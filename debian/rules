@@ -1,0 +1,226 @@
+#! /usr/bin/make -f
+
+PKG                   := tex-gyre
+PKG_INSTALL_DIR       := debian/$(PKG)
+
+INSTALL               := install
+INSTALL_FILE          := $(INSTALL) -p -o root -g root -m 644
+
+
+SHELL                 := /bin/bash
+
+build: build-arch build-indep
+# We have nothing to do here but the Debian Policy says this target must
+# exist.
+
+build-arch:
+# Nothing to do here
+
+build-indep: build-indep-stamp
+
+build-indep-stamp:
+	dh_testdir fonts/type1/public/tex-gyre/qtmr.pfb tex/latex/tex-gyre/tgtermes.sty
+        # Warn the person building the package if new files were added
+        # to the .orig.tar.gz + .diff.gz that this script is not aware of.
+	@newfiles=$$(find . -type f | grep -Ev \
+          -e '^\./debian/' \
+          -e '^\./fonts/type1/public/tex-gyre/[^/]*\.pf[bm]$$' \
+          -e '^\./fonts/afm/public/tex-gyre/[^/]*\.afm$$' \
+          -e '^\./fonts/tfm/public/tex-gyre/[^/]*\.tfm$$' \
+	  -e '^\./fonts/map/dvips/tex-gyre/[^/]*\.map$$' \
+	  -e '^\./fonts/enc/dvips/tex-gyre/[^/]*\.enc$$' \
+	  -e '^\./fonts/opentype/public/tex-gyre/[^/]*\.otf$$' \
+          -e '^\./tex/latex/tex-gyre/[^/]*\.(fd|sty)$$' \
+          -e '^\./doc/fonts/tex-gyre/[^/]*\.(tex|pdf|txt)$$' || true) && \
+          if [ -n "$$newfiles" ]; then \
+              { echo "New files were found in the patched tarball" \
+                     "(.orig.tar.gz + .diff.gz):"; \
+                echo "$$newfiles" | sed 's/^\(.*\)$$/  \1/'; \
+                echo; \
+                echo "Please update the debian/rules file accordingly."; \
+              } >&2; \
+              exit 1; \
+          fi
+
+        # Upstream provides <texmf>/fonts/map/dvips/tex-gyre/q??.map that should be
+        # equivalent to all the encoding-specific map files in 
+        # <texmf>/fonts/map/dvips/tex-gyre/ 
+        # Let's check if this is really the case.
+	@export LC_COLLATE=C && for fam in qag qbk qzc qcr qcs qhv qpl qtm ; do \
+	   a=$$(find fonts/map/dvips/tex-gyre -name "$$fam-*.map" \
+              -print0 | xargs -0r cat | grep -Ev -e '^(%|[[:space:]]*$$)' \
+                      | sort) \
+	&& b=$$(sort < fonts/map/dvips/tex-gyre/$$fam.map | grep -Ev -e \
+                                                        '^(%|[[:space:]]*$$)') \
+	&& if [ "$$a" != "$$b" ]; then \
+             { echo; \
+               echo "Warning: fonts/map/dvips/tex-gyre/$$fam.map does not appear to" \
+                    "be equivalent to"; \
+               echo "the concatenation of the other family's map files found in" \
+                    "fonts/map/dvips/tex-gyre/."; \
+               echo; \
+             } >&2; \
+           fi ; \
+	done
+
+	# Generate $(PKG).scale from $(PKG).defoma-hints (since it contains
+	# nice hand-crafted XLFD names for the fonts).
+	sed -nf debian/sed_scripts/gen-fonts.scale \
+	  "debian/$(PKG).defoma-hints" > "debian/$(PKG).scale.tmp"
+	{ wc -l < "debian/$(PKG).scale.tmp" && \
+	  cat "debian/$(PKG).scale.tmp"; \
+	} > "debian/$(PKG).scale"
+
+	# The following generated list should be safe with respect to font
+	# file names containing spaces (there is one name per line)...
+	sed -ne 's/^[[:blank:]]*begin[[:blank:]]\{1,\}.*[/]\([^/]\{1,\}\)\.pfb[[:blank:]]*$$/\1/p' \
+	  < "debian/$(PKG).defoma-hints" > "debian/$(PKG).fontlist-x11"
+	
+        # Generate the actual copyright file from copyright.in and
+        # the GUST license
+	cat debian/copyright.in doc/fonts/tex-gyre/GUST-FONT-LICENSE.txt \
+            > debian/copyright
+
+	touch build-indep-stamp
+
+clean:
+	dh_testdir fonts/type1/public/tex-gyre/qtmr.pfb tex/latex/tex-gyre/tgtermes.sty
+	dh_testroot
+	# debian/$(PKG).links is automatically generated from the list of
+	# fonts to declare to X11 among other things, so we have to delete
+	# it here.
+	rm -f build-indep-stamp debian/copyright \
+		"debian/$(PKG).scale.tmp" "debian/$(PKG).scale" \
+		"debian/$(PKG).fontlist-x11" "debian/$(PKG).links"
+	dh_clean
+
+binary-indep: build-indep
+	dh_testdir fonts/type1/public/tex-gyre/qtmr.pfb tex/latex/tex-gyre/tgtermes.sty
+	dh_testroot
+	dh_clean
+
+	# We will call dh_link only once for the build, with all desired links
+	# specified in $(PKG).links because it is much faster than spawning
+	# a dh_link (actually, Perl) process for every symbolic link in this
+	# package. So, $(PKG).links starts as an empty file and (target, link)
+	# pairs will be added to it in the relevant places.
+	: > "debian/$(PKG).links"
+
+	dh_installdirs \
+          usr/share/texmf/fonts/type1/public/tex-gyre \
+          usr/share/texmf/fonts/opentype/public/tex-gyre \
+          usr/share/texmf/fonts/afm/public/tex-gyre \
+          usr/share/texmf/fonts/tfm/public/tex-gyre \
+          usr/share/texmf/fonts/enc/dvips/tex-gyre \
+	  usr/share/texmf/fonts/map/dvips/tex-gyre \
+          usr/share/texmf/tex/latex/tex-gyre \
+          usr/share/doc/texmf/fonts/tex-gyre \
+	  etc/X11/fonts/Type1 \
+	  usr/share/fonts/X11/Type1 \
+          usr/share/lintian/overrides
+
+        # Note: we won't install the PFM files because we already have the
+        #       AFM files which are preferred in general.
+
+        # Install all the PFB files in the right place for TeX and friends
+	$(INSTALL_FILE) fonts/type1/public/tex-gyre/*.pfb \
+          "$(PKG_INSTALL_DIR)/usr/share/texmf/fonts/type1/public/tex-gyre"
+
+        # Install all the OpenType files in the right place for TeX and friends
+	$(INSTALL_FILE) fonts/opentype/public/tex-gyre/*.otf \
+          "$(PKG_INSTALL_DIR)/usr/share/texmf/fonts/opentype/public/tex-gyre"
+
+        # Install all the AFM files in the right place for TeX and friends
+	for file in fonts/afm/public/tex-gyre/*.afm; do \
+          DEST_FILE="$(PKG_INSTALL_DIR)/usr/share/texmf/$$file" \
+          && cp "$$file" "$$DEST_FILE" \
+          && chown root:root "$$DEST_FILE" \
+          && chmod 644 "$$DEST_FILE"; \
+        done
+
+	# Setup symlinks so that X can see the AFM and PFB files as well.
+	sed -nf debian/sed_scripts/gen-x-fonts-links-list \
+	  "debian/$(PKG).fontlist-x11" >> "debian/$(PKG).links"
+	
+	$(INSTALL_FILE) "debian/$(PKG).scale" \
+	  "$(PKG_INSTALL_DIR)/etc/X11/fonts/Type1"
+	dh_installxfonts
+	
+	$(INSTALL_FILE) fonts/tfm/public/tex-gyre/*.tfm \
+          "$(PKG_INSTALL_DIR)/usr/share/texmf/fonts/tfm/public/tex-gyre"
+
+	$(INSTALL_FILE) fonts/enc/dvips/tex-gyre/*.enc \
+          "$(PKG_INSTALL_DIR)/usr/share/texmf/fonts/enc/dvips/tex-gyre"
+
+	$(INSTALL_FILE) fonts/map/dvips/tex-gyre/*.map \
+	  "$(PKG_INSTALL_DIR)/usr/share/texmf/fonts/map/dvips/tex-gyre"
+
+	for file in tex/latex/tex-gyre/*.fd tex/latex/tex-gyre/*.sty; do \
+          $(INSTALL_FILE) "$$file" \
+             "$(PKG_INSTALL_DIR)/usr/share/texmf/tex/latex/tex-gyre"; \
+        done
+
+	for file in doc/fonts/tex-gyre/*; do \
+          $(INSTALL_FILE) "$$file" \
+            "$(PKG_INSTALL_DIR)/usr/share/doc/texmf/fonts/tex-gyre"; \
+        done
+
+        # Install the standard conffile for update-updmap
+	dh_installtex mapfile=debian/tex-gyre.cfg
+
+	dh_link \
+	  usr/share/doc/texmf/fonts/tex-gyre/README-TeX-Gyre-Adventor.txt \
+	  usr/share/doc/tex-gyre/README-TeX-Gyre-Adventor.txt \
+	  usr/share/doc/texmf/fonts/tex-gyre/README-TeX-Gyre-Bonum.txt \
+	  usr/share/doc/tex-gyre/README-TeX-Gyre-Bonum.txt \
+	  usr/share/doc/texmf/fonts/tex-gyre/README-TeX-Gyre-Chorus.txt \
+	  usr/share/doc/tex-gyre/README-TeX-Gyre-Chorus.txt \
+	  usr/share/doc/texmf/fonts/tex-gyre/README-TeX-Gyre-Cursor.txt \
+	  usr/share/doc/tex-gyre/README-TeX-Gyre-Cursor.txt \
+	  usr/share/doc/texmf/fonts/tex-gyre/README-TeX-Gyre-Heros.txt \
+	  usr/share/doc/tex-gyre/README-TeX-Gyre-Heros.txt \
+	  usr/share/doc/texmf/fonts/tex-gyre/README-TeX-Gyre-Pagella.txt \
+	  usr/share/doc/tex-gyre/README-TeX-Gyre-Pagella.txt \
+	  usr/share/doc/texmf/fonts/tex-gyre/README-TeX-Gyre-Schola.txt \
+	  usr/share/doc/tex-gyre/README-TeX-Gyre-Schola.txt \
+	  usr/share/doc/texmf/fonts/tex-gyre/README-TeX-Gyre-Termes.txt \
+	  usr/share/doc/tex-gyre/README-TeX-Gyre-Termes.txt \
+	  usr/share/doc/texmf/fonts/tex-gyre/qag-info.pdf \
+	  usr/share/doc/tex-gyre/qag-info.pdf \
+	  usr/share/doc/texmf/fonts/tex-gyre/qbk-info.pdf \
+	  usr/share/doc/tex-gyre/qbk-info.pdf \
+	  usr/share/doc/texmf/fonts/tex-gyre/qzc-info.pdf \
+	  usr/share/doc/tex-gyre/qzc-info.pdf \
+	  usr/share/doc/texmf/fonts/tex-gyre/qcr-info.pdf \
+	  usr/share/doc/tex-gyre/qcr-info.pdf \
+	  usr/share/doc/texmf/fonts/tex-gyre/qcs-info.pdf \
+	  usr/share/doc/tex-gyre/qcs-info.pdf \
+	  usr/share/doc/texmf/fonts/tex-gyre/qhv-info.pdf \
+	  usr/share/doc/tex-gyre/qhv-info.pdf \
+	  usr/share/doc/texmf/fonts/tex-gyre/qpl-info.pdf \
+	  usr/share/doc/tex-gyre/qpl-info.pdf \
+	  usr/share/doc/texmf/fonts/tex-gyre/qtm-info.pdf \
+	  usr/share/doc/tex-gyre/qtm-info.pdf
+
+	dh_installdefoma
+
+	dh_installdocs
+	dh_installchangelogs
+
+	$(INSTALL_FILE) debian/lintian-overrides \
+	  "$(PKG_INSTALL_DIR)/usr/share/lintian/overrides/$(PKG)"
+
+	dh_compress -X.pdf
+	dh_fixperms
+	dh_installdeb
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+binary-arch:
+# We have nothing to do here but the Debian Policy says this target must
+# exist.
+
+binary: binary-indep binary-arch
+
+.PHONY: clean build build-arch build-indep binary binary-indep binary-arch
