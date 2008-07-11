@@ -1,3 +1,9 @@
+tex-gyre (2008.02.29-1) unstable; urgency=low
+
+  * New TeX Gyre Fonts release
+
+ -- Norbert Preining <preining@debian.org>  Fri, 11 Jul 2008 07:59:51 +0200
+
 tex-gyre (2007.09.25-1) unstable; urgency=low
 
   * First upload to Debian
