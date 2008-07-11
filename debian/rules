@@ -31,7 +31,7 @@ build-indep-stamp:
 	  -e '^\./fonts/enc/dvips/tex-gyre/[^/]*\.enc$$' \
 	  -e '^\./fonts/opentype/public/tex-gyre/[^/]*\.otf$$' \
           -e '^\./tex/latex/tex-gyre/[^/]*\.(fd|sty)$$' \
-          -e '^\./doc/fonts/tex-gyre/[^/]*\.(tex|pdf|txt)$$' || true) && \
+          -e '^\./doc/fonts/tex-gyre/[^/]*\.(tex|pdf|txt|fea|nam)$$' || true) && \
           if [ -n "$$newfiles" ]; then \
               { echo "New files were found in the patched tarball" \
                      "(.orig.tar.gz + .diff.gz):"; \
