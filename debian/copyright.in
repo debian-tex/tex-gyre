@@ -11,101 +11,150 @@ It was downloaded from:
 Upstream work
 -------------
 
-There are 7 upstream README files saying:
+We include the relevant parts from the 7 README and ???-hist.txt files:
 
 -----  README-TeX-Gyre-Adventor.txt:
 Font: TeX Gyre Adventor
-Design: Herb Lubalin and Tom Carnase
 Authors: Bogus\l{}aw Jackowski and Janusz M. Nowacki
-Version: 0.991
-Date: 30 III 2007
+Version: 2.003
+Date: 16 IX 2009
 Downloads: http://www.gust.org.pl/projects/e-foundry/tex-gyre/adventor
+
 License:
-  % Copyright (URW)++, copyright 1999 by (URW)++ Design & Development.
-  % Cyrillic glyphs added by Valek Filippov, copyright 2001-2002.
+  % Copyright 2007--2009 for TeX Gyre extensions by B. Jackowski
+  % and J.M. Nowacki (on behalf of TeX Users Groups).
   % Vietnamese characters were added by Han The Thanh.
-  % Copyright 2007 for TeX Gyre extensions by B. Jackowski and J. M. Nowacki
-  % (on behalf of TeX Users Groups).
-  % This work is released under the GUST Font License
-  %   -- see GUST-FONT-LICENSE.txt.
-  % This work has the LPPL maintenance status "maintained".
-  % The Current Maintainer of this work is Bogus\l{}aw Jackowski
-  %   and Janusz M. Nowacki.
+  %
+  % This work can be freely used and distributed under
+  % the GUST Font License (GFL -- see GUST-FONT-LICENSE.txt)
+  % which is actually an instance of the LaTeX Project Public License
+  % (LPPL -- see http://www.latex-project.org/lppl.txt ).
+  %
+  % This work has the maintenance status "maintained". The Current Maintainer
+  % of this work is Bogus\l{}aw Jackowski and Janusz M. Nowacki.
+  %
   % This work consists of the files listed
-  %   % in the MANIFEST-TeX-Gyre-Adventor.txt file.
+  % in the MANIFEST-TeX-Gyre-Adventor.txt file.
 
 ###########################################################################
 ############         A BRIEF DESCRIPTION OF THE PACKAGE        ############
 ###########################################################################
 
-The current package contains the most recent version of the TeX Gyre Adventor
-family of fonts in the PostScript Type 1 and OpenType formats. The font
-was designed by Herb Lubalin and Tom Carnase in 1970. TeX Gyre Adventor
-is based on the URW Gothic L distributed under GPL with Ghostscript.
-The Vietnamese and Cyrillic characters were added by Han The Thanh
-and Valek Filippov, respectively. The Greek (basic) alphabet programmed for
-the TeX Gyre Adventor was inspired by the Kerkis package
+The current package contains the most recent version of the TeX Gyre
+Adventor family of fonts in the PostScript Type 1 and OpenType formats.
+TeX Gyre Adventor is based on the URW Gothic L kindly released
+by URW++ Design and Development Inc. under GFL (independently of the GPL
+release accompanying Ghostscript). The Vietnamese glyphs were added
+by Han The Thanh. The Greek (basic) alphabet programmed for the TeX Gyre
+Adventor was inspired by the Kerkis package
 (http://iris.math.aegean.gr/kerkis/).
+
+----- qag-hist.txt
+Ver 2.003: 16.09.2009
+* this is the first official release of the TeX Gyre Adventor fonts since
+  June 22, 2009, when URW++, represented by Dr. Peter Rosenfeld, its
+  Managing Director, kindly agreed to release the original 35 base
+  PostScript fonts as shipped with Ghostscript ver. 4.00 under the LPPL
+  (LaTeX Project Public License). This should be understood so that the
+  35 base Postscript fonts may be used and developed either under the
+  LPPL or one of the GPL (GNU Public Licence) or AFPL (Aladdin Free
+  Public Licence). The latter were put in force with the initial release
+  of the base fonts with Ghostscript ver. 4.00 in 1996. Hereby we thank
+  Dr. Rosenfeld. The TeX Gyre fonts are being develped from the
+  Ghostscript ver. 4.00 base. For reasons explained elsewhere, we prefer
+  to provide our work under the GUST Font Licence (GFL) which is legally
+  equivallent to the LPPL. However, since 1996 the 35 PostScript base
+  fonts were enhanced under the GNU Public License with Vietnamese glyphs
+  by Han The Thanh and Cyrillic glyphs by Valek Filippov. Han The Thanh
+  kindly permitted his additions to be retained under under GFL/LPPL in
+  this and future TeX Gyre fonts releases. Unfortunately, we were unable
+  to receive a similar permission from Valek Filippov for his Cyrillic
+  glyphs, thus there are no Cyrillic glyphs in any of the TeX Gyre fonts.
+
 
 ----- README-TeX-Gyre-Bonum.txt
 Font: TeX Gyre Bonum
-Design: Alexander Phemister
 Authors: Bogus\l{}aw Jackowski and Janusz M. Nowacki
-Version: 1.010
-Date: 30 III 2007
-Downloads: http://www.gust.org.pl/projects/e-foundry/tex-gyre/bonum
+Version: 2.003
+Date: 16 IX 2009
+Downloads: http://www.gust.org.pl/projects/e-foundry/tex-gyre/adventor
+
 License:
-  % Copyright (URW)++, copyright 1999 by (URW)++ Design & Development.
-  % Cyrillic glyphs added by Valek Filippov, copyright 2001-2002.
+  % Copyright 2007--2009 for TeX Gyre extensions by B. Jackowski
+  % and J.M. Nowacki (on behalf of TeX Users Groups).
   % Vietnamese characters were added by Han The Thanh.
   % The original Greek symbols were replaced by the relevant glyphs
   % from the Kerkis package (http://iris.math.aegean.gr/kerkis/)
   % with the kind permission of the authors, Apostolos Syropoulos
   % and Antonis Tsolomitis.
-  % Copyright 2006 for TeX Gyre extensions by B. Jackowski and J. M. Nowacki
-  % (on behalf of TeX Users Groups).
-  % This work is released under the GUST Font License
-  %   -- see GUST-FONT-LICENSE.txt.
-  % This work has the LPPL maintenance status "maintained".
-  % The Current Maintainer of this work is Bogus\l{}aw Jackowski
-  %   and Janusz M. Nowacki.
-  % This work consists of the files listed
+  %
+  % This work can be freely used and distributed under
+  % the GUST Font License (GFL -- see GUST-FONT-LICENSE.txt)
+  % which is actually an instance of the LaTeX Project Public License
+  % (LPPL -- see http://www.latex-project.org/lppl.txt ).
+  %
+  % This work has the maintenance status "maintained". The Current Maintainer
+  % of this work is Bogus\l{}aw Jackowski and Janusz M. Nowacki.
+  %
+  % This work consists of the files listed in
   %   % in the MANIFEST-TeX-Gyre-Bonum.txt file.
 
 ###########################################################################
 ############         A BRIEF DESCRIPTION OF THE PACKAGE        ############
 ###########################################################################
 
-The current package contains the most recent version of the TeX Gyre Bonum
-family of fonts in the PostScript Type 1 and OpenType formats. The original 
-design is due to Alexander Phemister (1860); the typeface was named
-Bookman (or Bookman Old Style). In 1975, it was redesigned for the
-International Typeface Corporation by Edward Benguiat (as ITC Bookman).
-TeX Gyre Bonum is based on the URW Bookman L distributed under GPL
-with Ghostscript. The Vietnamese and Cyrillic characters were added
-by Han The Thanh and Valek Filippov, respectively. The Greek symbols
-were improved courtesy of Apostolos Syropoulos and Antonis
-Tsolomitis by importing the relevant glyphs (with slight tuning)
-from their Kerkis fonts.
+The current package contains the most recent version of the TeX Gyre
+Bonum family of fonts in the PostScript Type 1 and OpenType formats.
+TeX Gyre Bonum is based on the URW Bookman L kindly released
+by URW++ Design and Development Inc. under GFL (independently of the GPL
+release accompanying Ghostscript). The Vietnamese glyphs were added
+by Han The Thanh. The Greek symbols were improved courtesy of Apostolos
+Syropoulos and Antonis Tsolomitis by importing the relevant glyphs
+(with slight tuning) from their Kerkis fonts
+(http://iris.math.aegean.gr/kerkis/).
+
+----- qbk-hist.txt
+Ver 2.003: 16.09.2009
+* this is the first official release of the TeX Gyre Bonum fonts since
+  June 22, 2009, when URW++, represented by Dr. Peter Rosenfeld, its
+  Managing Director, kindly agreed to release the original 35 base
+  PostScript fonts as shipped with Ghostscript ver. 4.00 under the LPPL
+  (LaTeX Project Public License). This should be understood so that the
+  35 base Postscript fonts may be used and developed either under the
+  LPPL or one of the GPL (GNU Public Licence) or AFPL (Aladdin Free
+  Public Licence). The latter were put in force with the initial release
+  of the base fonts with Ghostscript ver. 4.00 in 1996. Hereby we thank
+  Dr. Rosenfeld. The TeX Gyre fonts are being develped from the
+  Ghostscript ver. 4.00 base. For reasons explained elsewhere, we prefer
+  to provide our work under the GUST Font Licence (GFL) which is legally
+  equivallent to the LPPL. However, since 1996 the 35 PostScript base
+  fonts were enhanced under the GNU Public License with Vietnamese glyphs
+  by Han The Thanh and Cyrillic glyphs by Valek Filippov. Han The Thanh
+  kindly permitted his additions to be retained under under GFL/LPPL in
+  this and future TeX Gyre fonts releases. Unfortunately, we were unable
+  to receive a similar permission from Valek Filippov for his Cyrillic
+  glyphs, thus there are no Cyrillic glyphs in any of the TeX Gyre fonts.
 
 ----- README-TeX-Gyre-Chorus.txt
 Font: TeX Gyre Chorus
-Design: Hermann Zapf
 Authors: Bogus\l{}aw Jackowski and Janusz M. Nowacki
-Version: 1.000
-Date: 25 IX 2007
+Version: 2.003
+Date: 16 IX 2009
 Downloads: http://www.gust.org.pl/projects/e-foundry/tex-gyre/chorus
+
 License:
-  % Copyright (URW)++, copyright 1999 by (URW)++ Design & Development.
-  % Cyrillic glyphs added by Valek Filippov, copyright 2001-2002.
+  % Copyright 2007--2009 for TeX Gyre extensions by B. Jackowski
+  % and J.M. Nowacki (on behalf of TeX Users Groups).
   % Vietnamese characters were added by Han The Thanh.
-  % Copyright 2006 for TeX Gyre extensions by B. Jackowski and J. M. Nowacki
-  % (on behalf of TeX Users Groups).
-  % This work is released under the GUST Font License
-  %   -- see GUST-FONT-LICENSE.txt.
-  % This work has the LPPL maintenance status "maintained".
-  % The Current Maintainer of this work is Bogus\l{}aw Jackowski
-  %   and Janusz M. Nowacki.
+  %
+  % This work can be freely used and distributed under
+  % the GUST Font License (GFL -- see GUST-FONT-LICENSE.txt)
+  % which is actually an instance of the LaTeX Project Public License
+  % (LPPL -- see http://www.latex-project.org/lppl.txt ).
+  %
+  % This work has the maintenance status "maintained". The Current Maintainer
+  % of this work is Bogus\l{}aw Jackowski and Janusz M. Nowacki.
+  %
   % This work consists of the files listed
   % in the MANIFEST-TeX-Gyre-Chorus.txt file.
 
@@ -113,67 +162,112 @@ License:
 ############         A BRIEF DESCRIPTION OF THE PACKAGE        ############
 ###########################################################################
 
-The package contains the most recent version of the TeX Gyre Chorus
-font in the PostScript Type 1 and OpenType formats. The font,
-derived from handwritten letterforms of the Italian Renaissance, was
-designed by Hermann Zapf (ITC Zapf Chancery(R), 1979; currently, other
-variants of this typeface are available). TeX Gyre Chorus is based
-on the URW Chancery L Medium Italic distributed under GPL with Ghostscript.
-The Vietnamese and Cyrillic characters were added by Han The Thanh and
-Valek Filippov, respectively.
+The current package contains the most recent version of the TeX Gyre
+Chorus font in the PostScript Type 1 and OpenType formats. TeX Gyre
+Chorus is based on the URW Chancery L Medium Italic kindly released
+by URW++ Design and Development Inc. under GFL (independently of the
+GPL release accompanying Ghostscript). The Vietnamese glyphs were
+added by Han The Thanh.
+
+----- qzc-hist.txt
+Ver 2.003: 16.09.2009
+* this is the first official release of the TeX Gyre Chorus font since
+  June 22, 2009, when URW++, represented by Dr. Peter Rosenfeld, its
+  Managing Director, kindly agreed to release the original 35 base
+  PostScript fonts as shipped with Ghostscript ver. 4.00 under the LPPL
+  (LaTeX Project Public License). This should be understood so that the
+  35 base Postscript fonts may be used and developed either under the
+  LPPL or one of the GPL (GNU Public Licence) or AFPL (Aladdin Free
+  Public Licence). The latter were put in force with the initial release
+  of the base fonts with Ghostscript ver. 4.00 in 1996. Hereby we thank
+  Dr. Rosenfeld. The TeX Gyre fonts are being develped from the
+  Ghostscript ver. 4.00 base. For reasons explained elsewhere, we prefer
+  to provide our work under the GUST Font Licence (GFL) which is legally
+  equivallent to the LPPL. However, since 1996 the 35 PostScript base
+  fonts were enhanced under the GNU Public License with Vietnamese glyphs
+  by Han The Thanh and Cyrillic glyphs by Valek Filippov. Han The Thanh
+  kindly permitted his additions to be retained under under GFL/LPPL in
+  this and future TeX Gyre fonts releases. Unfortunately, we were unable
+  to receive a similar permission from Valek Filippov for his Cyrillic
+  glyphs, thus there are no Cyrillic glyphs in any of the TeX Gyre fonts.
+
 
 ----- README-TeX-Gyre-Cursor.txt
 Font: TeX Gyre Cursor
-Design: Howard G. (Bud) Kettler
 Authors: Bogus\l{}aw Jackowski and Janusz M. Nowacki
-Version: 1.010
-Date: 12 IX 2007
+Version: 2.003
+Date: 16 IX 2009
 Downloads: http://www.gust.org.pl/projects/e-foundry/tex-gyre/cursor
+
 License:
-  % Copyright (URW)++, copyright 1999 by (URW)++ Design & Development.
-  % Cyrillic glyphs added by Valek Filippov, copyright 2001-2002.
+  % Copyright 2007--2009 for TeX Gyre extensions by B. Jackowski
+  % and J.M. Nowacki (on behalf of TeX Users Groups).
   % Vietnamese characters were added by Han The Thanh.
-  % Copyright 2006 for TeX Gyre extensions by B. Jackowski and J. M. Nowacki
-  % (on behalf of TeX Users Groups).
-  % This work is released under the GUST Font License
-  %   -- see GUST-FONT-LICENSE.txt.
-  % This work has the LPPL maintenance status "maintained".
-  % The Current Maintainer of this work is Bogus\l{}aw Jackowski
-  %   and Janusz M. Nowacki.
-  % This work consists of the files listed
-  %   % in the MANIFEST-TeX-Gyre-Cursor.txt file.
+  %
+  % This work can be freely used and distributed under
+  % the GUST Font License (GFL -- see GUST-FONT-LICENSE.txt)
+  % which is actually an instance of the LaTeX Project Public License
+  % (LPPL -- see http://www.latex-project.org/lppl.txt ).
+  %
+  % This work has the maintenance status "maintained". The Current Maintainer
+  % of this work is Bogus\l{}aw Jackowski and Janusz M. Nowacki.
+  %
+  % This work consists of the files listed in
+  % the MANIFEST-TeX-Gyre-Cursor.txt file.
 
 ###########################################################################
 ############         A BRIEF DESCRIPTION OF THE PACKAGE        ############
 ###########################################################################
 
-The current package contains the most recent version of the TeX Gyre Cursor
-family of fonts in the PostScript Type 1 and OpenType formats. The typeface
-was designed by Howard G. (Bud) Kettler in 1955 for the IBM corporation
-(interesting information about the designer can be found at
-http://www.graphos.org/courier.html ). TeX Gyre Cursor is based
-on the URW Nimbus Mono L distributed under GPL with Ghostscript.
-The Vietnamese and Cyrillic characters were added by Han The Thanh
-and Valek Filippov, respectively.
+The current package contains the most recent version of the TeX Gyre
+Cursor family of fonts in the PostScript Type 1 and OpenType formats.
+TeX Gyre Cursor is based on the URW Nimbus Mono L kindly released
+by URW++ Design and Development Inc. under GFL (independently
+of the GPL release accompanying Ghostscript). The Vietnamese
+glyphs were added by Han The Thanh. 
+
+----- qcr-hist.txt
+Ver 2.003: 16.09.2009
+* this is the first official release of the TeX Gyre Cursor fonts since
+  June 22, 2009, when URW++, represented by Dr. Peter Rosenfeld, its
+  Managing Director, kindly agreed to release the original 35 base
+  PostScript fonts as shipped with Ghostscript ver. 4.00 under the LPPL
+  (LaTeX Project Public License). This should be understood so that the
+  35 base Postscript fonts may be used and developed either under the
+  LPPL or one of the GPL (GNU Public Licence) or AFPL (Aladdin Free
+  Public Licence). The latter were put in force with the initial release
+  of the base fonts with Ghostscript ver. 4.00 in 1996. Hereby we thank
+  Dr. Rosenfeld. The TeX Gyre fonts are being develped from the
+  Ghostscript ver. 4.00 base. For reasons explained elsewhere, we prefer
+  to provide our work under the GUST Font Licence (GFL) which is legally
+  equivallent to the LPPL. However, since 1996 the 35 PostScript base
+  fonts were enhanced under the GNU Public License with Vietnamese glyphs
+  by Han The Thanh and Cyrillic glyphs by Valek Filippov. Han The Thanh
+  kindly permitted his additions to be retained under under GFL/LPPL in
+  this and future TeX Gyre fonts releases. Unfortunately, we were unable
+  to receive a similar permission from Valek Filippov for his Cyrillic
+  glyphs, thus there are no Cyrillic glyphs in any of the TeX Gyre fonts.
 
 ----- README-TeX-Gyre-Heros.txt
 Font: TeX Gyre Heros
-Design: Max Miedinger
 Authors: Bogus\l{}aw Jackowski and Janusz M. Nowacki
-Version: 0.995
-Date: 30 III 2007
+Version: 2.003
+Date: 16 IX 2009
 Downloads: http://www.gust.org.pl/projects/e-foundry/tex-gyre/heros
+
 License:
-  % Copyright (URW)++, copyright 1999 by (URW)++ Design & Development.
-  % Cyrillic glyphs added by Valek Filippov, copyright 2001-2002.
+  % Copyright 2007--2009 for TeX Gyre extensions by B. Jackowski
+  % and J.M. Nowacki (on behalf of TeX Users Groups).
   % Vietnamese characters were added by Han The Thanh.
-  % Copyright 2006 for TeX Gyre extensions by B. Jackowski and J. M. Nowacki
-  % (on behalf of TeX Users Groups).
-  % This work is released under the GUST Font License
-  %   -- see GUST-FONT-LICENSE.txt.
-  % This work has the LPPL maintenance status "maintained".
-  % The Current Maintainer of this work is Bogus\l{}aw Jackowski
-  %   and Janusz M. Nowacki.
+  %
+  % This work can be freely used and distributed under
+  % the GUST Font License (GFL -- see GUST-FONT-LICENSE.txt)
+  % which is actually an instance of the LaTeX Project Public License
+  % (LPPL -- see http://www.latex-project.org/lppl.txt ).
+  %
+  % This work has the maintenance status "maintained". The Current Maintainer
+  % of this work is Bogus\l{}aw Jackowski and Janusz M. Nowacki.
+  %
   % This work consists of the files listed
   % in the MANIFEST-TeX-Gyre-Heros.txt file.
 
@@ -181,31 +275,55 @@ License:
 ############         A BRIEF DESCRIPTION OF THE PACKAGE        ############
 ###########################################################################
 
-The current package contains the most recent version of the TeX Gyre Heros
-family of fonts in the PostScript Type 1 and OpenType formats. The font,
-named Helvetica, was prepared by Max Miedinger (with Eduard Hoffmann) in 1957
-at the Haas type foundry. TeX Gyre Heros is based on the URW Nimbus Sans L
-font distributed under GPL with Ghostscript. The Vietnamese and Cyrillic
-characters were added by Han The Thanh and Valek Filippov, respectively.
+The current package contains the most recent version of the TeX Gyre
+Adventor family of fonts in the PostScript Type 1 and OpenType formats.
+TeX Gyre Adventor is based on the URW Nimbus Sans L kindly released by
+URW++ Design and Development Inc. under GFL (independently of the GPL
+release accompanying Ghostscript). The Vietnamese glyphs were added by
+Han The Thanh. 
+
+----- qhv-hist.txt
+Ver 2.003: 16.09.2009
+* this is the first official release of the TeX Gyre Heros fonts since
+  June 22, 2009, when URW++, represented by Dr. Peter Rosenfeld, its
+  Managing Director, kindly agreed to release the original 35 base
+  PostScript fonts as shipped with Ghostscript ver. 4.00 under the LPPL
+  (LaTeX Project Public License). This should be understood so that the
+  35 base Postscript fonts may be used and developed either under the
+  LPPL or one of the GPL (GNU Public Licence) or AFPL (Aladdin Free
+  Public Licence). The latter were put in force with the initial release
+  of the base fonts with Ghostscript ver. 4.00 in 1996. Hereby we thank
+  Dr. Rosenfeld. The TeX Gyre fonts are being develped from the
+  Ghostscript ver. 4.00 base. For reasons explained elsewhere, we prefer
+  to provide our work under the GUST Font Licence (GFL) which is legally
+  equivallent to the LPPL. However, since 1996 the 35 PostScript base
+  fonts were enhanced under the GNU Public License with Vietnamese glyphs
+  by Han The Thanh and Cyrillic glyphs by Valek Filippov. Han The Thanh
+  kindly permitted his additions to be retained under under GFL/LPPL in
+  this and future TeX Gyre fonts releases. Unfortunately, we were unable
+  to receive a similar permission from Valek Filippov for his Cyrillic
+  glyphs, thus there are no Cyrillic glyphs in any of the TeX Gyre fonts.
 
 ----- README-TeX-Gyre-Pagella.txt
 Font: TeX Gyre Pagella
-Design: Hermann Zapf
 Authors: Bogus\l{}aw Jackowski and Janusz M. Nowacki
-Version: 1.011
-Date: 14 I 2007
+Version: 2.003
+Date: 16 IX 2009
 Downloads: http://www.gust.org.pl/projects/e-foundry/tex-gyre/pagella
+
 License:
-  % Copyright (URW)++, copyright 1999 by (URW)++ Design & Development.
-  % Cyrillic glyphs added by Valek Filippov, copyright 2001-2002.
+  % Copyright 2006--2009 for TeX Gyre extensions by B. Jackowski
+  % and J.M. Nowacki (on behalf of TeX Users Groups).
   % Vietnamese characters were added by Han The Thanh.
-  % Copyright 2006 for TeX Gyre extensions by B. Jackowski and J. M. Nowacki
-  % (on behalf of TeX Users Groups).
-  % This work is released under the GUST Font License
-  %   -- see GUST-FONT-LICENSE.txt.
-  % This work has the LPPL maintenance status "maintained".
-  % The Current Maintainer of this work is Bogus\l{}aw Jackowski
-  %   and Janusz M. Nowacki.
+  %
+  % This work can be freely used and distributed under
+  % the GUST Font License (GFL -- see GUST-FONT-LICENSE.txt)
+  % which is actually an instance of the LaTeX Project Public License
+  % (LPPL -- see http://www.latex-project.org/lppl.txt ).
+  %
+  % This work has the maintenance status "maintained". The Current Maintainer
+  % of this work is Bogus\l{}aw Jackowski and Janusz M. Nowacki.
+  %
   % This work consists of the files listed
   % in the MANIFEST-TeX-Gyre-Pagella.txt file.
 
@@ -213,66 +331,110 @@ License:
 ############         A BRIEF DESCRIPTION OF THE PACKAGE        ############
 ###########################################################################
 
-The current package contains the most recent version of the TeX Gyre Pagella
-family of fonts in the PostScript Type 1 and OpenType formats.
-Originally, the font was designed by Hermann Zapf in the 1940's
-for the Stempel type foundry (an interesting lifestory of Hermann Zapf
-can be found at: http://www.linotype.com/1494/theschoolyears.html );
-TeX Gyre Pagella is based on the URW Palladio L distributed under GPL
-with Ghostscript. The Vietnamese and Cyrillic characters were added
-by Han The Thanh and Valek Filippov, respectively.
+The current package contains the most recent version of the TeX Gyre
+Pagella family of fonts in the PostScript Type 1 and OpenType formats.
+TeX Gyre Pagella is based on the URW Palladio L kindly released
+by URW++ Design and Development Inc. under GFL (independently of the GPL
+release accompanying Ghostscript). The Vietnamese glyphs were added
+by Han The Thanh.
+
+----- qpl-hist.txt
+Ver 2.003: 16.09.2009
+* this is the first official release of the TeX Gyre Pagella fonts since
+  June 22, 2009, when URW++, represented by Dr. Peter Rosenfeld, its
+  Managing Director, kindly agreed to release the original 35 base
+  PostScript fonts as shipped with Ghostscript ver. 4.00 under the LPPL
+  (LaTeX Project Public License). This should be understood so that the
+  35 base Postscript fonts may be used and developed either under the
+  LPPL or one of the GPL (GNU Public Licence) or AFPL (Aladdin Free
+  Public Licence). The latter were put in force with the initial release
+  of the base fonts with Ghostscript ver. 4.00 in 1996. Hereby we thank
+  Dr. Rosenfeld. The TeX Gyre fonts are being develped from the
+  Ghostscript ver. 4.00 base. For reasons explained elsewhere, we prefer
+  to provide our work under the GUST Font Licence (GFL) which is legally
+  equivallent to the LPPL. However, since 1996 the 35 PostScript base
+  fonts were enhanced under the GNU Public License with Vietnamese glyphs
+  by Han The Thanh and Cyrillic glyphs by Valek Filippov. Han The Thanh
+  kindly permitted his additions to be retained under under GFL/LPPL in
+  this and future TeX Gyre fonts releases. Unfortunately, we were unable
+  to receive a similar permission from Valek Filippov for his Cyrillic
+  glyphs, thus there are no Cyrillic glyphs in any of the TeX Gyre fonts.
 
 ----- README-TeX-Gyre-Schola.txt
 Font: TeX Gyre Schola
-Design: Morris Fuller Benton
 Authors: Bogus\l{}aw Jackowski and Janusz M. Nowacki
-Version: 0.996
-Date: 14 I 2007
+Version: 2.003
+Date: 16 IX 2009
 Downloads: http://www.gust.org.pl/projects/e-foundry/tex-gyre/schola
 License:
-  % Copyright (URW)++, copyright 1999 by (URW)++ Design & Development.
-  % Cyrillic glyphs added by Valek Filippov, copyright 2001-2002.
+  % Copyright 2007--2009 for TeX Gyre extensions by B. Jackowski
+  % and J.M. Nowacki (on behalf of TeX Users Groups).
   % Vietnamese characters were added by Han The Thanh.
-  % Copyright 2006 for TeX Gyre extensions by B. Jackowski and J. M. Nowacki
-  % (on behalf of TeX Users Groups).
-  % This work is released under the GUST Font License
-  %   -- see GUST-FONT-LICENSE.txt.
-  % This work has the LPPL maintenance status "maintained".
-  % The Current Maintainer of this work is Bogus\l{}aw Jackowski
-  %   and Janusz M. Nowacki.
-  % This work consists of the files listed
+  %
+  % This work can be freely used and distributed under
+  % the GUST Font License (GFL -- see GUST-FONT-LICENSE.txt)
+  % which is actually an instance of the LaTeX Project Public License
+  % (LPPL -- see http://www.latex-project.org/lppl.txt ).
+  %
+  % This work has the maintenance status "maintained". The Current Maintainer
+  % of this work is Bogus\l{}aw Jackowski and Janusz M. Nowacki.
+  %
+  % This work consists of the files listed in
   % in the MANIFEST-TeX-Gyre-Schola.txt file.
 
 ###########################################################################
 ############         A BRIEF DESCRIPTION OF THE PACKAGE        ############
 ###########################################################################
 
-The current package contains the most recent version of the TeX Gyre Schola
-family of fonts in the PostScript Type 1 and OpenType formats. The original 
-design is due to Morris Fuller Benton (1919) for the American Type Founders.
-Originally, italics were not designed, they were added in later revivals
-by Linotype and ITC. TeX Gyre Schola is based on the URW Century Schoolbook L
-distributed under GPL with Ghostscript. The Vietnamese and Cyrillic
-characters were added by Han The Thanh and Valek Filippov, respectively.
+The current package contains the most recent version of the TeX Gyre
+Schola family of fonts in the PostScript Type 1 and OpenType formats.
+TeX Gyre Schola is based on the URW Century Schoolbook L kindly released
+by URW++ Design and Development Inc. under GFL (independently of the GPL
+release accompanying Ghostscript). The Vietnamese glyphs were added
+by Han The Thanh.
+
+----- qcs-hist.txt
+Ver 2.003: 16.09.2009
+* this is the first official release of the TeX Gyre Schola fonts since
+  June 22, 2009, when URW++, represented by Dr. Peter Rosenfeld, its
+  Managing Director, kindly agreed to release the original 35 base
+  PostScript fonts as shipped with Ghostscript ver. 4.00 under the LPPL
+  (LaTeX Project Public License). This should be understood so that the
+  35 base Postscript fonts may be used and developed either under the
+  LPPL or one of the GPL (GNU Public Licence) or AFPL (Aladdin Free
+  Public Licence). The latter were put in force with the initial release
+  of the base fonts with Ghostscript ver. 4.00 in 1996. Hereby we thank
+  Dr. Rosenfeld. The TeX Gyre fonts are being develped from the
+  Ghostscript ver. 4.00 base. For reasons explained elsewhere, we prefer
+  to provide our work under the GUST Font Licence (GFL) which is legally
+  equivallent to the LPPL. However, since 1996 the 35 PostScript base
+  fonts were enhanced under the GNU Public License with Vietnamese glyphs
+  by Han The Thanh and Cyrillic glyphs by Valek Filippov. Han The Thanh
+  kindly permitted his additions to be retained under under GFL/LPPL in
+  this and future TeX Gyre fonts releases. Unfortunately, we were unable
+  to receive a similar permission from Valek Filippov for his Cyrillic
+  glyphs, thus there are no Cyrillic glyphs in any of the TeX Gyre fonts.
 
 ----- README-TeX-Gyre-Termes.txt
 Font: TeX Gyre Termes
-Design: Stanley Morison together with Starling Burgess and Victor Lardent
 Authors: Bogus\l{}aw Jackowski and Janusz M. Nowacki
-Version: 1.011
-Date: 14 I 2007
+Version: 2.003
+Date: 16 IX 2009
 Downloads: http://www.gust.org.pl/projects/e-foundry/tex-gyre/termes
+
 License:
-  % Copyright (URW)++, copyright 1999 by (URW)++ Design & Development.
-  % Cyrillic glyphs added by Valek Filippov, copyright 2001-2002.
+  % Copyright 2006--2009 for TeX Gyre extensions by B. Jackowski
+  % and J.M. Nowacki (on behalf of TeX Users Groups).
   % Vietnamese characters were added by Han The Thanh.
-  % Copyright 2006 for TeX Gyre extensions by B. Jackowski and J. M. Nowacki
-  % (on behalf of TeX Users Groups).
-  % This work is released under the GUST Font License
-  %   -- see GUST-FONT-LICENSE.txt.
-  % This work has the LPPL maintenance status "maintained".
-  % The Current Maintainer of this work is Bogus\l{}aw Jackowski
-  %   and Janusz M. Nowacki.
+  %
+  % This work can be freely used and distributed under
+  % the GUST Font License (GFL -- see GUST-FONT-LICENSE.txt)
+  % which is actually an instance of the LaTeX Project Public License
+  % (LPPL -- see http://www.latex-project.org/lppl.txt ).
+  %
+  % This work has the maintenance status "maintained". The Current Maintainer
+  % of this work is Bogus\l{}aw Jackowski and Janusz M. Nowacki.
+  %
   % This work consists of the files listed
   % in the MANIFEST-TeX-Gyre-Termes.txt file.
 
@@ -280,15 +442,35 @@ License:
 ############         A BRIEF DESCRIPTION OF THE PACKAGE        ############
 ###########################################################################
 
-The current package contains the most recent version of the TeX Gyre Termes
-family of fonts in the PostScript Type 1 and OpenType formats. Originally,
-the font was designed by Stanley Morison together with Starling Burgess and
-Victor Lardent for the London newspaper ``The Times''. It was first issued by
-the Monotype Corporation in 1932 (see the article by Charles Bigelow for
-interesting details: http://www.truetype-typography.com/articles/times.htm );
-TeX Gyre Termes is based on the URW Nimbus Roman No9 L distributed under
-GPL with Ghostscript. The Vietnamese and Cyrillic characters were added
-by Han The Thanh and Valek Filippov, respectively.
+The current package contains the most recent version of the TeX Gyre
+Termes family of fonts in the PostScript Type 1 and OpenType formats.
+TeX Gyre Termes is based on the URW Nimbus Roman No9 L kindly released
+by URW++ Design and Development Inc. under GFL (independently of the GPL
+release accompanying Ghostscript). The Vietnamese glyphs were added
+by Han The Thanh.
+
+----- qtm-hist.txt
+Ver 2.003: 16.09.2009
+* this is the first official release of the TeX Gyre Termes fonts since
+  June 22, 2009, when URW++, represented by Dr. Peter Rosenfeld, its
+  Managing Director, kindly agreed to release the original 35 base
+  PostScript fonts as shipped with Ghostscript ver. 4.00 under the LPPL
+  (LaTeX Project Public License). This should be understood so that the
+  35 base Postscript fonts may be used and developed either under the
+  LPPL or one of the GPL (GNU Public Licence) or AFPL (Aladdin Free
+  Public Licence). The latter were put in force with the initial release
+  of the base fonts with Ghostscript ver. 4.00 in 1996. Hereby we thank
+  Dr. Rosenfeld. The TeX Gyre fonts are being develped from the
+  Ghostscript ver. 4.00 base. For reasons explained elsewhere, we prefer
+  to provide our work under the GUST Font Licence (GFL) which is legally
+  equivallent to the LPPL. However, since 1996 the 35 PostScript base
+  fonts were enhanced under the GNU Public License with Vietnamese glyphs
+  by Han The Thanh and Cyrillic glyphs by Valek Filippov. Han The Thanh
+  kindly permitted his additions to be retained under under GFL/LPPL in
+  this and future TeX Gyre fonts releases. Unfortunately, we were unable
+  to receive a similar permission from Valek Filippov for his Cyrillic
+  glyphs, thus there are no Cyrillic glyphs in any of the TeX Gyre fonts.
+
 ---------------
 
 See the appendix A for the GUST Font License.
@@ -297,7 +479,7 @@ Debian packaging
 ----------------
 
 Copyright (c) 2004, 2005, 2006, 2007 Florent Rougon
-Copyright (c) 2007 Norbert Preining
+Copyright (c) 2007, 2008, 2009 Norbert Preining
 
 The packaging of the TeX Gyre fonts are based heavily on Florent's 
 package for the Latin Modern fonts (lmodern).

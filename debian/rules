@@ -3,6 +3,8 @@
 PKG                   := tex-gyre
 PKG_INSTALL_DIR       := debian/$(PKG)
 
+FAMILIES              := qag qbk qzc qcr qcs qhv qpl qtm
+
 INSTALL               := install
 INSTALL_FILE          := $(INSTALL) -p -o root -g root -m 644
 
@@ -46,7 +48,7 @@ build-indep-stamp:
         # equivalent to all the encoding-specific map files in 
         # <texmf>/fonts/map/dvips/tex-gyre/ 
         # Let's check if this is really the case.
-	@export LC_COLLATE=C && for fam in qag qbk qzc qcr qcs qhv qpl qtm ; do \
+	@export LC_COLLATE=C && for fam in $(FAMILIES) ; do \
 	   a=$$(find fonts/map/dvips/tex-gyre -name "$$fam-*.map" \
               -print0 | xargs -0r cat | grep -Ev -e '^(%|[[:space:]]*$$)' \
                       | sort) \

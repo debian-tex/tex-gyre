@@ -5,7 +5,7 @@ Maintainer: Debian TeX maintainers <debian-tex-maint@lists.debian.org>
 Uploaders: Norbert Preining <preining@debian.org>
 Build-Depends: debhelper (>= 5.0.35)
 Build-Depends-Indep: tex-common (>= 1.1), defoma (>= 0.7.0)
-Standards-Version: 3.8.0
+Standards-Version: 3.8.3
 Vcs-Svn: svn://svn.debian.org/svn/debian-tex/tex-gyre/trunk
 Vcs-Browser: http://svn.debian.org/wsvn/debian-tex/tex-gyre/trunk/
 Homepage: http://www.gust.org.pl/projects/e-foundry/tex-gyre/
@@ -50,5 +50,4 @@ Description: scalable PostScript and OpenType fonts based on URW Fonts
  extended, and contain nearly 1200 glyphs each.  Each family is
  available in Adobe Type 1 and Open Type formats, and LaTeX support
  (for use with a variety of encodings) is provided.  Vietnamese
- and Cyrillic characters were added by Han The Thanh and Valek
- Filippov, respectively.
+ characters were added by Han The Thanh.
