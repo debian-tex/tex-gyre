@@ -14,12 +14,6 @@ Upstream work
 We include the relevant parts from the 7 README and ???-hist.txt files:
 
 -----  README-TeX-Gyre-Adventor.txt:
-Font: TeX Gyre Adventor
-Authors: Bogus\l{}aw Jackowski and Janusz M. Nowacki
-Version: 2.003
-Date: 16 IX 2009
-Downloads: http://www.gust.org.pl/projects/e-foundry/tex-gyre/adventor
-
 License:
   % Copyright 2007--2009 for TeX Gyre extensions by B. Jackowski
   % and J.M. Nowacki (on behalf of TeX Users Groups).
@@ -73,12 +67,6 @@ Ver 2.003: 16.09.2009
 
 
 ----- README-TeX-Gyre-Bonum.txt
-Font: TeX Gyre Bonum
-Authors: Bogus\l{}aw Jackowski and Janusz M. Nowacki
-Version: 2.003
-Date: 16 IX 2009
-Downloads: http://www.gust.org.pl/projects/e-foundry/tex-gyre/adventor
-
 License:
   % Copyright 2007--2009 for TeX Gyre extensions by B. Jackowski
   % and J.M. Nowacki (on behalf of TeX Users Groups).
@@ -136,12 +124,6 @@ Ver 2.003: 16.09.2009
   glyphs, thus there are no Cyrillic glyphs in any of the TeX Gyre fonts.
 
 ----- README-TeX-Gyre-Chorus.txt
-Font: TeX Gyre Chorus
-Authors: Bogus\l{}aw Jackowski and Janusz M. Nowacki
-Version: 2.003
-Date: 16 IX 2009
-Downloads: http://www.gust.org.pl/projects/e-foundry/tex-gyre/chorus
-
 License:
   % Copyright 2007--2009 for TeX Gyre extensions by B. Jackowski
   % and J.M. Nowacki (on behalf of TeX Users Groups).
@@ -193,12 +175,6 @@ Ver 2.003: 16.09.2009
 
 
 ----- README-TeX-Gyre-Cursor.txt
-Font: TeX Gyre Cursor
-Authors: Bogus\l{}aw Jackowski and Janusz M. Nowacki
-Version: 2.003
-Date: 16 IX 2009
-Downloads: http://www.gust.org.pl/projects/e-foundry/tex-gyre/cursor
-
 License:
   % Copyright 2007--2009 for TeX Gyre extensions by B. Jackowski
   % and J.M. Nowacki (on behalf of TeX Users Groups).
@@ -249,12 +225,6 @@ Ver 2.003: 16.09.2009
   glyphs, thus there are no Cyrillic glyphs in any of the TeX Gyre fonts.
 
 ----- README-TeX-Gyre-Heros.txt
-Font: TeX Gyre Heros
-Authors: Bogus\l{}aw Jackowski and Janusz M. Nowacki
-Version: 2.003
-Date: 16 IX 2009
-Downloads: http://www.gust.org.pl/projects/e-foundry/tex-gyre/heros
-
 License:
   % Copyright 2007--2009 for TeX Gyre extensions by B. Jackowski
   % and J.M. Nowacki (on behalf of TeX Users Groups).
@@ -305,12 +275,6 @@ Ver 2.003: 16.09.2009
   glyphs, thus there are no Cyrillic glyphs in any of the TeX Gyre fonts.
 
 ----- README-TeX-Gyre-Pagella.txt
-Font: TeX Gyre Pagella
-Authors: Bogus\l{}aw Jackowski and Janusz M. Nowacki
-Version: 2.003
-Date: 16 IX 2009
-Downloads: http://www.gust.org.pl/projects/e-foundry/tex-gyre/pagella
-
 License:
   % Copyright 2006--2009 for TeX Gyre extensions by B. Jackowski
   % and J.M. Nowacki (on behalf of TeX Users Groups).
@@ -339,6 +303,9 @@ release accompanying Ghostscript). The Vietnamese glyphs were added
 by Han The Thanh.
 
 ----- qpl-hist.txt
+Ver 2.004: 07.10.2009
+* accents repositioned to work better (a little bit) with the \accent primitive
+
 Ver 2.003: 16.09.2009
 * this is the first official release of the TeX Gyre Pagella fonts since
   June 22, 2009, when URW++, represented by Dr. Peter Rosenfeld, its
@@ -361,11 +328,6 @@ Ver 2.003: 16.09.2009
   glyphs, thus there are no Cyrillic glyphs in any of the TeX Gyre fonts.
 
 ----- README-TeX-Gyre-Schola.txt
-Font: TeX Gyre Schola
-Authors: Bogus\l{}aw Jackowski and Janusz M. Nowacki
-Version: 2.003
-Date: 16 IX 2009
-Downloads: http://www.gust.org.pl/projects/e-foundry/tex-gyre/schola
 License:
   % Copyright 2007--2009 for TeX Gyre extensions by B. Jackowski
   % and J.M. Nowacki (on behalf of TeX Users Groups).
@@ -394,6 +356,10 @@ release accompanying Ghostscript). The Vietnamese glyphs were added
 by Han The Thanh.
 
 ----- qcs-hist.txt
+Ver 2.004: 07.10.2009
+* malformed `estimated' glyph corrected
+* accents repositioned to work better with the \accent primitive
+
 Ver 2.003: 16.09.2009
 * this is the first official release of the TeX Gyre Schola fonts since
   June 22, 2009, when URW++, represented by Dr. Peter Rosenfeld, its
@@ -416,12 +382,6 @@ Ver 2.003: 16.09.2009
   glyphs, thus there are no Cyrillic glyphs in any of the TeX Gyre fonts.
 
 ----- README-TeX-Gyre-Termes.txt
-Font: TeX Gyre Termes
-Authors: Bogus\l{}aw Jackowski and Janusz M. Nowacki
-Version: 2.003
-Date: 16 IX 2009
-Downloads: http://www.gust.org.pl/projects/e-foundry/tex-gyre/termes
-
 License:
   % Copyright 2006--2009 for TeX Gyre extensions by B. Jackowski
   % and J.M. Nowacki (on behalf of TeX Users Groups).
@@ -450,6 +410,9 @@ release accompanying Ghostscript). The Vietnamese glyphs were added
 by Han The Thanh.
 
 ----- qtm-hist.txt
+Ver 2.004: 07.10.2009
+* malformed `estimated' glyph corrected
+
 Ver 2.003: 16.09.2009
 * this is the first official release of the TeX Gyre Termes fonts since
   June 22, 2009, when URW++, represented by Dr. Peter Rosenfeld, its

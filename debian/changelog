@@ -1,5 +1,5 @@
-tex-gyre (2.003-1) unstable; urgency=low
+tex-gyre (2.004-1) unstable; urgency=low
 
   * First upload to Debian after the license cleanup
 
- -- Norbert Preining <preining@debian.org>  Wed, 30 Sep 2009 18:55:51 +0900
+ -- Norbert Preining <preining@debian.org>  Sun, 11 Oct 2009 14:48:01 +0900
