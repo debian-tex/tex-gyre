@@ -2,7 +2,7 @@ tex-gyre (2.004-2) unstable; urgency=low
 
   * UNRELEASED
   * link the -hist files also into /u/s/d/tex-gyre as they contain
-    the changes of the fonts.
+    the changes of the fonts (see #552238)
 
  -- Norbert Preining <preining@debian.org>  Thu, 29 Oct 2009 23:18:53 +0900
 
