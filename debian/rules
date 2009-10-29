@@ -173,14 +173,15 @@ binary-indep: build-indep
 	dh_installtex mapfile=debian/tex-gyre.cfg
 
 	dh_link \
-	  $(patsubst %,  \
-	       usr/share/doc/texmf/fonts/tex-gyre/README-TeX-Gyre-%.txt \
-	       usr/share/doc/tex-gyre/README-TeX-Gyre-%.txt, \
-	       $FAMILYNAMES ) \
-	  $(patsubst %, usr/share/doc/texmf/fonts/tex-gyre/%-info.pdf \
-	                usr/share/doc/tex-gyre/%-info.pdf, $FAMILIES ) \
-	  $(patsubst %, usr/share/doc/texmf/fonts/tex-gyre/%-hist.txt \
-	  		usr/share/doc/tex-gyre/%-hist.txt, $FAMILIES ) 
+          $(foreach FAM, $(FAMILYNAMES), \
+               usr/share/doc/texmf/fonts/tex-gyre/README-TeX-Gyre-$(FAM).txt \
+	       usr/share/doc/tex-gyre/README-TeX-Gyre-$(FAM).txt) \
+          $(foreach FAM, $(FAMILIES), \
+	       usr/share/doc/texmf/fonts/tex-gyre/$(FAM)-info.pdf \
+	       usr/share/doc/tex-gyre/$(FAM)-info.pdf) \
+          $(foreach FAM, $(FAMILIES), \
+	       usr/share/doc/texmf/fonts/tex-gyre/$(FAM)-hist.txt \
+	       usr/share/doc/tex-gyre/$(FAM)-hist.txt)
 
 	dh_installdefoma
 
