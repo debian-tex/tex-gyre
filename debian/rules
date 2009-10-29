@@ -4,6 +4,8 @@ PKG                   := tex-gyre
 PKG_INSTALL_DIR       := debian/$(PKG)
 
 FAMILIES              := qag qbk qzc qcr qcs qhv qpl qtm
+FAMILYNAMES           := Adventor Bonum Chorus Cursor Heros Pagella \
+                         Schola Termes
 
 INSTALL               := install
 INSTALL_FILE          := $(INSTALL) -p -o root -g root -m 644
@@ -171,38 +173,14 @@ binary-indep: build-indep
 	dh_installtex mapfile=debian/tex-gyre.cfg
 
 	dh_link \
-	  usr/share/doc/texmf/fonts/tex-gyre/README-TeX-Gyre-Adventor.txt \
-	  usr/share/doc/tex-gyre/README-TeX-Gyre-Adventor.txt \
-	  usr/share/doc/texmf/fonts/tex-gyre/README-TeX-Gyre-Bonum.txt \
-	  usr/share/doc/tex-gyre/README-TeX-Gyre-Bonum.txt \
-	  usr/share/doc/texmf/fonts/tex-gyre/README-TeX-Gyre-Chorus.txt \
-	  usr/share/doc/tex-gyre/README-TeX-Gyre-Chorus.txt \
-	  usr/share/doc/texmf/fonts/tex-gyre/README-TeX-Gyre-Cursor.txt \
-	  usr/share/doc/tex-gyre/README-TeX-Gyre-Cursor.txt \
-	  usr/share/doc/texmf/fonts/tex-gyre/README-TeX-Gyre-Heros.txt \
-	  usr/share/doc/tex-gyre/README-TeX-Gyre-Heros.txt \
-	  usr/share/doc/texmf/fonts/tex-gyre/README-TeX-Gyre-Pagella.txt \
-	  usr/share/doc/tex-gyre/README-TeX-Gyre-Pagella.txt \
-	  usr/share/doc/texmf/fonts/tex-gyre/README-TeX-Gyre-Schola.txt \
-	  usr/share/doc/tex-gyre/README-TeX-Gyre-Schola.txt \
-	  usr/share/doc/texmf/fonts/tex-gyre/README-TeX-Gyre-Termes.txt \
-	  usr/share/doc/tex-gyre/README-TeX-Gyre-Termes.txt \
-	  usr/share/doc/texmf/fonts/tex-gyre/qag-info.pdf \
-	  usr/share/doc/tex-gyre/qag-info.pdf \
-	  usr/share/doc/texmf/fonts/tex-gyre/qbk-info.pdf \
-	  usr/share/doc/tex-gyre/qbk-info.pdf \
-	  usr/share/doc/texmf/fonts/tex-gyre/qzc-info.pdf \
-	  usr/share/doc/tex-gyre/qzc-info.pdf \
-	  usr/share/doc/texmf/fonts/tex-gyre/qcr-info.pdf \
-	  usr/share/doc/tex-gyre/qcr-info.pdf \
-	  usr/share/doc/texmf/fonts/tex-gyre/qcs-info.pdf \
-	  usr/share/doc/tex-gyre/qcs-info.pdf \
-	  usr/share/doc/texmf/fonts/tex-gyre/qhv-info.pdf \
-	  usr/share/doc/tex-gyre/qhv-info.pdf \
-	  usr/share/doc/texmf/fonts/tex-gyre/qpl-info.pdf \
-	  usr/share/doc/tex-gyre/qpl-info.pdf \
-	  usr/share/doc/texmf/fonts/tex-gyre/qtm-info.pdf \
-	  usr/share/doc/tex-gyre/qtm-info.pdf
+	  $(patsubst %, 
+	       usr/share/doc/texmf/fonts/tex-gyre/README-TeX-Gyre-%.txt \
+	       usr/share/doc/tex-gyre/README-TeX-Gyre-%.txt, \
+	       $FAMILYNAMES ) \
+	  $(patsubst %, usr/share/doc/texmf/fonts/tex-gyre/%-info.pdf \
+	                usr/share/doc/tex-gyre/%-info.pdf, $FAMILIES ) \
+	  $(patsubst %, usr/share/doc/texmf/fonts/tex-gyre/%-hist.txt \
+	  		usr/share/doc/tex-gyre/%-hist.txt, $FAMILIES ) 
 
 	dh_installdefoma
 
