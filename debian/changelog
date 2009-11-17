@@ -1,10 +1,11 @@
-tex-gyre (2.004-2) unstable; urgency=low
+tex-gyre (2.004.1-1) unstable; urgency=low
 
-  * UNRELEASED
+  * new upstream release without changed version number
+  * TeX Gyre Schola in fact is now ver 2.005.
   * link the -hist files also into /u/s/d/tex-gyre as they contain
     the changes of the fonts (see #552238)
 
- -- Norbert Preining <preining@debian.org>  Thu, 29 Oct 2009 23:18:53 +0900
+ -- Norbert Preining <preining@debian.org>  Tue, 17 Nov 2009 19:49:02 +0900
 
 tex-gyre (2.004-1) unstable; urgency=low
 
