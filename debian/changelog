@@ -1,3 +1,9 @@
+tex-gyre (2.004.1-2) unstable; urgency=low
+
+  * forced rebuild due to defoma breakage (Closes: #560776)
+
+ -- Norbert Preining <preining@debian.org>  Sat, 26 Dec 2009 18:25:28 +0900
+
 tex-gyre (2.004.1-1) unstable; urgency=low
 
   * new upstream release without changed version number
