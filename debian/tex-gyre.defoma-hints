@@ -1,8 +1,8 @@
 category type1
-begin /usr/share/texmf/fonts/type1/public/tex-gyre/qzcri.pfb
+begin /usr/share/texmf/fonts/type1/public/tex-gyre/qzcmi.pfb
   FaceNum = 3
   Inherit = Family GeneralFamily Weight Width Shape Direction Priority AFM
-  FontName = TeXGyreChorus-Italic
+  FontName = TeXGyreChorus-MediumItalic
   Charset = font-specific
   Family = TeXGyreChorus
   GeneralFamily = Roman
@@ -12,11 +12,11 @@ begin /usr/share/texmf/fonts/type1/public/tex-gyre/qzcri.pfb
   Direction = Horizontal
   Priority = 20
   X-FontName = -unregistered-TeXGyreChorus-medium-i-normal--0-0-0-0-p-0-unregistered-font_specific
-  AFM = /usr/share/texmf/fonts/afm/public/tex-gyre/qzcri.afm
-  FontName1 = TeXGyreChorus-Italic-ISO8859-1
+  AFM = /usr/share/texmf/fonts/afm/public/tex-gyre/qzcmi.afm
+  FontName1 = TeXGyreChorus-MediumItalic-ISO8859-1
   Charset1 = ISO8859-1
   X-FontName1 = -unregistered-TeXGyreChorus-medium-i-normal--0-0-0-0-p-0-iso8859-1
-  FontName1 = TeXGyreChorus-Italic-ISO8859-15
+  FontName1 = TeXGyreChorus-MediumItalic-ISO8859-15
   Charset1 = ISO8859-15
   X-FontName1 = -unregistered-TeXGyreChorus-medium-i-normal--0-0-0-0-p-0-iso8859-15
 end
