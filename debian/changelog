@@ -2,6 +2,8 @@ tex-gyre (2.004.1-3) unstable; urgency=low
 
   * UNRELEASED
   * fix dangling symlink after the renaming qzcri -> qzcmi (Closes: #566986)
+
+  [ Hilmar Preuße ]
   * Use maintscript support in dh_installdeb rather than writing out
     dpkg-maintscript-helper commands by hand. Thanks to Colin Watson
     (Closes: #659746)
