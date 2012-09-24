@@ -120,6 +120,7 @@ binary-indep: build-indep
           usr/share/texmf/tex/latex/tex-gyre \
           usr/share/doc/texmf/fonts/tex-gyre \
 	  etc/X11/fonts/Type1 \
+	  etc/fonts/conf.avail \
 	  usr/share/fonts/X11/Type1 \
           usr/share/lintian/overrides
 
@@ -146,6 +147,11 @@ binary-indep: build-indep
 	sed -nf debian/sed_scripts/gen-x-fonts-links-list \
 	  "debian/$(PKG).fontlist-x11" >> "debian/$(PKG).links"
 	
+	$(INSTALL_FILE) "debian/65-$(PKG).conf" \
+	  "$(PKG_INSTALL_DIR)/etc/fonts/conf.avail"
+	$(INSTALL_FILE) "debian/30-$(PKG)-aliases.conf"
+	  "$(PKG_INSTALL_DIR)/etc/fonts/conf.avail"
+
 	$(INSTALL_FILE) "debian/$(PKG).scale" \
 	  "$(PKG_INSTALL_DIR)/etc/X11/fonts/Type1"
 	dh_installxfonts
