@@ -149,7 +149,7 @@ binary-indep: build-indep
 	
 	$(INSTALL_FILE) "debian/65-$(PKG).conf" \
 	  "$(PKG_INSTALL_DIR)/etc/fonts/conf.avail"
-	$(INSTALL_FILE) "debian/30-$(PKG)-aliases.conf"
+	$(INSTALL_FILE) "debian/30-$(PKG)-aliases.conf" \
 	  "$(PKG_INSTALL_DIR)/etc/fonts/conf.avail"
 
 	$(INSTALL_FILE) "debian/$(PKG).scale" \
@@ -179,6 +179,8 @@ binary-indep: build-indep
 	dh_installtex mapfile=debian/tex-gyre.cfg
 
 	dh_link \
+	    etc/fonts/conf.avail/65-$(PKG).conf \
+	    etc/fonts/conf.d/65-$(PKG).conf \
           $(foreach FAM, $(FAMILYNAMES), \
                usr/share/doc/texmf/fonts/tex-gyre/README-TeX-Gyre-$(FAM).txt \
 	       usr/share/doc/tex-gyre/README-TeX-Gyre-$(FAM).txt) \
