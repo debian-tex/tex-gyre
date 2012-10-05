@@ -1,13 +1,13 @@
-tex-gyre (2.004.1-5~1) UNRELEASED; urgency=low
+tex-gyre (2.004.1-5) experimental; urgency=low
 
   * make OTF fonts available to fontconfig, and disable the Type1 fonts
     for fontconfig, but keep them for normal X (Closes: #686098)
   * register fonts as metric compatible alternatives to the Adobe Fonts
     (Closes: #616419)
-  Thanks to Fabian Greffrath who provided the fontconfif conf files,
+  Thanks to Fabian Greffrath who provided the fontconfig conf files,
   did lots of inquire and testing.
 
- -- Norbert Preining <preining@debian.org>  Tue, 25 Sep 2012 13:30:11 +0900
+ -- Norbert Preining <preining@debian.org>  Fri, 05 Oct 2012 18:46:30 +0900
 
 tex-gyre (2.004.1-4) unstable; urgency=low
 
