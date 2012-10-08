@@ -154,10 +154,10 @@ binary-indep: build-indep
 	sed -nf debian/sed_scripts/gen-x-fonts-links-list \
 	  "debian/$(PKG).fontlist-x11" >> "debian/$(PKG).links"
 	
-	$(INSTALL_FILE) "debian/65-$(PKG).conf" \
-	  "$(PKGFONTS_INSTALL_DIR)/etc/fonts/conf.avail"
-	$(INSTALL_FILE) "debian/30-$(PKG)-aliases.conf" \
-	  "$(PKGFONTS_INSTALL_DIR)/etc/fonts/conf.avail"
+	$(INSTALL_FILE) "debian/fontconf-opentype.conf" \
+	  "$(PKGFONTS_INSTALL_DIR)/etc/fonts/conf.avail/65-$(PKGFONTS).conf"
+	$(INSTALL_FILE) "debian/fontconf-aliases.conf" \
+	  "$(PKGFONTS_INSTALL_DIR)/etc/fonts/conf.avail/30-$(PKGFONTS)-aliases.conf"
 
 	$(INSTALL_FILE) "debian/$(PKG).scale" \
 	  "$(PKG_INSTALL_DIR)/etc/X11/fonts/Type1"
