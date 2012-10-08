@@ -442,7 +442,7 @@ Debian packaging
 ----------------
 
 Copyright (c) 2004, 2005, 2006, 2007 Florent Rougon
-Copyright (c) 2007, 2008, 2009 Norbert Preining
+Copyright (c) 2007, 2008, 2009, 2010, 2011, 2012 Norbert Preining
 
 The packaging of the TeX Gyre fonts are based heavily on Florent's 
 package for the Latin Modern fonts (lmodern).
