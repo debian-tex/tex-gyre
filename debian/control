@@ -61,7 +61,7 @@ Section: fonts
 Architecture: all
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}
-Replaces: tex-gyre (<< 2.004.1-5~)
+Replaces: tex-gyre (<= 2.004.1-4)
 Description: OpenType fonts based on URW Fonts
  The TeX Gyre project, following the Latin Modern project, aims at providing
  a rich collection of diacritical characters in the attempt to cover as many
