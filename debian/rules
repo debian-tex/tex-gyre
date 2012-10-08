@@ -120,7 +120,6 @@ binary-indep: build-indep
           usr/share/texmf/fonts/enc/dvips/tex-gyre \
 	  usr/share/texmf/fonts/map/dvips/tex-gyre \
           usr/share/texmf/tex/latex/tex-gyre \
-          usr/share/doc/texmf/fonts/tex-gyre \
 	  etc/X11/fonts/Type1 \
 	  etc/fonts/conf.avail \
 	  usr/share/fonts/X11/Type1 \
@@ -128,6 +127,7 @@ binary-indep: build-indep
 	
 	dh_installdirs -p $(PKGFONTS) \
 	  usr/share/texmf/fonts/opentype/public/tex-gyre \
+          usr/share/doc/texmf/fonts/tex-gyre \
 	  etc/fonts/conf.avail
 	  
 
@@ -179,23 +179,24 @@ binary-indep: build-indep
 
 	for file in doc/fonts/tex-gyre/*; do \
           $(INSTALL_FILE) "$$file" \
-            "$(PKG_INSTALL_DIR)/usr/share/doc/texmf/fonts/tex-gyre"; \
+            "$(PKGFONTS_INSTALL_DIR)/usr/share/doc/texmf/fonts/tex-gyre"; \
         done
 
         # Install the standard conffile for update-updmap
 	dh_installtex mapfile=debian/tex-gyre.cfg
 	dh_installtex -p $(PKGFONTS)
 
-	dh_link \
-          $(foreach FAM, $(FAMILYNAMES), \
-               usr/share/doc/texmf/fonts/tex-gyre/README-TeX-Gyre-$(FAM).txt \
-	       usr/share/doc/tex-gyre/README-TeX-Gyre-$(FAM).txt) \
-          $(foreach FAM, $(FAMILIES), \
-	       usr/share/doc/texmf/fonts/tex-gyre/$(FAM)-info.pdf \
-	       usr/share/doc/tex-gyre/$(FAM)-info.pdf) \
-          $(foreach FAM, $(FAMILIES), \
-	       usr/share/doc/texmf/fonts/tex-gyre/$(FAM)-hist.txt \
-	       usr/share/doc/tex-gyre/$(FAM)-hist.txt)
+	$(foreach PPP, $(PKG) $(PKGFONTS), \
+	  dh_link -p $(PPP) \
+            $(foreach FAM, $(FAMILYNAMES), \
+              usr/share/doc/texmf/fonts/tex-gyre/README-TeX-Gyre-$(FAM).txt \
+	      usr/share/doc/$(PPP)/README-TeX-Gyre-$(FAM).txt) \
+            $(foreach FAM, $(FAMILIES), \
+	      usr/share/doc/texmf/fonts/tex-gyre/$(FAM)-info.pdf \
+	      usr/share/doc/$(PPP)/$(FAM)-info.pdf) \
+            $(foreach FAM, $(FAMILIES), \
+	      usr/share/doc/texmf/fonts/tex-gyre/$(FAM)-hist.txt \
+	      usr/share/doc/$(PPP)/$(FAM)-hist.txt) ; )
 	dh_link -p $(PKGFONTS) \
 	    etc/fonts/conf.avail/65-$(PKG).conf \
 	    etc/fonts/conf.d/65-$(PKG).conf \
