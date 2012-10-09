@@ -122,13 +122,13 @@ binary-indep: build-indep
           usr/share/texmf/tex/latex/tex-gyre \
 	  etc/X11/fonts/Type1 \
 	  etc/fonts/conf.avail \
-	  usr/share/fonts/X11/Type1 \
-          usr/share/lintian/overrides
+	  usr/share/fonts/X11/Type1
 	
 	dh_installdirs -p $(PKGFONTS) \
 	  usr/share/texmf/fonts/opentype/public/tex-gyre \
           usr/share/doc/texmf/fonts/tex-gyre \
-	  etc/fonts/conf.avail
+	  etc/fonts/conf.avail \
+          usr/share/lintian/overrides
 	  
 
         # Note: we won't install the PFM files because we already have the
@@ -207,7 +207,7 @@ binary-indep: build-indep
 	dh_installchangelogs
 
 	$(INSTALL_FILE) debian/lintian-overrides \
-	  "$(PKG_INSTALL_DIR)/usr/share/lintian/overrides/$(PKG)"
+	  "$(PKGFONTS_INSTALL_DIR)/usr/share/lintian/overrides/$(PKGFONTS)"
 
 	dh_compress -X.pdf
 	dh_fixperms
