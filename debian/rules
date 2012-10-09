@@ -112,77 +112,13 @@ binary-indep: build-indep
 	# pairs will be added to it in the relevant places.
 	: > "debian/$(PKG).links"
 
-	dh_installdirs \
-          usr/share/texmf/fonts/type1/public/tex-gyre \
-          usr/share/texmf/fonts/opentype/public/tex-gyre \
-          usr/share/texmf/fonts/afm/public/tex-gyre \
-          usr/share/texmf/fonts/tfm/public/tex-gyre \
-          usr/share/texmf/fonts/enc/dvips/tex-gyre \
-	  usr/share/texmf/fonts/map/dvips/tex-gyre \
-          usr/share/texmf/tex/latex/tex-gyre \
-	  etc/X11/fonts/Type1 \
-	  etc/fonts/conf.avail \
-	  usr/share/fonts/X11/Type1
-	
-	dh_installdirs -p $(PKGFONTS) \
-	  usr/share/texmf/fonts/opentype/public/tex-gyre \
-          usr/share/doc/texmf/fonts/tex-gyre \
-	  etc/fonts/conf.avail \
-          usr/share/lintian/overrides
-	  
-
-        # Note: we won't install the PFM files because we already have the
-        #       AFM files which are preferred in general.
-
-        # Install all the PFB files in the right place for TeX and friends
-	$(INSTALL_FILE) fonts/type1/public/tex-gyre/*.pfb \
-          "$(PKG_INSTALL_DIR)/usr/share/texmf/fonts/type1/public/tex-gyre"
-
-        # Install all the OpenType files in the right place for TeX and friends
-	$(INSTALL_FILE) fonts/opentype/public/tex-gyre/*.otf \
-          "$(PKGFONTS_INSTALL_DIR)/usr/share/texmf/fonts/opentype/public/tex-gyre"
-
-        # Install all the AFM files in the right place for TeX and friends
-	for file in fonts/afm/public/tex-gyre/*.afm; do \
-          DEST_FILE="$(PKG_INSTALL_DIR)/usr/share/texmf/$$file" \
-          && cp "$$file" "$$DEST_FILE" \
-          && chown root:root "$$DEST_FILE" \
-          && chmod 644 "$$DEST_FILE"; \
-        done
 
 	# Setup symlinks so that X can see the AFM and PFB files as well.
 	sed -nf debian/sed_scripts/gen-x-fonts-links-list \
 	  "debian/$(PKG).fontlist-x11" >> "debian/$(PKG).links"
 	
-	$(INSTALL_FILE) "debian/fontconf-opentype.conf" \
-	  "$(PKGFONTS_INSTALL_DIR)/etc/fonts/conf.avail/65-$(PKGFONTS).conf"
-	$(INSTALL_FILE) "debian/fontconf-aliases.conf" \
-	  "$(PKGFONTS_INSTALL_DIR)/etc/fonts/conf.avail/30-$(PKGFONTS)-aliases.conf"
-
-	$(INSTALL_FILE) "debian/$(PKG).scale" \
-	  "$(PKG_INSTALL_DIR)/etc/X11/fonts/Type1"
+	dh_install
 	dh_installxfonts
-	
-	$(INSTALL_FILE) fonts/tfm/public/tex-gyre/*.tfm \
-          "$(PKG_INSTALL_DIR)/usr/share/texmf/fonts/tfm/public/tex-gyre"
-
-	$(INSTALL_FILE) fonts/enc/dvips/tex-gyre/*.enc \
-          "$(PKG_INSTALL_DIR)/usr/share/texmf/fonts/enc/dvips/tex-gyre"
-
-	$(INSTALL_FILE) fonts/map/dvips/tex-gyre/*.map \
-	  "$(PKG_INSTALL_DIR)/usr/share/texmf/fonts/map/dvips/tex-gyre"
-
-	for file in tex/latex/tex-gyre/*.fd tex/latex/tex-gyre/*.sty; do \
-          $(INSTALL_FILE) "$$file" \
-             "$(PKG_INSTALL_DIR)/usr/share/texmf/tex/latex/tex-gyre"; \
-        done
-
-	for file in doc/fonts/tex-gyre/*; do \
-          $(INSTALL_FILE) "$$file" \
-            "$(PKGFONTS_INSTALL_DIR)/usr/share/doc/texmf/fonts/tex-gyre"; \
-        done
-
-        # Install the standard conffile for update-updmap
 	dh_installtex mapfile=debian/tex-gyre.cfg
 	dh_installtex -p $(PKGFONTS)
 
@@ -205,10 +141,7 @@ binary-indep: build-indep
 
 	dh_installdocs
 	dh_installchangelogs
-
-	$(INSTALL_FILE) debian/lintian-overrides \
-	  "$(PKGFONTS_INSTALL_DIR)/usr/share/lintian/overrides/$(PKGFONTS)"
-
+	dh_lintian
 	dh_compress -X.pdf
 	dh_fixperms
 	dh_installdeb

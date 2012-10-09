@@ -1,4 +1,4 @@
-tex-gyre (2.004.1-5~2) experimental; urgency=low
+tex-gyre (2.004.1-5~3) experimental; urgency=low
 
   Thanks to Fabian Greffrath who provided the fontconfig conf files,
   did lots of inquire and testing.
@@ -9,9 +9,9 @@ tex-gyre (2.004.1-5~2) experimental; urgency=low
   * register fonts as metric compatible alternatives to the Adobe Fonts
     (Closes: #616419)
   * bump standards version, shut lintian up since we create the 
-    copyright file
+    copyright file, use .install files, bump compat level to 7
 
- -- Norbert Preining <preining@debian.org>  Tue, 09 Oct 2012 08:57:15 +0900
+ -- Norbert Preining <preining@debian.org>  Tue, 09 Oct 2012 17:05:01 +0900
 
 tex-gyre (2.004.1-4) unstable; urgency=low
 
