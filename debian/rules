@@ -36,7 +36,9 @@ build-indep-stamp:
 	  -e '^\./fonts/map/dvips/tex-gyre/[^/]*\.map$$' \
 	  -e '^\./fonts/enc/dvips/tex-gyre/[^/]*\.enc$$' \
 	  -e '^\./fonts/opentype/public/tex-gyre/[^/]*\.otf$$' \
+	  -e '^\./fonts/opentype/public/tex-gyre-math/[^/]*\.otf$$' \
           -e '^\./tex/latex/tex-gyre/[^/]*\.(fd|sty)$$' \
+	  -e '^\./doc/fonts/tex-gyre-math/[^/]*\.(tex|pdf|txt|fea|docx)$$' \
           -e '^\./doc/fonts/tex-gyre/[^/]*\.(tex|pdf|txt|fea|nam)$$' || true) && \
           if [ -n "$$newfiles" ]; then \
               { echo "New files were found in the patched tarball" \
@@ -132,7 +134,12 @@ binary-indep: build-indep
 	      usr/share/doc/$(PPP)/$(FAM)-info.pdf) \
             $(foreach FAM, $(FAMILIES), \
 	      usr/share/doc/texmf/fonts/tex-gyre/$(FAM)-hist.txt \
-	      usr/share/doc/$(PPP)/$(FAM)-hist.txt) ; )
+	      usr/share/doc/$(PPP)/$(FAM)-hist.txt) \
+	    usr/share/doc/texmf/fonts/tex-gyre-math/README-TeX-Gyre-Pagella-Math.txt \
+	    usr/share/doc/$(PPP)/README-TeX-Gyre-Pagella-Math.txt \
+	    usr/share/doc/texmf/fonts/tex-gyre-math/README-TeX-Gyre-Termes-Math.txt \
+	    usr/share/doc/$(PPP)/README-TeX-Gyre-Termes-Math.txt \
+	      ; )
 	dh_link -p $(PKGFONTS) \
 	    etc/fonts/conf.avail/65-$(PKG).conf \
 	    etc/fonts/conf.d/65-$(PKG).conf \

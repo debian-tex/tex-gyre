@@ -1,17 +1,20 @@
-tex-gyre (2.004.1-5~3) experimental; urgency=low
+tex-gyre (2.004.2-1~1) experimental; urgency=low
 
-  Thanks to Fabian Greffrath who provided the fontconfig conf files,
-  did lots of inquire and testing.
+  * New upstream release: inclusion of tex-gyre-math fonts, that is
+    TeX Gyre Pagella Math and TeX Gyre Thermes Math fonts opentype format
+    (adapt packaging, adjust copyright file)
   * split OTF fonts into a separate package fonts-texgyre
     (Closes: #689580, #689581)
   * make OTF fonts available to fontconfig, and disable the Type1 fonts
     for fontconfig, but keep them for normal X (Closes: #686098)
   * register fonts as metric compatible alternatives to the Adobe Fonts
     (Closes: #616419)
+  Thanks to Fabian Greffrath who provided the fontconfig conf files,
+  did lots of inquire and testing.
   * bump standards version, shut lintian up since we create the 
     copyright file, use .install files, bump compat level to 7
 
- -- Norbert Preining <preining@debian.org>  Tue, 09 Oct 2012 17:05:01 +0900
+ -- Norbert Preining <preining@debian.org>  Mon, 29 Oct 2012 17:52:41 +0900
 
 tex-gyre (2.004.1-4) unstable; urgency=low
 

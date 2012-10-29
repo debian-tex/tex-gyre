@@ -1,17 +1,18 @@
 This package was debianized by Norbert Preining <preining@debian.org> on
 Thu, 23 Aug 2007 18:38:31 +0200.
 
-It was downloaded from:
-
-    http://www.ctan.org/tex-archive/help/Catalogue/entries/tex-gyre.html
-
-    (repacked into tar.gz format for dpkg-source)
-
+The following TeX Live packages were downloaded from 
+    http://www.ctan.org/tex-archive/systems/texlive/tlnet/archive/
+and merged into one orig.tar.gz file:
+    tex-gyre.tar.xz
+    tex-gyre.doc.tar.xz
+    tex-gyre-math.tar.xz
+    tex-gyre-math.doc.tar.xz
 
 Upstream work
 -------------
 
-We include the relevant parts from the 7 README and ???-hist.txt files:
+We include the relevant parts from the 9 README and ???-hist.txt files:
 
 -----  README-TeX-Gyre-Adventor.txt:
 License:
@@ -434,7 +435,42 @@ Ver 2.003: 16.09.2009
   to receive a similar permission from Valek Filippov for his Cyrillic
   glyphs, thus there are no Cyrillic glyphs in any of the TeX Gyre fonts.
 
----------------
+----- README-TeX-Gyre-Pagella-Math.txt
+License:
+  % Copyright 2012 for the TeX Gyre math extensions by B. Jackowski,
+  % P. Strzelczyk and P. Pianowski (on behalf of TeX Users Groups).
+  %
+  % This work can be freely used and distributed under
+  % the GUST Font License (GFL -- see GUST-FONT-LICENSE.txt)
+  % which is actually an instance of the LaTeX Project Public License
+  % (LPPL -- see http://www.latex-project.org/lppl.txt).
+  %
+  % This work has the maintenance status "maintained". The Current Maintainer
+  % of this work is Bogus\l{}aw Jackowski, Piotr Strzelczyk and Piotr Pianowski
+  %
+  % This work consists of the files listed
+  % in the MANIFEST-TeX-Gyre-Pagella.txt file.
+
+----- README-TeX-Gyre-Termes-Math.txt
+License:
+  % Copyright 2012 for the TeX Gyre math extensions by B. Jackowski,
+  % P. Strzelczyk and P. Pianowski (on behalf of TeX Users Groups).
+  %
+  % This work can be freely used and distributed under
+  % the GUST Font License (GFL -- see GUST-FONT-LICENSE.txt)
+  % which is actually an instance of the LaTeX Project Public License
+  % (LPPL -- see http://www.latex-project.org/lppl.txt).
+  %
+  % This work has the maintenance status "maintained". The Current Maintainer
+  % of this work is Bogus\l{}aw Jackowski, Piotr Strzelczyk and Piotr Pianowski.
+  %
+  % This work consists of the files listed
+  % in the MANIFEST-TeX-Gyre-Termes.txt file.
+
+
+
+
+------------------
 
 See the appendix A for the GUST Font License.
 

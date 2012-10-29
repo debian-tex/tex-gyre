@@ -1,1 +1,2 @@
 fonts-texgyre binary: extra-license-file usr/share/doc/texmf/fonts/tex-gyre/GUST-FONT-LICENSE.txt
+fonts-texgyre binary: extra-license-file usr/share/doc/texmf/fonts/tex-gyre-math/GUST-FONT-LICENSE.txt
