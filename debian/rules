@@ -141,10 +141,10 @@ binary-indep: build-indep
 	    usr/share/doc/$(PPP)/README-TeX-Gyre-Termes-Math.txt \
 	      ; )
 	dh_link -p $(PKGFONTS) \
-	    etc/fonts/conf.avail/65-$(PKG).conf \
-	    etc/fonts/conf.d/65-$(PKG).conf \
-	    etc/fonts/conf.avail/30-$(PKG)-aliases.conf \
-	    etc/fonts/conf.d/30-$(PKG)-aliases.conf
+	    etc/fonts/conf.avail/65-$(PKGFONTS).conf \
+	    etc/fonts/conf.d/65-$(PKGFONTS).conf \
+	    etc/fonts/conf.avail/30-$(PKGFONTS)-aliases.conf \
+	    etc/fonts/conf.d/30-$(PKGFONTS)-aliases.conf
 
 	dh_installdocs
 	dh_installchangelogs

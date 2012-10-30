@@ -1,3 +1,9 @@
+tex-gyre (2.004.2-2) unstable; urgency=low
+
+  * fix wrong symlinks for fonts.conf files, thanks Fabian for spotting it
+
+ -- Norbert Preining <preining@debian.org>  Wed, 31 Oct 2012 07:27:42 +0900
+
 tex-gyre (2.004.2-1) unstable; urgency=low
 
   * New upstream release: inclusion of tex-gyre-math fonts, that is
