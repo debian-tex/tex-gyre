@@ -1,6 +1,6 @@
 fonts/opentype/public/tex-gyre/*.otf usr/share/texmf/fonts/opentype/public/tex-gyre
 fonts/opentype/public/tex-gyre-math/*.otf usr/share/texmf/fonts/opentype/public/tex-gyre-math
-doc/fonts/tex-gyre/* usr/share/doc/texmf/fonts/tex-gyre
-doc/fonts/tex-gyre-math/* usr/share/doc/texmf/fonts/tex-gyre-math
+doc/fonts/tex-gyre/* usr/share/texmf/doc/fonts/tex-gyre
+doc/fonts/tex-gyre-math/* usr/share/texmf/doc/fonts/tex-gyre-math
 debian/65-fonts-texgyre.conf etc/fonts/conf.avail
 debian/30-fonts-texgyre-aliases.conf etc/fonts/conf.avail
