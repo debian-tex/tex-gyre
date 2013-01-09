@@ -127,17 +127,17 @@ binary-indep: build-indep
 	$(foreach PPP, $(PKG) $(PKGFONTS), \
 	  dh_link -p $(PPP) \
             $(foreach FAM, $(FAMILYNAMES), \
-              usr/share/doc/texmf/fonts/tex-gyre/README-TeX-Gyre-$(FAM).txt \
+              usr/share/texmf/doc/fonts/tex-gyre/README-TeX-Gyre-$(FAM).txt \
 	      usr/share/doc/$(PPP)/README-TeX-Gyre-$(FAM).txt) \
             $(foreach FAM, $(FAMILIES), \
-	      usr/share/doc/texmf/fonts/tex-gyre/$(FAM)-info.pdf \
+	      usr/share/texmf/doc/fonts/tex-gyre/$(FAM)-info.pdf \
 	      usr/share/doc/$(PPP)/$(FAM)-info.pdf) \
             $(foreach FAM, $(FAMILIES), \
-	      usr/share/doc/texmf/fonts/tex-gyre/$(FAM)-hist.txt \
+	      usr/share/texmf/doc/fonts/tex-gyre/$(FAM)-hist.txt \
 	      usr/share/doc/$(PPP)/$(FAM)-hist.txt) \
-	    usr/share/doc/texmf/fonts/tex-gyre-math/README-TeX-Gyre-Pagella-Math.txt \
+	    usr/share/texmf/doc/fonts/tex-gyre-math/README-TeX-Gyre-Pagella-Math.txt \
 	    usr/share/doc/$(PPP)/README-TeX-Gyre-Pagella-Math.txt \
-	    usr/share/doc/texmf/fonts/tex-gyre-math/README-TeX-Gyre-Termes-Math.txt \
+	    usr/share/texmf/doc/fonts/tex-gyre-math/README-TeX-Gyre-Termes-Math.txt \
 	    usr/share/doc/$(PPP)/README-TeX-Gyre-Termes-Math.txt \
 	      ; )
 	dh_link -p $(PKGFONTS) \

@@ -1,3 +1,9 @@
+tex-gyre (2.004.2-4) UNRELEASED; urgency=low
+
+  * fix dangling symlinks of doc files
+
+ -- Norbert Preining <preining@debian.org>  Wed, 09 Jan 2013 13:00:03 +0900
+
 tex-gyre (2.004.2-3) experimental; urgency=low
 
   * fix Vcs fields
