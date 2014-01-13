@@ -31,7 +31,7 @@ Architecture: all
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}
 Replaces: tex-gyre (<= 2.004.1-4)
-Breaks: tex-gyre (<= 2.004.1-4)
+Breaks: tex-gyre (<= 2.004.1-4), fontconfig-config (<< 2.11.0)
 Description: OpenType fonts based on URW Fonts
  The TeX Gyre project, following the Latin Modern project, aims at providing
  a rich collection of diacritical characters in the attempt to cover as many
@@ -39,9 +39,6 @@ Description: OpenType fonts based on URW Fonts
  .
  This package provides the OpenType variant of these fonts. For support
  for TeX and Type 1 (PostScript) fonts, see the tex-gyre package.
- .
- The fonts shipped in this package are registered as alternatives for the
- 35 core PostScript fonts with fontconfig.
  .
  The TeX-GYRE bundle consists of seven font families:
  .

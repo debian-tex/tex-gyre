@@ -3,4 +3,3 @@ fonts/opentype/public/tex-gyre-math/*.otf usr/share/texmf/fonts/opentype/public/
 doc/fonts/tex-gyre/* usr/share/texmf/doc/fonts/tex-gyre
 doc/fonts/tex-gyre-math/* usr/share/texmf/doc/fonts/tex-gyre-math
 debian/65-fonts-texgyre.conf etc/fonts/conf.avail
-debian/30-fonts-texgyre-aliases.conf etc/fonts/conf.avail
