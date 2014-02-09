@@ -14,7 +14,8 @@ Package: tex-gyre
 Section: tex
 Architecture: all
 Pre-Depends: ${misc:Pre-Depends}
-Depends: ${misc:Depends}, fonts-texgyre (= ${source:Version})
+Depends: ${misc:Depends}
+Recommends: fonts-texgyre (= ${source:Version})
 Description: scalable PostScript and OpenType fonts based on URW Fonts
  The TeX Gyre project, following the Latin Modern project, aims at providing
  a rich collection of diacritical characters in the attempt to cover as many

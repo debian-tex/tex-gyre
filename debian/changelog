@@ -3,8 +3,9 @@ tex-gyre (2.004.2-5) UNRELEASED; urgency=medium
   * Remove the fontconfig patch which registered the fonts as aliases for the
     Adobe PostScript Base fonts. This is already handled by fontconfig
     upstream in recent versions. (Closes: #735143) Thanks Fabian Greffrath.
+  * drop fonts-texgyre to recommends (Closes: #737269)
 
- -- Norbert Preining <preining@debian.org>  Tue, 14 Jan 2014 07:38:43 +0900
+ -- Norbert Preining <preining@debian.org>  Mon, 10 Feb 2014 08:44:24 +0900
 
 tex-gyre (2.004.2-4) unstable; urgency=low
 
