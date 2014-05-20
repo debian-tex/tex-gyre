@@ -30,6 +30,7 @@ build-indep-stamp:
 	# to the .orig.tar.gz + .diff.gz that this script is not aware of.
 	@newfiles=$$(find . -type f | grep -Ev \
           -e '^\./debian/' \
+	  -e '^\./tlpkg/' \
           -e '^\./fonts/type1/public/tex-gyre/[^/]*\.pf[bm]$$' \
           -e '^\./fonts/afm/public/tex-gyre/[^/]*\.afm$$' \
           -e '^\./fonts/tfm/public/tex-gyre/[^/]*\.tfm$$' \
@@ -39,6 +40,7 @@ build-indep-stamp:
 	  -e '^\./fonts/opentype/public/tex-gyre-math/[^/]*\.otf$$' \
           -e '^\./tex/latex/tex-gyre/[^/]*\.(fd|sty)$$' \
 	  -e '^\./doc/fonts/tex-gyre-math/[^/]*\.(tex|pdf|txt|fea|docx)$$' \
+	  -e '^\./doc/fonts/tex-gyre-math/README$$' \
           -e '^\./doc/fonts/tex-gyre/[^/]*\.(tex|pdf|txt|fea|nam)$$' || true) && \
           if [ -n "$$newfiles" ]; then \
               { echo "New files were found in the patched tarball" \
