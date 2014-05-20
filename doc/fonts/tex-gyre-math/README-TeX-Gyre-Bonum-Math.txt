@@ -2,13 +2,13 @@
 ############          The TeX Gyre Collection of Fonts         ############
 ###########################################################################
 
-Font: TeX Gyre Termes Math
+Font: TeX Gyre Bonum Math
 Authors: Bogus\l{}aw Jackowski, Piotr Strzelczyk and Piotr Pianowski
-Version: 1.502
-Date: 14 I 2013
+Version: 1.002
+Date: 12 V 2014
 
 License:
-  % Copyright 2012--2013 for the TeX Gyre math extensions by B. Jackowski,
+  % Copyright 2014 for the TeX Gyre math extensions by B. Jackowski,
   % P. Strzelczyk and P. Pianowski (on behalf of TeX Users Groups).
   %
   % This work can be freely used and distributed under
@@ -20,13 +20,13 @@ License:
   % of this work is Bogus\l{}aw Jackowski, Piotr Strzelczyk and Piotr Pianowski.
   %
   % This work consists of the files listed
-  % in the MANIFEST-TeX-Gyre-Termes.txt file.
+  % in the MANIFEST-TeX-Gyre-Bonum.txt file.
  
 ###########################################################################
 ############          A BRIEF DESCRIPTION OF THE FONT          ############
 ###########################################################################
 
-TeX Gyre Termes Math is a math companion for the TeX Gyre Termes family
+TeX Gyre Bonum Math is a math companion for the TeX Gyre Bonum family
 of fonts (see http://www.gust.org.pl/projects/e-foundry/tex-gyre/) in
 the OpenType format.
 
@@ -41,12 +41,19 @@ italic and bold italic), a calligraphic script (regular and bold),
 a double-struck script, a fraktur script (regular and bold), a sans-serif 
 script (regular, bold, oblique and bold oblique), and a monospaced script.
 
-The basic script is, obviously, TeX Gyre Termes. Symbols, namely,
-calligraphic, double struck, Greek, sans serif bold Greek, and Hebrew,
-were drawn from scratch. The main math component, that is, the math
-extension, was also programmed from scratch.
+The basic script is, obviously, TeX Gyre Bonum. The Greek
+symbols in TeX Gyre Bonum were excerpted from the Kerkis
+package (http://iris.math.aegean.gr/kerkis/) with the kind
+permission of the authors, Apostolos Syropoulos and Antonis
+Tsolomitis; in TeX Gyre Bonum Math, a few adjustments in the
+Greek alphabet  were needed (such as adding four variants
+of kappa1: u03F0 -- regular, u1D6DE -- bold, u1D718 -- italic,
+u1D752 -- bold italic).
 
-Some scripts, however, are borrowed from other fonts (the current
+The calligraphic script were created from scratch as well as the math extension,
+i.e., the main component of the font.
+
+Other scripts, however, are borrowed from other fonts (the current
 selection, however, may be subject to change):
 
   * The fraktur alphabets (regular and bold) is excerpted
@@ -57,11 +64,14 @@ selection, however, may be subject to change):
   * The sans serif alphabets (regular, oblique, bold, and
     bold oblique) are excerpted from TeX Gyre Heros
     http://www.gust.org.pl/projects/e-foundry/tex-gyre/heros
-    (actually, the sans serif bold Greek symbols are based
-    on TeX Gyre Heros Greek alphabet).
+    (actually, the sans serif bold Greek symbols were manually tuned).
 
-  * The monospaced alphabet is excerpted from TeX Gyre Cursor
-    http://www.gust.org.pl/projects/e-foundry/tex-gyre/cursor
+  * The double struck script is excerpted from TeX Gyre Termes Math;
+    in the future, we plan to replace it with the script having forms
+    derived from TeX Gyre Bonum alphabet.
+
+  * Finally, the monospaced alphabet is taken from TeX Gyre Cursor
+    (see http://www.gust.org.pl/projects/e-foundry/tex-gyre/).
 
 Note that the members of all the mentioned alphabets, except
 the main roman alphabet, should be considered symbols, not letters;

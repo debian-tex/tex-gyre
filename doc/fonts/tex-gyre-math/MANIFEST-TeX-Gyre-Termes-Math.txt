@@ -4,10 +4,10 @@
 
 Font: TeX Gyre Termes Math
 Authors: Bogus\l{}aw Jackowski, Piotr Strzelczyk and Piotr Pianowski
-Version: 1.010
-Date: 11 X 2012
+Version: 1.502
+Date: 14 I 2013
 
-Copyright 2012 for TeX Gyre math extensions by B. Jackowski,
+Copyright 2012--2013 for TeX Gyre math extensions by B. Jackowski,
 P. Strzelczyk and P. Pianowski (on behalf of TeX Users Groups).
 
 This work can be freely used and distributed under
@@ -31,8 +31,8 @@ restrictions.
    by clause 1 of GUST-FONT-LICENSE.txt
 
    1.1 OTF menu names
-       TG Termes Math
-       TGTermesMath-Regular
+       TeX Gyre Termes Math;
+       TeXGyreTermesMath-Regular;
 
 2. Files whose names should be changed in derived works as requested
    by clause 1 of GUST-FONT-LICENSE.txt
@@ -43,14 +43,14 @@ restrictions.
        doc/README-TeX-Gyre-Termes-Math.txt
        doc/math-test.tex
        doc/math-test-context.tex
-       doc/test-context-tg_termes_math.pdf
-       doc/test-context-tg_termes_math.tex
-       doc/test-lualatex-tg_termes_math.pdf
-       doc/test-lualatex-tg_termes_math.tex
-       doc/test-xelatex-tg_termes_math.pdf
-       doc/test-xelatex-tg_termes_math.tex
-       doc/test-word-tg_termes_math.docx
-       doc/test-word-tg_termes_math.pdf
+       doc/test-context-texgyretermes_math.pdf
+       doc/test-context-texgyretermes_math.tex
+       doc/test-lualatex-texgyretermes_math.pdf
+       doc/test-lualatex-texgyretermes_math.tex
+       doc/test-xelatex-texgyretermes_math.pdf
+       doc/test-xelatex-texgyretermes_math.tex
+       doc/test-word-texgyretermes_math.docx
+       doc/test-word-texgyretermes_math.pdf
 
 3. Files whose names need not be changed in derived works as requested
    by clause 1 of GUST-FONT-LICENSE.txt

@@ -4,11 +4,11 @@
 
 Font: TeX Gyre Pagella Math
 Authors: Bogus\l{}aw Jackowski, Piotr Strzelczyk and Piotr Pianowski
-Version: 1.543
-Date: 11 X 2012
+Version: 1.605
+Date: 14 I 2013
 
 License:
-  % Copyright 2012 for the TeX Gyre math extensions by B. Jackowski,
+  % Copyright 2012--2013 for the TeX Gyre math extensions by B. Jackowski,
   % P. Strzelczyk and P. Pianowski (on behalf of TeX Users Groups).
   %
   % This work can be freely used and distributed under
@@ -35,11 +35,11 @@ confidential Microsoft document "The MATH table and OpenType Features
 for Math Processing". Moreover, they should contain a broad collection
 of special characters (see "Draft Unicode Technical Report #25.
 UNICODE SUPPORT FOR MATHEMATICS" by Barbara Beeton, Asmus Freytag,
-and Murray Sargent III). In particular, math OTF fonts are expected
-to contain the following scripts: a basic serif font (regular, bold, 
-italic and bold italic), a calligraphic font (regular and bold), 
-a double-struck font, a fraktur font (regular and bold), a sans-serif 
-font (regular, bold, oblique and regular oblique), and a monospaced font.
+and Murray Sargent III). In particular, math OTF scripts are expected
+to contain the following scripts: a basic serif script (regular, bold, 
+italic and bold italic), a calligraphic script (regular and bold), 
+a double-struck script, a fraktur script (regular and bold), a sans-serif 
+script (regular, bold, oblique and bold oblique), and a monospaced script.
 
 The basic script is, obviously, TeX Gyre Pagella. Greek symbols
 were taken from the Math Pazo font by Diego Puga with the kind
