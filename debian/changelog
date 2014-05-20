@@ -8,8 +8,9 @@ tex-gyre (20140520-1) unstable; urgency=medium
     Adobe PostScript Base fonts. This is already handled by fontconfig
     upstream in recent versions. (Closes: #735143) Thanks Fabian Greffrath.
   * drop fonts-texgyre to recommends (Closes: #737269)
+  * bump standards version, no changes necessary
 
- -- Norbert Preining <preining@debian.org>  Tue, 20 May 2014 12:48:26 +0900
+ -- Norbert Preining <preining@debian.org>  Tue, 20 May 2014 12:52:25 +0900
 
 tex-gyre (2.004.2-4) unstable; urgency=low
 
