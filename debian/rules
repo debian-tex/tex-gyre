@@ -26,8 +26,8 @@ build-indep: build-indep-stamp
 
 build-indep-stamp:
 	dh_testdir fonts/type1/public/tex-gyre/qtmr.pfb tex/latex/tex-gyre/tgtermes.sty
-        # Warn the person building the package if new files were added
-        # to the .orig.tar.gz + .diff.gz that this script is not aware of.
+	# Warn the person building the package if new files were added
+	# to the .orig.tar.gz + .diff.gz that this script is not aware of.
 	@newfiles=$$(find . -type f | grep -Ev \
           -e '^\./debian/' \
           -e '^\./fonts/type1/public/tex-gyre/[^/]*\.pf[bm]$$' \
@@ -50,8 +50,8 @@ build-indep-stamp:
               exit 1; \
           fi
 
-        # Upstream provides <texmf>/fonts/map/dvips/tex-gyre/q??.map that should be
-        # equivalent to all the encoding-specific map files in 
+        # Upstream provides <texmf>/fonts/map/dvips/tex-gyre/q??.map that 
+	# should be equivalent to all the encoding-specific map files in 
         # <texmf>/fonts/map/dvips/tex-gyre/ 
         # Let's check if this is really the case.
 	@export LC_COLLATE=C && for fam in $(FAMILIES) ; do \
@@ -135,8 +135,12 @@ binary-indep: build-indep
             $(foreach FAM, $(FAMILIES), \
 	      usr/share/texmf/doc/fonts/tex-gyre/$(FAM)-hist.txt \
 	      usr/share/doc/$(PPP)/$(FAM)-hist.txt) \
+	    usr/share/texmf/doc/fonts/tex-gyre-math/README-TeX-Gyre-Bonum-Math.txt \
+	    usr/share/doc/$(PPP)/README-TeX-Gyre-Bonum-Math.txt \
 	    usr/share/texmf/doc/fonts/tex-gyre-math/README-TeX-Gyre-Pagella-Math.txt \
 	    usr/share/doc/$(PPP)/README-TeX-Gyre-Pagella-Math.txt \
+	    usr/share/texmf/doc/fonts/tex-gyre-math/README-TeX-Gyre-Schola-Math.txt \
+	    usr/share/doc/$(PPP)/README-TeX-Gyre-Schola-Math.txt \
 	    usr/share/texmf/doc/fonts/tex-gyre-math/README-TeX-Gyre-Termes-Math.txt \
 	    usr/share/doc/$(PPP)/README-TeX-Gyre-Termes-Math.txt \
 	      ; )
@@ -144,7 +148,7 @@ binary-indep: build-indep
 	    etc/fonts/conf.avail/65-$(PKGFONTS).conf \
 	    etc/fonts/conf.d/65-$(PKGFONTS).conf
 
-	dh_installdocs
+	dh_installdocs debian/VERSIONS
 	dh_installchangelogs
 	dh_lintian
 	dh_compress -X.pdf
