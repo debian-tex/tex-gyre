@@ -1,13 +1,15 @@
 
 \startformula
-  \widehat{bcd} \ \widetilde{efg} \ \dot A \ {\bi\dot A \check t} 
+  \let\widehat\hat    % will be fixed in Context
+  \let\widetilde\tilde
+  \widehat{bcd} \ \widetilde{efg} \ \dot A \ \dot R  \ {\bi\dot A \check t} 
   \  \check{\cal A} \check{\cal a} \ \mathbf{\acute \imath}
 \stopformula
 
 %Angle brackets:
 \startformula
   \langle a \rangle \left\langle \frac{a}{b} \right\rangle
-   \left\langle \frac{\frac{a}{b}}{c} \right\rangle
+  \left\langle \frac{\frac{a}{b}}{c} \right\rangle
 \stopformula
 
 %Big operators:
@@ -16,11 +18,9 @@
 \stopformula
 
 %%Horizontal brackets:
-\let\overbracket\overbrace
-\let\overparen\overbrace
 \startformula
  \underbrace{\overbracket{aaaaaaa}}_{\rm Siedém}
-  \underbrace{\overparen{aaaaa}}_{\rm pięć}
+  \underbrace{\overparent{aaaaa}}_{\rm pięć}
 \stopformula
 
 %Squares:

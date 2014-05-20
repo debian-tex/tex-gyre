@@ -2,13 +2,13 @@
 ############          The TeX Gyre Collection of Fonts         ############
 ###########################################################################
 
-Font: TeX Gyre Termes Math
+Font: TeX Gyre Schola Math
 Authors: Bogus\l{}aw Jackowski, Piotr Strzelczyk and Piotr Pianowski
-Version: 1.502
-Date: 14 I 2013
+Version: 1.526
+Date: 12 V 2014
 
 License:
-  % Copyright 2012--2013 for the TeX Gyre math extensions by B. Jackowski,
+  % Copyright 2014 for the TeX Gyre math extensions by B. Jackowski,
   % P. Strzelczyk and P. Pianowski (on behalf of TeX Users Groups).
   %
   % This work can be freely used and distributed under
@@ -20,13 +20,13 @@ License:
   % of this work is Bogus\l{}aw Jackowski, Piotr Strzelczyk and Piotr Pianowski.
   %
   % This work consists of the files listed
-  % in the MANIFEST-TeX-Gyre-Termes.txt file.
+  % in the MANIFEST-TeX-Gyre-Schola.txt file.
  
 ###########################################################################
 ############          A BRIEF DESCRIPTION OF THE FONT          ############
 ###########################################################################
 
-TeX Gyre Termes Math is a math companion for the TeX Gyre Termes family
+TeX Gyre Schola Math is a math companion for the TeX Gyre Schola family
 of fonts (see http://www.gust.org.pl/projects/e-foundry/tex-gyre/) in
 the OpenType format.
 
@@ -41,27 +41,25 @@ italic and bold italic), a calligraphic script (regular and bold),
 a double-struck script, a fraktur script (regular and bold), a sans-serif 
 script (regular, bold, oblique and bold oblique), and a monospaced script.
 
-The basic script is, obviously, TeX Gyre Termes. Symbols, namely,
-calligraphic, double struck, Greek, sans serif bold Greek, and Hebrew,
-were drawn from scratch. The main math component, that is, the math
-extension, was also programmed from scratch.
+The basic script is, obviously, TeX Gyre Schola. Greek symbols are based on Theano Modern font
+(http://www.thefreewindows.com/2949/old-standard-unicode-greek-polytonic-font/)
+by Alexey Kryukov with the kind permission from the author to use his work
+with the GFL licence. The double struck and calligraphic scripts were created
+from scratch as well as the math extension, i.e., the main component of the font.
 
-Some scripts, however, are borrowed from other fonts (the current
+Other scripts, however, are borrowed from other fonts (the current
 selection, however, may be subject to change):
 
-  * The fraktur alphabets (regular and bold) is excerpted
-    from the Leipziger Fraktur replica by Peter Wiegel
-    ( http://www.peter-wiegel.de/Leipzig.html )
-    with the kind permission of the author.
+  * the fraktur script is excerpted from the renowned Euler family
+    (http://en.wikipedia.org/wiki/AMS_Euler);
 
-  * The sans serif alphabets (regular, oblique, bold, and
-    bold oblique) are excerpted from TeX Gyre Heros
-    http://www.gust.org.pl/projects/e-foundry/tex-gyre/heros
-    (actually, the sans serif bold Greek symbols are based
-    on TeX Gyre Heros Greek alphabet).
+  * the sans serif alphabets are excerpted from another renowned font,
+    Lato by /Lukasz Dziedzic (http://www.latofonts.com/) also with the
+    kind permission from the author to use his work
+    with the GFL licence;
 
-  * The monospaced alphabet is excerpted from TeX Gyre Cursor
-    http://www.gust.org.pl/projects/e-foundry/tex-gyre/cursor
+  * and finally, the monospaced alphabet is taken from TeX Gyre Cursor
+    (see http://www.gust.org.pl/projects/e-foundry/tex-gyre/).
 
 Note that the members of all the mentioned alphabets, except
 the main roman alphabet, should be considered symbols, not letters;
