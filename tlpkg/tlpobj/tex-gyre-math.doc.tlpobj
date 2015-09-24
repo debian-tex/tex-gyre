@@ -1,9 +1,9 @@
 name tex-gyre-math.doc
 category Package
-revision 34089
+revision 36916
 shortdesc doc files of tex-gyre-math
 relocated 1
-docfiles size=131
+docfiles size=130
  RELOC/doc/fonts/tex-gyre-math/GUST-FONT-LICENSE.txt
  RELOC/doc/fonts/tex-gyre-math/INSTALL.txt
  RELOC/doc/fonts/tex-gyre-math/MANIFEST-TeX-Gyre-Bonum-Math.txt

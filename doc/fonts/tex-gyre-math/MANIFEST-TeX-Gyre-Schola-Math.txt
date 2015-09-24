@@ -4,8 +4,8 @@
 
 Font: TeX Gyre Schola Math
 Authors: Bogus\l{}aw Jackowski, Piotr Strzelczyk and Piotr Pianowski
-Version: 1.526
-Date: 12 V 2014
+Version: 1.533
+Date: 5 IX 2014
 
 Copyright 2014 for TeX Gyre math extensions by B. Jackowski,
 P. Strzelczyk and P. Pianowski (on behalf of TeX Users Groups).
