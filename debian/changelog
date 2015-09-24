@@ -1,8 +1,8 @@
-tex-gyre (20150923-1) UNRELEASED; urgency=medium
+tex-gyre (20150923-1) unstable; urgency=medium
 
   * new upstream release with new math fonts
 
- -- Norbert Preining <preining@debian.org>  Thu, 24 Sep 2015 20:02:38 +0900
+ -- Norbert Preining <preining@debian.org>  Thu, 24 Sep 2015 20:06:26 +0900
 
 tex-gyre (20140520-1) unstable; urgency=medium
 
