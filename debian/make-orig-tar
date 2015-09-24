@@ -1,5 +1,5 @@
 
-tlnet=${1:-/var/www/norbert/tlpretest}
+tlnet=${1:-/var/www/norbert/tlnet}
 
 package=tex-gyre
 contents="tex-gyre tex-gyre-math"
