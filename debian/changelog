@@ -2,8 +2,9 @@ tex-gyre (20150923-1) unstable; urgency=medium
 
   * new upstream release with new math fonts
   * override license-problem-font-adobe-copyrighted-fragment
+  * bump standards version to 3.9.6, no changes necessary
 
- -- Norbert Preining <preining@debian.org>  Thu, 24 Sep 2015 20:07:52 +0900
+ -- Norbert Preining <preining@debian.org>  Thu, 24 Sep 2015 20:09:08 +0900
 
 tex-gyre (20140520-1) unstable; urgency=medium
 
