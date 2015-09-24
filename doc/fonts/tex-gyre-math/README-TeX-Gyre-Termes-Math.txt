@@ -4,11 +4,11 @@
 
 Font: TeX Gyre Termes Math
 Authors: Bogus\l{}aw Jackowski, Piotr Strzelczyk and Piotr Pianowski
-Version: 1.502
-Date: 14 I 2013
+Version: 1.543
+Date: 5 IX 2014
 
 License:
-  % Copyright 2012--2013 for the TeX Gyre math extensions by B. Jackowski,
+  % Copyright 2012--2014 for the TeX Gyre math extensions by B. Jackowski,
   % P. Strzelczyk and P. Pianowski (on behalf of TeX Users Groups).
   %
   % This work can be freely used and distributed under
@@ -74,6 +74,15 @@ the Type1 PostScript font containing all relevant characters was
 generated with the MetaType1 engine, and the result was converted
 into the OTF format with all the necessary data structures by
 a Python script employing the FontForge library.
+
+Recent changes (ver. 1.502 --> ver. 1.543) comprised
+mainly interline settings in OTF tables (HHEA and
+OS/2) and the correction of the unicode slots assigned to
+contour integrals (glyphs `clockwise contour
+integral', u+2232, and `anticlockwise contour
+integral', u+2233, used to have swapped slots).
+
+                   *    *    *
 
 The TeX Gyre Math Project was launched and is supported by
 TeX USERS GROUPS (CS TUG, DANTE eV, GUST, NTG, TUG India, TUG, UK TUG).

@@ -4,8 +4,8 @@
 
 Font: TeX Gyre Schola Math
 Authors: Bogus\l{}aw Jackowski, Piotr Strzelczyk and Piotr Pianowski
-Version: 1.526
-Date: 12 V 2014
+Version: 1.533
+Date: 5 IX 2014
 
 License:
   % Copyright 2014 for the TeX Gyre math extensions by B. Jackowski,
@@ -72,6 +72,11 @@ the Type1 PostScript font containing all relevant characters was
 generated with the MetaType1 engine, and the result was converted
 into the OTF format with all the necessary data structures by
 a Python script employing the FontForge library.
+
+Recent changes (ver. 1.526 --> ver. 1.533) comprised mainly
+interline settings in OTF tables (HHEA and OS/2).
+
+                   *    *    *
 
 The TeX Gyre Math Project was launched and is supported by
 TeX USERS GROUPS (CS TUG, DANTE eV, GUST, NTG, TUG India, TUG, UK TUG).
