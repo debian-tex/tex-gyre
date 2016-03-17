@@ -124,7 +124,8 @@ binary-indep: build-indep
 	dh_install
 	dh_installxfonts
 	dh_installtex mapfile=debian/tex-gyre.cfg
-	dh_installtex -p $(PKGFONTS)
+	# not necessary anymore
+	# dh_installtex -p $(PKGFONTS)
 
 	$(foreach PPP, $(PKG) $(PKGFONTS), \
 	  dh_link -p $(PPP) \
