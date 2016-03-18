@@ -4,8 +4,9 @@ tex-gyre (20150923-2) UNRELEASED; urgency=medium
     via triggers (Closes: #818548)
   * bump standards version, no changes necessary
   * bump tex-common build-dep to 6
+  * separate math fonts out into their own package
 
- -- Norbert Preining <preining@debian.org>  Fri, 18 Mar 2016 08:53:57 +0900
+ -- Norbert Preining <preining@debian.org>  Fri, 18 Mar 2016 09:07:53 +0900
 
 tex-gyre (20150923-1) unstable; urgency=medium
 
