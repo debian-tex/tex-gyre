@@ -1,3 +1,9 @@
+tex-gyre (20150923-3) unstable; urgency=medium
+
+  * fix dh_installtex fonts (Closes: #819164)
+
+ -- Norbert Preining <preining@debian.org>  Fri, 25 Mar 2016 00:02:39 +0900
+
 tex-gyre (20150923-2) unstable; urgency=medium
 
   * drop dh_installtex call for fonts-texgyre, as all work is done
