@@ -99,7 +99,8 @@ clean:
 	# debian/$(PKG).links is automatically generated from the list of
 	# fonts to declare to X11 among other things, so we have to delete
 	# it here.
-	rm -f build-indep-stamp debian/copyright \
+	# rm -f debian/copyright
+	rm -f build-indep-stamp \
 		"debian/$(PKG).scale.tmp" "debian/$(PKG).scale" \
 		"debian/$(PKG).fontlist-x11" "debian/$(PKG).links"
 	dh_clean
