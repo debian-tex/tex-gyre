@@ -1,7 +1,7 @@
 name tex-gyre-math
 category Package
-revision 36916
-shortdesc Maths fonts to match tex-gyre text fonts.
+revision 41264
+shortdesc Maths fonts to match tex-gyre text fonts
 relocated 1
 longdesc TeX-Gyre-Math is a collection of maths fonts to match the text
 longdesc fonts of the TeX-Gyre collection. The collection is available
@@ -11,11 +11,13 @@ longdesc match TeX-Gyre-Bonum), TeX-Gyre-Math-Pagella (to match TeX-Gyre-
 longdesc Pagella), TeX-Gyre-Math-Schola (to match TeX-Gyre-Schola) and
 longdesc TeX-Gyre-Math-Termes (to match TeX-Gyre-Termes) fonts are
 longdesc provided.
-runfiles size=552
+runfiles size=681
  RELOC/fonts/opentype/public/tex-gyre-math/texgyrebonum-math.otf
+ RELOC/fonts/opentype/public/tex-gyre-math/texgyredejavu-math.otf
  RELOC/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf
  RELOC/fonts/opentype/public/tex-gyre-math/texgyreschola-math.otf
  RELOC/fonts/opentype/public/tex-gyre-math/texgyretermes-math.otf
 catalogue-ctan /fonts/tex-gyre-math
-catalogue-date 2015-04-18 11:33:52 +0200
+catalogue-date 2016-05-18 22:04:46 +0200
 catalogue-license gfl
+catalogue-topics font font-collection font-maths font-otf

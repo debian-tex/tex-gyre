@@ -5,7 +5,7 @@
 Font: TeX Gyre Schola Math
 Authors: Bogus\l{}aw Jackowski, Piotr Strzelczyk and Piotr Pianowski
 Version: 1.533
-Date: 5 IX 2014
+Date: 5 IX 2014 / 19 V 2016 (documentation update)
 
 Copyright 2014 for TeX Gyre math extensions by B. Jackowski,
 P. Strzelczyk and P. Pianowski (on behalf of TeX Users Groups).
@@ -37,7 +37,7 @@ restrictions.
 2. Files whose names should be changed in derived works as requested
    by clause 1 of GUST-FONT-LICENSE.txt
 
-   2.1 otf/texgyreschola-math.otf
+   2.1 opentype/texgyreschola-math.otf
 
    2.2 doc/MANIFEST-TeX-Gyre-Schola-Math.txt
        doc/README-TeX-Gyre-Schola-Math.txt

@@ -1,17 +1,20 @@
 name tex-gyre-math.doc
 category Package
-revision 36916
+revision 41264
 shortdesc doc files of tex-gyre-math
 relocated 1
-docfiles size=130
+docfiles size=179
  RELOC/doc/fonts/tex-gyre-math/GUST-FONT-LICENSE.txt
  RELOC/doc/fonts/tex-gyre-math/INSTALL.txt
+ RELOC/doc/fonts/tex-gyre-math/LICENSE-DejaVu.txt
  RELOC/doc/fonts/tex-gyre-math/MANIFEST-TeX-Gyre-Bonum-Math.txt
+ RELOC/doc/fonts/tex-gyre-math/MANIFEST-TeX-Gyre-DejaVu-Math.txt
  RELOC/doc/fonts/tex-gyre-math/MANIFEST-TeX-Gyre-Pagella-Math.txt
  RELOC/doc/fonts/tex-gyre-math/MANIFEST-TeX-Gyre-Schola-Math.txt
  RELOC/doc/fonts/tex-gyre-math/MANIFEST-TeX-Gyre-Termes-Math.txt
  RELOC/doc/fonts/tex-gyre-math/README
  RELOC/doc/fonts/tex-gyre-math/README-TeX-Gyre-Bonum-Math.txt
+ RELOC/doc/fonts/tex-gyre-math/README-TeX-Gyre-DejaVu-Math.txt
  RELOC/doc/fonts/tex-gyre-math/README-TeX-Gyre-Pagella-Math.txt
  RELOC/doc/fonts/tex-gyre-math/README-TeX-Gyre-Schola-Math.txt
  RELOC/doc/fonts/tex-gyre-math/README-TeX-Gyre-Termes-Math.txt
@@ -19,6 +22,8 @@ docfiles size=130
  RELOC/doc/fonts/tex-gyre-math/math-test.tex
  RELOC/doc/fonts/tex-gyre-math/test-context-texgyre_bonum_math.pdf
  RELOC/doc/fonts/tex-gyre-math/test-context-texgyre_bonum_math.tex
+ RELOC/doc/fonts/tex-gyre-math/test-context-texgyre_dejavu_math.pdf
+ RELOC/doc/fonts/tex-gyre-math/test-context-texgyre_dejavu_math.tex
  RELOC/doc/fonts/tex-gyre-math/test-context-texgyre_pagella_math.pdf
  RELOC/doc/fonts/tex-gyre-math/test-context-texgyre_pagella_math.tex
  RELOC/doc/fonts/tex-gyre-math/test-context-texgyre_schola_math.pdf
@@ -27,6 +32,8 @@ docfiles size=130
  RELOC/doc/fonts/tex-gyre-math/test-context-texgyre_termes_math.tex
  RELOC/doc/fonts/tex-gyre-math/test-lualatex-texgyre_bonum_math.pdf
  RELOC/doc/fonts/tex-gyre-math/test-lualatex-texgyre_bonum_math.tex
+ RELOC/doc/fonts/tex-gyre-math/test-lualatex-texgyre_dejavu_math.pdf
+ RELOC/doc/fonts/tex-gyre-math/test-lualatex-texgyre_dejavu_math.tex
  RELOC/doc/fonts/tex-gyre-math/test-lualatex-texgyre_pagella_math.pdf
  RELOC/doc/fonts/tex-gyre-math/test-lualatex-texgyre_pagella_math.tex
  RELOC/doc/fonts/tex-gyre-math/test-lualatex-texgyre_schola_math.pdf
@@ -35,6 +42,8 @@ docfiles size=130
  RELOC/doc/fonts/tex-gyre-math/test-lualatex-texgyre_termes_math.tex
  RELOC/doc/fonts/tex-gyre-math/test-word-texgyre_bonum_math.docx
  RELOC/doc/fonts/tex-gyre-math/test-word-texgyre_bonum_math.pdf
+ RELOC/doc/fonts/tex-gyre-math/test-word-texgyre_dejavu_math.docx
+ RELOC/doc/fonts/tex-gyre-math/test-word-texgyre_dejavu_math.pdf
  RELOC/doc/fonts/tex-gyre-math/test-word-texgyre_pagella_math.docx
  RELOC/doc/fonts/tex-gyre-math/test-word-texgyre_pagella_math.pdf
  RELOC/doc/fonts/tex-gyre-math/test-word-texgyre_schola_math.docx
@@ -43,6 +52,8 @@ docfiles size=130
  RELOC/doc/fonts/tex-gyre-math/test-word-texgyre_termes_math.pdf
  RELOC/doc/fonts/tex-gyre-math/test-xelatex-texgyre_bonum_math.pdf
  RELOC/doc/fonts/tex-gyre-math/test-xelatex-texgyre_bonum_math.tex
+ RELOC/doc/fonts/tex-gyre-math/test-xelatex-texgyre_dejavu_math.pdf
+ RELOC/doc/fonts/tex-gyre-math/test-xelatex-texgyre_dejavu_math.tex
  RELOC/doc/fonts/tex-gyre-math/test-xelatex-texgyre_pagella_math.pdf
  RELOC/doc/fonts/tex-gyre-math/test-xelatex-texgyre_pagella_math.tex
  RELOC/doc/fonts/tex-gyre-math/test-xelatex-texgyre_schola_math.pdf

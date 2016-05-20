@@ -12,6 +12,11 @@ option. Windows 98 (or newer): Go to Start, then Control Panel.
 Double click on Fonts, and drag-and-drop the font file into the Fonts
 applet window. In MS Windows up to XP, in the Fonts applet, you can
 also choose File from the menu bar, then Install New Font.
+Please note, that if the font is not installed or not installed properly
+(whatever that means), MS Word will substitute Cambria Math, even
+if in the font selection control it says that DejaVu Math is being used.
+To check, please compare visually the attached test-word-dejavu_math.docx
+file with test-word-dejavu_math.pdf, with an eye especially on the sqrt signs.
 
 b. APPLE (MAC OS X)
 The font can be installed by double-clicking on the font file and
