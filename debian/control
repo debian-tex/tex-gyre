@@ -5,7 +5,7 @@ Maintainer: Debian TeX maintainers <debian-tex-maint@lists.debian.org>
 Uploaders: Norbert Preining <preining@debian.org>
 Build-Depends: debhelper (>= 8.1.0)
 Build-Depends-Indep: tex-common (>= 6)
-Standards-Version: 3.9.7
+Standards-Version: 3.9.8
 Vcs-Git: git://anonscm.debian.org/debian-tex/tex-gyre.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=debian-tex/tex-gyre.git
 Homepage: http://www.gust.org.pl/projects/e-foundry/tex-gyre/

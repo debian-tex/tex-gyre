@@ -1,8 +1,9 @@
 tex-gyre (20160520-1) unstable; urgency=medium
 
   * new upstream release with new math fonts (TL2016)
+  * bump standards version, no changes necessary
 
- -- Norbert Preining <preining@debian.org>  Fri, 20 May 2016 11:52:29 +0900
+ -- Norbert Preining <preining@debian.org>  Fri, 20 May 2016 13:56:07 +0900
 
 tex-gyre (20150923-3) unstable; urgency=medium
 
