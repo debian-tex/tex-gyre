@@ -144,6 +144,8 @@ binary-indep: build-indep
 	    usr/share/doc/$(PPP)/README-TeX-Gyre-Schola-Math.txt \
 	    usr/share/texmf/doc/fonts/tex-gyre-math/README-TeX-Gyre-Termes-Math.txt \
 	    usr/share/doc/$(PPP)/README-TeX-Gyre-Termes-Math.txt \
+	    usr/share/texmf/doc/fonts/tex-gyre-math/README-TeX-Gyre-DejaVu-Math.txt \
+	    usr/share/doc/$(PPP)/README-TeX-Gyre-DejaVu-Math.txt \
 	      ; )
 	dh_link -p $(PKGFONTS) \
 	    etc/fonts/conf.avail/65-$(PKGFONTS).conf \
