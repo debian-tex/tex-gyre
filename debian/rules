@@ -39,6 +39,7 @@ build-indep-stamp:
 	  -e '^\./fonts/opentype/public/tex-gyre/[^/]*\.otf$$' \
 	  -e '^\./fonts/opentype/public/tex-gyre-math/[^/]*\.otf$$' \
           -e '^\./tex/latex/tex-gyre/[^/]*\.(fd|sty)$$' \
+	  -e '^\./source/fonts/tex-gyre-math/texgyredejavu-math\.sfd$$' \
 	  -e '^\./doc/fonts/tex-gyre-math/[^/]*\.(tex|pdf|txt|fea|docx)$$' \
 	  -e '^\./doc/fonts/tex-gyre-math/README$$' \
           -e '^\./doc/fonts/tex-gyre/[^/]*\.(tex|pdf|txt|fea|nam)$$' || true) && \
