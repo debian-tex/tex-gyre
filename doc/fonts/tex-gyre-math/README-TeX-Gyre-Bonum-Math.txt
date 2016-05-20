@@ -5,7 +5,7 @@
 Font: TeX Gyre Bonum Math
 Authors: Bogus\l{}aw Jackowski, Piotr Strzelczyk and Piotr Pianowski
 Version: 1.005
-Date: 5 IX 2014
+Date: 5 IX 2014 / 19 V 2016 (documentation update)
 
 License:
   % Copyright 2014 for the TeX Gyre math extensions by B. Jackowski,

@@ -1,7 +1,7 @@
 name tex-gyre
 category Package
 revision 18651
-shortdesc TeX Fonts extending freely available URW fonts.
+shortdesc TeX Fonts extending freely available URW fonts
 relocated 1
 longdesc The TeX-GYRE bundle consists of six font families: TeX Gyre
 longdesc Adventor is based on the URW Gothic L family of fonts (which is
@@ -852,6 +852,7 @@ runfiles size=6213
  RELOC/tex/latex/tex-gyre/ts1qtm.fd
  RELOC/tex/latex/tex-gyre/ts1qzc.fd
 catalogue-ctan /fonts/tex-gyre
-catalogue-date 2014-06-07 20:47:53 +0200
+catalogue-date 2015-08-03 05:43:12 +0200
 catalogue-license gfsl
+catalogue-topics font font-otf font-type1 font-collection
 catalogue-version 2.004
