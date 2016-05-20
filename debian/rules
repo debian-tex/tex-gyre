@@ -88,8 +88,8 @@ build-indep-stamp:
 	
         # Generate the actual copyright file from copyright.in and
         # the GUST license
-	cat debian/copyright.in doc/fonts/tex-gyre/GUST-FONT-LICENSE.txt \
-            > debian/copyright
+	#cat debian/copyright.in doc/fonts/tex-gyre/GUST-FONT-LICENSE.txt \
+        #    > debian/copyright
 
 	touch build-indep-stamp
 
