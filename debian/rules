@@ -89,11 +89,6 @@ build-indep-stamp:
 	sed -ne 's/^[[:blank:]]*begin[[:blank:]]\{1,\}.*[/]\([^/]\{1,\}\)\.pfb[[:blank:]]*$$/\1/p' \
 	  < "debian/$(PKG).defoma-hints" > "debian/$(PKG).fontlist-x11"
 	
-        # Generate the actual copyright file from copyright.in and
-        # the GUST license
-	#cat debian/copyright.in doc/fonts/tex-gyre/GUST-FONT-LICENSE.txt \
-        #    > debian/copyright
-
 	touch build-indep-stamp
 
 clean:
@@ -102,7 +97,6 @@ clean:
 	# debian/$(PKG).links is automatically generated from the list of
 	# fonts to declare to X11 among other things, so we have to delete
 	# it here.
-	# rm -f debian/copyright
 	rm -f build-indep-stamp \
 		"debian/$(PKG).scale.tmp" "debian/$(PKG).scale" \
 		"debian/$(PKG).fontlist-x11" "debian/$(PKG).links"
