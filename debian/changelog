@@ -10,8 +10,9 @@ tex-gyre (20180619-1) UNRELEASED; urgency=medium
       it contains source *.sfd files
     - the relevant LaTeX files haven't been changed, they just got a new time stamp
   * bump compatibility to dh 11
+  * update VCS fields
 
- -- Norbert Preining <preining@debian.org>  Tue, 19 Jun 2018 11:59:16 +0900
+ -- Norbert Preining <preining@debian.org>  Tue, 19 Jun 2018 12:00:29 +0900
 
 tex-gyre (20160520-1) unstable; urgency=medium
 
