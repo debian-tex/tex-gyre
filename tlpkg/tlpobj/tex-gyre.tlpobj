@@ -1,6 +1,6 @@
 name tex-gyre
 category Package
-revision 18651
+revision 48025
 shortdesc TeX Fonts extending freely available URW fonts
 relocated 1
 longdesc The TeX-GYRE bundle consists of six font families: TeX Gyre
@@ -16,19 +16,19 @@ longdesc Gyre Heros is based on URW Nimbus Sans L (from Helvetica,
 longdesc prepared by Max Miedinger, with Eduard Hoffmann in 1957). TeX
 longdesc Gyre Pagella is based on URW Palladio L (from Palatino,
 longdesc designed by Hermann Zapf in the 1940s). TeX Gyre Schola is
-longdesc based on the URW Century Schoolbook L family (which was
-longdesc designed by Morris Fuller Benton for the American Type
-longdesc Founders). TeX Gyre Termes is based on the URW Nimbus Roman No9
-longdesc L family of fonts (whose original, Times, was designed by
+longdesc based on the URW Century Schoolbook L family (from Century
+longdesc Schoolbook, designed by Morris Fuller Benton for the American
+longdesc Type Founders). TeX Gyre Termes is based on the URW Nimbus
+longdesc Roman No9 L family of fonts (from Times New Roman, designed by
 longdesc Stanley Morison together with Starling Burgess and Victor
 longdesc Lardent and first offered by Monotype). The constituent
-longdesc standard faces of each family have been greatly extended, and
-longdesc contain nearly 1100 glyphs each (though Chorus omits Greek
-longdesc support, has no small-caps family and has approximately 800
-longdesc glyphs). Each family is available in Adobe Type 1 and Open Type
+longdesc standard faces of each family have been greatly extended
+longdesc (though Chorus omits Greek support and has no small-caps
+longdesc family). Each family is available in Adobe Type 1 and Open Type
 longdesc formats, and LaTeX support (for use with a variety of
 longdesc encodings) is provided. Vietnamese characters were added by Han
-longdesc The Thanh.
+longdesc The Thanh. There are companion maths fonts for several of these
+longdesc designs, listed in the TeX Gyre Math package.
 execute addMap qag.map
 execute addMap qbk.map
 execute addMap qcr.map
@@ -37,7 +37,7 @@ execute addMap qhv.map
 execute addMap qpl.map
 execute addMap qtm.map
 execute addMap qzc.map
-runfiles size=6213
+runfiles size=6656
  RELOC/fonts/afm/public/tex-gyre/qagb.afm
  RELOC/fonts/afm/public/tex-gyre/qagbi.afm
  RELOC/fonts/afm/public/tex-gyre/qagr.afm
@@ -852,7 +852,7 @@ runfiles size=6213
  RELOC/tex/latex/tex-gyre/ts1qtm.fd
  RELOC/tex/latex/tex-gyre/ts1qzc.fd
 catalogue-ctan /fonts/tex-gyre
-catalogue-date 2015-08-03 05:43:12 +0200
-catalogue-license gfsl
+catalogue-date 2018-06-16 09:34:11 +0200
+catalogue-license gfl
 catalogue-topics font font-otf font-type1 font-collection
-catalogue-version 2.004
+catalogue-version 2.501

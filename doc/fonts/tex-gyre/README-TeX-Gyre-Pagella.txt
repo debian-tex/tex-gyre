@@ -4,15 +4,16 @@
 ###########################################################################
 
 Font: TeX Gyre Pagella
-Authors: Bogus\l{}aw Jackowski and Janusz M. Nowacki
-Version: 2.004
-Date: 7 X 2009
+Authors: Bogus\l{}aw Jackowski, Janusz M. Nowacki, Piotr Pianowski, and Piotr Strzelczyk
+Version: 2.501
+Date: 8 V 2018
 Downloads: http://www.gust.org.pl/projects/e-foundry/tex-gyre/pagella
 
+
 License:
-  % Copyright 2006--2009 for TeX Gyre extensions by B. Jackowski
-  % and J.M. Nowacki (on behalf of TeX Users Groups).
-  % Vietnamese characters were added by Han The Thanh.
+  % Copyright 2007--2018 for TeX Gyre extensions by B. Jackowski,
+  % J.M. Nowacki et al. (on behalf of TeX Users Groups). Vietnamese
+  % characters were added by Han The Thanh.
   %
   % This work can be freely used and distributed under
   % the GUST Font License (GFL -- see GUST-FONT-LICENSE.txt)
@@ -148,168 +149,6 @@ Additional encoding and map files can be found under:
 
                            *   *   *
 
-All four font files, qplb, qplbi, qplr, qplri, contain the same repertoire
-of 1089 characters, namely (these are the names used in Type 1 fonts):
-
-A a a.sc Aacute aacute aacute.sc Abreve abreve abreve.sc Abreveacute
-abreveacute abreveacute.sc Abrevedotbelow abrevedotbelow
-abrevedotbelow.sc Abrevegrave abrevegrave abrevegrave.sc Abrevehookabove
-abrevehookabove abrevehookabove.sc Abrevetilde abrevetilde abrevetilde.sc
-Acaron acaron acaron.sc Acircumflex acircumflex acircumflex.sc
-Acircumflexacute acircumflexacute acircumflexacute.sc Acircumflexdotbelow
-acircumflexdotbelow acircumflexdotbelow.sc Acircumflexgrave
-acircumflexgrave acircumflexgrave.sc Acircumflexhookabove
-acircumflexhookabove acircumflexhookabove.sc Acircumflextilde
-acircumflextilde acircumflextilde.sc Acute acute acute.dup acute.ts1
-Acutecomb acutecomb Adblgrave adblgrave adblgrave.sc Adieresis adieresis
-adieresis.sc Adotbelow adotbelow adotbelow.sc AE ae AE.dup ae.dup ae.sc
-AEacute aeacute aeacute.sc Agrave agrave agrave.sc Ahookabove ahookabove
-ahookabove.sc Alpha alpha Amacron amacron amacron.sc ampersand anglearc
-angleleft angleright Aogonek aogonek aogonek.sc Aogonekacute aogonekacute
-aogonekacute.sc approxequal Aring aring aring.sc Aringacute aringacute
-aringacute.sc arrowdown arrowleft arrowright arrowup asciicircum
-asciitilde asterisk asteriskmath at at.alt Atilde atilde atilde.sc B b
-b.sc backslash baht bar Beta beta bigcircle blanksymbol born braceleft
-braceright bracketleft bracketright Breve breve breve.ts1 Breveacute
-breveacute brevebelow brevebelowcomb brevebelowinverted
-brevebelowinvertedcomb Brevecomb brevecomb Brevegrave brevegrave
-Brevehookabove brevehookabove Breveinverted breveinverted
-Breveinvertedcomb breveinvertedcomb Brevetilde brevetilde brokenbar
-bullet C c c.sc Cacute cacute cacute.sc Caron caron caron.ts1 Caroncomb
-caroncomb Ccaron ccaron ccaron.sc Ccedilla ccedilla ccedilla.sc
-Ccircumflex ccircumflex ccircumflex.sc Cdotaccent cdotaccent
-cdotaccent.sc cedilla cedilla.dup cent cent.oldstyle centigrade Chi chi
-Circumflex circumflex circumflex.dup Circumflexacute circumflexacute
-Circumflexcomb circumflexcomb Circumflexgrave circumflexgrave
-Circumflexhookabove circumflexhookabove Circumflextilde circumflextilde
-colon colonmonetary comma commaaccent commaaccentcomb copyleft copyright
-copyright.alt currency cwm cwmascender cwmcapital cyrBreve cyrbreve
-cyrFlex cyrflex D d d.sc dagger daggerdbl dblbracketleft dblbracketright
-dblGrave dblgrave dblgrave.ts1 dblGravecomb dblgravecomb dblverticalbar
-Dcaron dcaron dcaron.sc Dcroat dcroat dcroat.sc Ddotbelow ddotbelow
-ddotbelow.sc degree Delta delta diameter died Dieresis dieresis
-dieresis.dup dieresis.ts1 Dieresisacute dieresisacute Dieresiscaron
-dieresiscaron Dieresiscomb dieresiscomb Dieresisgrave dieresisgrave
-discount divide divorced Dlinebelow dlinebelow dlinebelow.sc dollar
-dollar.oldstyle dong Dotaccent dotaccent Dotaccentcomb dotaccentcomb
-dotbelow dotbelowcomb dotlessi dotlessi.sc dotlessj dotlessj.dup
-dotlessj.sc E e e.sc Eacute eacute eacute.sc Ebreve ebreve ebreve.sc
-Ecaron ecaron ecaron.sc Ecircumflex ecircumflex ecircumflex.sc
-Ecircumflexacute ecircumflexacute ecircumflexacute.sc Ecircumflexdotbelow
-ecircumflexdotbelow ecircumflexdotbelow.sc Ecircumflexgrave
-ecircumflexgrave ecircumflexgrave.sc Ecircumflexhookabove
-ecircumflexhookabove ecircumflexhookabove.sc Ecircumflextilde
-ecircumflextilde ecircumflextilde.sc Edblgrave edblgrave edblgrave.sc
-Edieresis edieresis edieresis.sc Edotaccent edotaccent edotaccent.sc
-Edotbelow edotbelow edotbelow.sc Egrave egrave egrave.sc Ehookabove
-ehookabove ehookabove.sc eight eight.oldstyle eight.prop
-eight.taboldstyle ell ellipsis Emacron emacron emacron.sc emdash endash
-Eng eng eng.sc Eogonek eogonek eogonek.sc Eogonekacute eogonekacute
-eogonekacute.sc Epsilon epsilon epsilon.alt equal Ereversed ereversed
-ereversed.sc estimated Eta eta Eth eth eth.sc Etilde etilde etilde.sc
-eturned eturned.sc Euro exclam exclamdown F f f.sc f_k ff ffi ffl fi five
-five.oldstyle five.prop five.taboldstyle fl florin four four.oldstyle
-four.prop four.taboldstyle fraction fraction.alt G g g.sc Gacute gacute
-gacute.sc Gamma gamma Gbreve gbreve gbreve.sc Gcaron gcaron gcaron.sc
-Gcedilla gcedilla Gcircumflex gcircumflex gcircumflex.sc Gcommaaccent
-gcommaaccent gcommaaccent.sc Gdotaccent gdotaccent gdotaccent.sc
-Germandbls germandbls germandbls.dup germandbls.sc gnaborretni Grave
-grave grave.ts1 Gravecomb gravecomb greater greaterequal
-greaterorequalslant guarani guillemotleft guillemotright guilsinglleft
-guilsinglright H h h.sc Hbar hbar hbar.sc Hbrevebelow hbrevebelow
-hbrevebelow.sc Hcircumflex hcircumflex hcircumflex.sc Hdieresis hdieresis
-hdieresis.sc Hdotbelow hdotbelow hdotbelow.sc Hookabove hookabove
-Hookabovecomb hookabovecomb horn Htilde htilde htilde.sc Hungarumlaut
-hungarumlaut hungarumlaut.ts1 Hungarumlautcomb hungarumlautcomb hyphen
-hyphen.alt hyphen.dup hyphen.prop hyphendbl hyphendbl.alt I i i.sc Iacute
-iacute iacute.sc Ibreve ibreve ibreve.sc Icaron icaron icaron.sc
-Icircumflex icircumflex icircumflex.sc Idblgrave idblgrave idblgrave.sc
-Idieresis idieresis idieresis.sc Idieresisacute idieresisacute
-idieresisacute.sc Idotaccent idotaccent.sc Idotbelow idotbelow
-idotbelow.sc Igrave igrave igrave.sc Ihookabove ihookabove ihookabove.sc
-IJ ij ij.sc Imacron imacron Imacron.alt imacron.alt imacron.alt.sc
-imacron.sc infinity interrobang Iogonek iogonek iogonek.sc Iogonekacute
-iogonekacute iogonekacute.sc Iota iota Itilde itilde itilde.sc J j j.sc
-J_caron Jacute jacute jacute.sc jcaron jcaron.sc Jcircumflex jcircumflex
-jcircumflex.sc K k k.sc Kappa kappa Kcedilla kcedilla Kcommaaccent
-kcommaaccent kcommaaccent.sc L l l.sc Lacute lacute lacute.sc Lambda
-lambda Lcaron lcaron lcaron.sc Lcedilla lcedilla Lcommaaccent
-lcommaaccent lcommaaccent.sc Ldot ldot ldot.sc Ldotbelow ldotbelow
-ldotbelow.sc Ldotbelowmacron ldotbelowmacron ldotbelowmacron.sc leaf less
-lessequal lessorequalslant linebelow linebelowcomb lira logicalnot longs
-lozenge lscript Lslash lslash lslash.sc Ltilde ltilde ltilde.sc M m m.sc
-Macron macron Macron.alt macron.alt macron.dup macron.ts1 macronbelow
-macronbelowcomb Macroncomb macroncomb married Mdotbelow mdotbelow
-mdotbelow.sc mho minus minusplus Mu mu mu.alt multiply musicalnote N n
-n.sc Nacute nacute nacute.sc naira nbspace Ncaron ncaron ncaron.sc
-Ncedilla ncedilla Ncommaaccent ncommaaccent ncommaaccent.sc Ndotaccent
-ndotaccent ndotaccent.sc Ndotbelow ndotbelow ndotbelow.sc nine
-nine.oldstyle nine.prop nine.taboldstyle notequal Ntilde ntilde ntilde.sc
-Nu nu numbersign numero O o o.sc Oacute oacute oacute.sc Obreve obreve
-obreve.sc Ocaron ocaron ocaron.sc Ocircumflex ocircumflex ocircumflex.sc
-Ocircumflexacute ocircumflexacute ocircumflexacute.sc Ocircumflexdotbelow
-ocircumflexdotbelow ocircumflexdotbelow.sc Ocircumflexgrave
-ocircumflexgrave ocircumflexgrave.sc Ocircumflexhookabove
-ocircumflexhookabove ocircumflexhookabove.sc Ocircumflextilde
-ocircumflextilde ocircumflextilde.sc Odblgrave odblgrave odblgrave.sc
-Odieresis odieresis odieresis.sc Odotbelow odotbelow odotbelow.sc OE oe
-OE.dup oe.dup oe.sc ogonek Ograve ograve ograve.sc ohm Ohookabove
-ohookabove ohookabove.sc Ohorn ohorn ohorn.sc Ohornacute ohornacute
-ohornacute.sc Ohorndotbelow ohorndotbelow ohorndotbelow.sc Ohorngrave
-ohorngrave ohorngrave.sc Ohornhookabove ohornhookabove ohornhookabove.sc
-Ohorntilde ohorntilde ohorntilde.sc Ohungarumlaut ohungarumlaut
-ohungarumlaut.sc Omacron omacron omacron.sc Omega omega Omicron omicron
-one one.oldstyle one.prop one.superior one.taboldstyle onehalf onequarter
-Oogonek oogonek oogonek.sc Oogonekacute oogonekacute oogonekacute.sc
-openbullet ordfeminine ordmasculine Orogate orogate orogate.sc Oslash
-oslash Oslash.dup oslash.dup oslash.sc Oslashacute oslashacute
-oslashacute.sc Otilde otilde otilde.sc P p p.sc paragraph paragraph.alt
-parenleft parenright partialdiff percent period periodcentered permyriad
-perthousand perthousandzero peso Phi phi phi.alt Pi pi pi.alt plus
-plusminus Psi psi published Q q q.sc question questiondown
-quillbracketleft quillbracketright quotedbl quotedblbase quotedblbase.ts1
-quotedblleft quotedblright quoteleft quoteleft.dup quoteright
-quoteright.dup quotesinglbase quotesinglbase.ts1 quotesingle
-quotesingle.ts1 R r r.sc Racute racute racute.sc radical Rcaron rcaron
-rcaron.sc Rcedilla rcedilla Rcommaaccent rcommaaccent rcommaaccent.sc
-Rdblgrave rdblgrave rdblgrave.sc Rdotaccent rdotaccent rdotaccent.sc
-Rdotbelow rdotbelow rdotbelow.sc Rdotbelowmacron rdotbelowmacron
-rdotbelowmacron.sc recipe referencemark registered registered.alt Rho rho
-rho.alt Ring ring Ringacute ringacute Ringcomb ringcomb ringhalfleft
-ringhalfright S s s.sc Sacute sacute sacute.sc Scaron scaron scaron.sc
-Scedilla scedilla scedilla.sc schwa Scircumflex scircumflex
-scircumflex.sc Scommaaccent scommaaccent scommaaccent.sc Sdotbelow
-sdotbelow sdotbelow.sc section semicolon servicemark seven seven.oldstyle
-seven.prop seven.taboldstyle sfthyphen Sigma sigma sigma1 six
-six.oldstyle six.prop six.taboldstyle slash space star sterling summation
-suppress T t t.sc Tau tau Tcaron tcaron tcaron.sc Tcedilla tcedilla
-tcedilla.sc Tcommaaccent tcommaaccent tcommaaccent.sc Tdieresis tdieresis
-tdieresis.sc Tdotbelow tdotbelow tdotbelow.sc Theta theta theta.alt Thorn
-thorn thorn.sc three three.oldstyle three.prop three.superior
-three.taboldstyle threequarters threequartersemdash tie tieaccentcapital
-tieaccentcapital.new tieaccentlowercase tieaccentlowercase.new Tilde
-tilde tilde.dup tildebelow tildebelowcomb Tildecomb tildecomb tildelow
-Tlinebelow tlinebelow tlinebelow.sc trademark Ttilde ttilde ttilde.sc
-twelveudash two two.oldstyle two.prop two.superior two.taboldstyle U u
-u.sc Uacute uacute uacute.sc Ubreve ubreve ubreve.sc Ubrevebelowinverted
-ubrevebelowinverted ubrevebelowinverted.sc Ucaron ucaron ucaron.sc
-Ucircumflex ucircumflex ucircumflex.sc Udblgrave udblgrave udblgrave.sc
-Udieresis udieresis udieresis.sc Udieresisacute udieresisacute
-udieresisacute.sc Udieresiscaron udieresiscaron udieresiscaron.sc
-Udieresisgrave udieresisgrave udieresisgrave.sc Udotbelow udotbelow
-udotbelow.sc Ugrave ugrave ugrave.sc Uhookabove uhookabove uhookabove.sc
-Uhorn uhorn uhorn.sc Uhornacute uhornacute uhornacute.sc Uhorndotbelow
-uhorndotbelow uhorndotbelow.sc Uhorngrave uhorngrave uhorngrave.sc
-Uhornhookabove uhornhookabove uhornhookabove.sc Uhorntilde uhorntilde
-uhorntilde.sc Uhungarumlaut uhungarumlaut uhungarumlaut.sc Umacron
-umacron umacron.sc underscore undertie undertieinverted uni2010 uni2011
-uni2423 Uogonek uogonek uogonek.sc Upsilon upsilon Uring uring uring.sc
-Utilde utilde utilde.sc V v v.sc W w w.sc Wacute wacute wacute.sc
-Wcircumflex wcircumflex wcircumflex.sc Wdieresis wdieresis wdieresis.sc
-weierstrass Wgrave wgrave wgrave.sc won X x x.sc Xi xi Y y y.sc Yacute
-yacute yacute.sc Ycircumflex ycircumflex ycircumflex.sc Ydieresis
-ydieresis ydieresis.sc Ydotbelow ydotbelow ydotbelow.sc yen Ygrave ygrave
-ygrave.sc Yhookabove yhookabove yhookabove.sc Ytilde ytilde ytilde.sc Z z
-z.sc Zacute zacute zacute.sc Zcaron zcaron zcaron.sc Zdotaccent
-zdotaccent zdotaccent.sc Zdotbelow zdotbelow zdotbelow.sc zero
-zero.oldstyle zero.prop zero.slash zero.taboldstyle Zeta zeta
+All four font files, qplb, qplbi, qplr, qplri, share the same repertoire
+of characters. The number of glyphs in the PFB/OTF files (.notdef ignored) equals
+1616/1548; see qpl-info.pdf file in the relevant doc directory for details
