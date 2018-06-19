@@ -1,3 +1,17 @@
+tex-gyre (20180619-1) UNRELEASED; urgency=medium
+
+  * new upstream release 2.501:
+    Ver 2.501: 08.05.2018
+    - substantial extension of the repertoire by geometric, math and technical symbols,
+      in OTF files, stylistic feature ss10 (backward compatibility with old math symbols)
+      added, marks (anchors) implemented
+    - only one aggregate map is included for all encodings
+    - the contents of the doc/fonts/tex-gyre/ changed; most importantly,
+      it contains source *.sfd files
+    - the relevant LaTeX files haven't been changed, they just got a new time stamp
+
+ -- Norbert Preining <preining@debian.org>  Tue, 19 Jun 2018 11:30:58 +0900
+
 tex-gyre (20160520-1) unstable; urgency=medium
 
   * new upstream release with new math fonts (TL2016)
