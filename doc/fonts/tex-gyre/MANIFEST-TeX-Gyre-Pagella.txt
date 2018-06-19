@@ -4,13 +4,13 @@
 ###########################################################################
 
 Font: TeX Gyre Pagella
-Authors: Bogus\l{}aw Jackowski and Janusz M. Nowacki
-Version: 2.004
-Date: 7 X 2009
-Downloads: http://www.gust.org.pl/projects/e-foundry/tex-gyre/pagella
+Authors: Bogus\l{}aw Jackowski, Janusz M. Nowacki, Piotr Pianowski, and Piotr Strzelczyk
+Version: 2.501
+Date: 8 V 2018
+Downloads: http://www.gust.org.pl/projects/e-foundry/tex-gyre/adventor
 
-Copyright 2006--2009 for TeX Gyre extensions by B. Jackowski
-and J.M. Nowacki (on behalf of TeX Users Groups). Vietnamese
+Copyright 2007--2018 for TeX Gyre extensions by B. Jackowski,
+J.M. Nowacki et al. (on behalf of TeX Users Groups). Vietnamese
 characters were added by Han The Thanh.
 
 This work can be freely used and distributed under
@@ -66,14 +66,6 @@ restrictions.
        fonts/afm/public/tex-gyre/qplr.afm
        fonts/afm/public/tex-gyre/qplri.afm
        fonts/map/dvips/tex-gyre/qpl.map
-       fonts/map/dvips/tex-gyre/qpl-cs.map
-       fonts/map/dvips/tex-gyre/qpl-ec.map
-       fonts/map/dvips/tex-gyre/qpl-l7x.map
-       fonts/map/dvips/tex-gyre/qpl-qx.map
-       fonts/map/dvips/tex-gyre/qpl-rm.map
-       fonts/map/dvips/tex-gyre/qpl-t5.map
-       fonts/map/dvips/tex-gyre/qpl-texnansi.map
-       fonts/map/dvips/tex-gyre/qpl-ts1.map
        fonts/enc/dvips/tex-gyre/q-cs.enc
        fonts/enc/dvips/tex-gyre/q-cs-sc.enc
        fonts/enc/dvips/tex-gyre/q-ec.enc
@@ -184,15 +176,21 @@ restrictions.
 
    2.3 doc/fonts/tex-gyre/MANIFEST-TeX-Gyre-Pagella.txt
        doc/fonts/tex-gyre/README-TeX-Gyre-Pagella.txt
-       doc/fonts/tex-gyre/goadb999.nam
        doc/fonts/tex-gyre/qpl-hist.txt
        doc/fonts/tex-gyre/qpl-info.pdf
-       doc/fonts/tex-gyre/qpl-test.tex
-       doc/fonts/tex-gyre/qpl-test.pdf
-       doc/fonts/tex-gyre/qplb.fea
-       doc/fonts/tex-gyre/qplbi.fea
-       doc/fonts/tex-gyre/qplr.fea
-       doc/fonts/tex-gyre/qplri.fea
+       doc/fonts/tex-gyre/qplb.oti
+       doc/fonts/tex-gyre/qplbi.oti
+       doc/fonts/tex-gyre/qplr.oti
+       doc/fonts/tex-gyre/qplri.oti
+
+   2.4 source/fonts/tex-gyre/texgyrepagella-bold.fea
+       source/fonts/tex-gyre/texgyrepagella-bold.sfd
+       source/fonts/tex-gyre/texgyrepagella-bolditalic.fea
+       source/fonts/tex-gyre/texgyrepagella-bolditalic.sfd
+       source/fonts/tex-gyre/texgyrepagella-italic.fea
+       source/fonts/tex-gyre/texgyrepagella-italic.sfd
+       source/fonts/tex-gyre/texgyrepagella-regular.fea
+       source/fonts/tex-gyre/texgyrepagella-regular.sfd
 
 3. Files whose names need not be changed in derived works as requested
    by clause 1 of GUST-FONT-LICENSE.txt

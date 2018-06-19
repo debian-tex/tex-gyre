@@ -5,6 +5,15 @@ For the most recent version of this license see
 http://www.gust.org.pl/fonts/licenses/GUST-FONT-LICENSE.txt or
 http://tug.org/fonts/licenses/GUST-FONT-LICENSE.txt
 
+Ver 2.501: 08.05.2018
+* substantial extension of the repertoire by geometric, math and technical symbols,
+  in OTF, files stylistic feature ss10 (backward compatibility with old math symbols)
+  added, marks (anchors) implemented
+* only one aggregate map is included for all encodings
+* the contents of the doc/fonts/tex-gyre/ changed; most importantly,
+  it contains source *.sfd files
+* the relevant LaTeX files haven't been changed, they just got a new time stamp
+
 Ver 2.003: 16.09.2009
 * this is the first official release of the TeX Gyre Adventor fonts since
   June 22, 2009, when URW++, represented by Dr. Peter Rosenfeld, its
@@ -49,7 +58,7 @@ Ver 2.003: 16.09.2009
   points in the Unicode table and names assigned in the Adobe Glyph List
   (incidentaly, in J_caron apostrophe is used alike in lcaron and tcaron --
   cf. http://en.wikipedia.org/wiki/J-caron), small caps were assigned
-  code points in Private Unicode Area  
+  code points in Private Unicode Area
 * glyps orogate and Orogate (`rogate' in Polish means `with horns')
   added -- they are used to denote nasal vowels in ancient Polish texts
   (ca. XIV century)
@@ -99,7 +108,7 @@ Ver. 1.104: 29.02.2008
 
 Ver. 1.103: 22.02.2008
 * math glyphs shifted horizontally (widths left intact)
-* kerns between half rings and `A' (also `a.sc') added 
+* kerns between half rings and `A' (also `a.sc') added
 * in the OTF files, the features `salt', `ss01', `ss02',
   `ss03', `ss04' added
 
