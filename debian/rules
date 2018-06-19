@@ -15,7 +15,7 @@ INSTALL_FILE          := $(INSTALL) -p -o root -g root -m 644
 
 SHELL                 := /bin/bash
 
-build: build-arch build-indep
+^build: build-arch build-indep
 # We have nothing to do here but the Debian Policy says this target must
 # exist.
 
@@ -29,20 +29,22 @@ build-indep-stamp:
 	# Warn the person building the package if new files were added
 	# to the .orig.tar.gz + .diff.gz that this script is not aware of.
 	@newfiles=$$(find . -type f | grep -Ev \
-          -e '^\./debian/' \
+		-e '^\./.git/' \
+    -e '^\./debian/' \
 	  -e '^\./tlpkg/' \
-          -e '^\./fonts/type1/public/tex-gyre/[^/]*\.pf[bm]$$' \
-          -e '^\./fonts/afm/public/tex-gyre/[^/]*\.afm$$' \
-          -e '^\./fonts/tfm/public/tex-gyre/[^/]*\.tfm$$' \
+    -e '^\./fonts/type1/public/tex-gyre/[^/]*\.pf[bm]$$' \
+    -e '^\./fonts/afm/public/tex-gyre/[^/]*\.afm$$' \
+    -e '^\./fonts/tfm/public/tex-gyre/[^/]*\.tfm$$' \
 	  -e '^\./fonts/map/dvips/tex-gyre/[^/]*\.map$$' \
 	  -e '^\./fonts/enc/dvips/tex-gyre/[^/]*\.enc$$' \
 	  -e '^\./fonts/opentype/public/tex-gyre/[^/]*\.otf$$' \
 	  -e '^\./fonts/opentype/public/tex-gyre-math/[^/]*\.otf$$' \
-          -e '^\./tex/latex/tex-gyre/[^/]*\.(fd|sty)$$' \
+    -e '^\./tex/latex/tex-gyre/[^/]*\.(fd|sty)$$' \
 	  -e '^\./source/fonts/tex-gyre-math/texgyredejavu-math\.sfd$$' \
 	  -e '^\./doc/fonts/tex-gyre-math/[^/]*\.(tex|pdf|txt|fea|docx)$$' \
 	  -e '^\./doc/fonts/tex-gyre-math/README$$' \
-          -e '^\./doc/fonts/tex-gyre/[^/]*\.(tex|pdf|txt|fea|nam)$$' || true) && \
+		-e '^\./source/fonts/tex-gyre/[^/]*\.(fea|sfd)$$' \
+    -e '^\./doc/fonts/tex-gyre/[^/]*\.(tex|pdf|txt|fea|nam)$$' || true) && \
           if [ -n "$$newfiles" ]; then \
               { echo "New files were found in the patched tarball" \
                      "(.orig.tar.gz + .diff.gz):"; \
