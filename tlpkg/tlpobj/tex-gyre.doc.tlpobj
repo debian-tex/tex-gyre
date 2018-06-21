@@ -1,9 +1,9 @@
 name tex-gyre.doc
 category Package
-revision 48025
+revision 48058
 shortdesc doc files of tex-gyre
 relocated 1
-docfiles size=2385
+docfiles size=2369
  RELOC/doc/fonts/tex-gyre/GUST-FONT-LICENSE.txt
  RELOC/doc/fonts/tex-gyre/MANIFEST-TeX-Gyre-Adventor.txt
  RELOC/doc/fonts/tex-gyre/MANIFEST-TeX-Gyre-Bonum.txt
@@ -62,10 +62,6 @@ docfiles size=2385
  RELOC/doc/fonts/tex-gyre/qhvri.fea
  RELOC/doc/fonts/tex-gyre/qpl-hist.txt
  RELOC/doc/fonts/tex-gyre/qpl-info.pdf
- RELOC/doc/fonts/tex-gyre/qplb.fea
- RELOC/doc/fonts/tex-gyre/qplbi.fea
- RELOC/doc/fonts/tex-gyre/qplr.fea
- RELOC/doc/fonts/tex-gyre/qplri.fea
  RELOC/doc/fonts/tex-gyre/qtm-hist.txt
  RELOC/doc/fonts/tex-gyre/qtm-info.pdf
  RELOC/doc/fonts/tex-gyre/qtm-test.pdf
