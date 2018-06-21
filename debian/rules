@@ -31,35 +31,35 @@ build-indep-stamp:
 	@newfiles=$$(find . -type f | grep -Ev \
 		-e '^\./.git/' \
 		-e '^\./.pc/' \
-    -e '^\./debian/' \
-	  -e '^\./tlpkg/' \
-    -e '^\./fonts/type1/public/tex-gyre/[^/]*\.pf[bm]$$' \
-    -e '^\./fonts/afm/public/tex-gyre/[^/]*\.afm$$' \
-    -e '^\./fonts/tfm/public/tex-gyre/[^/]*\.tfm$$' \
-	  -e '^\./fonts/map/dvips/tex-gyre/[^/]*\.map$$' \
-	  -e '^\./fonts/enc/dvips/tex-gyre/[^/]*\.enc$$' \
-	  -e '^\./fonts/opentype/public/tex-gyre/[^/]*\.otf$$' \
-	  -e '^\./fonts/opentype/public/tex-gyre-math/[^/]*\.otf$$' \
-    -e '^\./tex/latex/tex-gyre/[^/]*\.(fd|sty)$$' \
-	  -e '^\./source/fonts/tex-gyre-math/texgyredejavu-math\.sfd$$' \
-	  -e '^\./doc/fonts/tex-gyre-math/[^/]*\.(tex|pdf|txt|fea|docx)$$' \
-	  -e '^\./doc/fonts/tex-gyre-math/README$$' \
+		-e '^\./debian/' \
+		-e '^\./tlpkg/' \
+		-e '^\./fonts/type1/public/tex-gyre/[^/]*\.pf[bm]$$' \
+		-e '^\./fonts/afm/public/tex-gyre/[^/]*\.afm$$' \
+		-e '^\./fonts/tfm/public/tex-gyre/[^/]*\.tfm$$' \
+		-e '^\./fonts/map/dvips/tex-gyre/[^/]*\.map$$' \
+		-e '^\./fonts/enc/dvips/tex-gyre/[^/]*\.enc$$' \
+		-e '^\./fonts/opentype/public/tex-gyre/[^/]*\.otf$$' \
+		-e '^\./fonts/opentype/public/tex-gyre-math/[^/]*\.otf$$' \
+		-e '^\./tex/latex/tex-gyre/[^/]*\.(fd|sty)$$' \
+		-e '^\./source/fonts/tex-gyre-math/texgyredejavu-math\.sfd$$' \
+		-e '^\./doc/fonts/tex-gyre-math/[^/]*\.(tex|pdf|txt|fea|docx)$$' \
+		-e '^\./doc/fonts/tex-gyre-math/README$$' \
 		-e '^\./source/fonts/tex-gyre/[^/]*\.(fea|sfd)$$' \
-    -e '^\./doc/fonts/tex-gyre/[^/]*\.(tex|pdf|txt|fea|nam)$$' || true) && \
-          if [ -n "$$newfiles" ]; then \
-              { echo "New files were found in the patched tarball" \
-                     "(.orig.tar.gz + .diff.gz):"; \
-                echo "$$newfiles" | sed 's/^\(.*\)$$/  \1/'; \
-                echo; \
-                echo "Please update the debian/rules file accordingly."; \
-              } >&2; \
-              exit 1; \
-          fi
+		-e '^\./doc/fonts/tex-gyre/[^/]*\.(tex|pdf|txt|fea|nam)$$' || true) && \
+	if [ -n "$$newfiles" ]; then \
+		{ echo "New files were found in the patched tarball" \
+			"(.orig.tar.gz + .diff.gz):"; \
+			echo "$$newfiles" | sed 's/^\(.*\)$$/  \1/'; \
+			echo; \
+			echo "Please update the debian/rules file accordingly."; \
+		} >&2; \
+		exit 1; \
+	fi
 
-        # Upstream provides <texmf>/fonts/map/dvips/tex-gyre/q??.map that 
+	# Upstream provides <texmf>/fonts/map/dvips/tex-gyre/q??.map that 
 	# should be equivalent to all the encoding-specific map files in 
-        # <texmf>/fonts/map/dvips/tex-gyre/ 
-        # Let's check if this is really the case.
+	# <texmf>/fonts/map/dvips/tex-gyre/ 
+	# Let's check if this is really the case.
 	@export LC_COLLATE=C && for fam in $(FAMILIES) ; do \
 	   a=$$(find fonts/map/dvips/tex-gyre -name "$$fam-*.map" \
               -print0 | xargs -0r cat | grep -Ev -e '^(%|[[:space:]]*$$)' \
