@@ -121,7 +121,6 @@ binary-indep: build-indep
 	  "debian/$(PKG).fontlist-x11" >> "debian/$(PKG).links"
 	
 	dh_install
-	dh_installxfonts
 	dh_installtex --package=$(PKG) mapfile=debian/tex-gyre.cfg
 
 	$(foreach PPP, $(PKG) $(PKGFONTS), \
@@ -150,6 +149,7 @@ binary-indep: build-indep
 	    etc/fonts/conf.avail/65-$(PKGFONTS).conf \
 	    etc/fonts/conf.d/65-$(PKGFONTS).conf
 
+	dh_installxfonts
 	dh_installdocs debian/VERSIONS
 	dh_installchangelogs
 	dh_lintian
