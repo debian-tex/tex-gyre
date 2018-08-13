@@ -77,30 +77,29 @@ build-indep-stamp:
            fi ; \
 	done
 
-	# Generate $(PKG).scale from $(PKG).defoma-hints (since it contains
-	# nice hand-crafted XLFD names for the fonts).
-	sed -nf debian/sed_scripts/gen-fonts.scale \
-	  "debian/$(PKG).defoma-hints" > "debian/$(PKG).scale.tmp"
-	{ wc -l < "debian/$(PKG).scale.tmp" && \
-	  cat "debian/$(PKG).scale.tmp"; \
-	} > "debian/$(PKG).scale"
+	# Generate $(PKG).scale from $(PKG).x-names
+	# count two times the number of fonts for total number of lines, since we generate
+	# entries for both iso8859-1 and -15
+	( cat debian/$(PKG).x-names ; cat debian/$(PKG).x-names ) | wc -l > debian/$(PKG).scale
+	cat debian/$(PKG).x-names | while read f a ; do \
+	  echo "$$f.pfb -unregistered-$$a-0-0-0-0-p-0-iso8859-1"; \
+	  echo "$$f.pfb -unregistered-$$a-0-0-0-0-p-0-iso8859-15"; \
+	done >> debian/$(PKG).scale
 
-	# The following generated list should be safe with respect to font
-	# file names containing spaces (there is one name per line)...
-	sed -ne 's/^[[:blank:]]*begin[[:blank:]]\{1,\}.*[/]\([^/]\{1,\}\)\.pfb[[:blank:]]*$$/\1/p' \
-	  < "debian/$(PKG).defoma-hints" > "debian/$(PKG).fontlist-x11"
-	
+	cat debian/$(PKG).x-names | while read f a ; do \
+	  echo "usr/share/texmf/fonts/type1/public/tex-gyre/$$f.pfb usr/share/fonts/X11/Type1/$$f.pfb" ; \
+	  echo "usr/share/texmf/fonts/afm/public/tex-gyre/$$f.afm usr/share/fonts/X11/Type1/$$f.afm" ; \
+	done > debian/$(PKG).links
+
 	touch build-indep-stamp
 
 clean:
 	dh_testdir fonts/type1/public/tex-gyre/qtmr.pfb tex/latex/tex-gyre/tgtermes.sty
 	dh_testroot
-	# debian/$(PKG).links is automatically generated from the list of
+	# debian/$(PKG).links/scale are automatically generated from the list of
 	# fonts to declare to X11 among other things, so we have to delete
-	# it here.
-	rm -f build-indep-stamp \
-		"debian/$(PKG).scale.tmp" "debian/$(PKG).scale" \
-		"debian/$(PKG).fontlist-x11" "debian/$(PKG).links"
+	# them here.
+	rm -f build-indep-stamp "debian/$(PKG).scale" "debian/$(PKG).links"
 	dh_clean
 
 binary-indep: build-indep
@@ -108,18 +107,6 @@ binary-indep: build-indep
 	dh_testroot
 	dh_clean
 
-	# We will call dh_link only once for the build, with all desired links
-	# specified in $(PKG).links because it is much faster than spawning
-	# a dh_link (actually, Perl) process for every symbolic link in this
-	# package. So, $(PKG).links starts as an empty file and (target, link)
-	# pairs will be added to it in the relevant places.
-	: > "debian/$(PKG).links"
-
-
-	# Setup symlinks so that X can see the AFM and PFB files as well.
-	sed -nf debian/sed_scripts/gen-x-fonts-links-list \
-	  "debian/$(PKG).fontlist-x11" >> "debian/$(PKG).links"
-	
 	dh_install
 	dh_installtex --package=$(PKG) mapfile=debian/tex-gyre.cfg
 
