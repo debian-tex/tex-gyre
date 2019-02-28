@@ -1,3 +1,9 @@
+tex-gyre (20180621-3) unstable; urgency=medium
+
+  * update VCS, my email, standards
+
+ -- Norbert Preining <norbert@preining.info>  Thu, 28 Feb 2019 23:58:28 +0900
+
 tex-gyre (20180621-2) unstable; urgency=medium
 
   * move call to dh_installxfonts below link creation (Closes: #905880)
