@@ -1,6 +1,7 @@
 tex-gyre (20180621-4) UNRELEASED; urgency=medium
 
   * Trim trailing whitespace.
+  * Move source package lintian overrides to debian/source.
 
  -- Debian Janitor <janitor@jelmer.uk>  Sun, 17 Nov 2019 02:30:01 +0000
 
