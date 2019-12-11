@@ -56,9 +56,9 @@ build-indep-stamp:
 		exit 1; \
 	fi
 
-	# Upstream provides <texmf>/fonts/map/dvips/tex-gyre/q??.map that 
-	# should be equivalent to all the encoding-specific map files in 
-	# <texmf>/fonts/map/dvips/tex-gyre/ 
+	# Upstream provides <texmf>/fonts/map/dvips/tex-gyre/q??.map that
+	# should be equivalent to all the encoding-specific map files in
+	# <texmf>/fonts/map/dvips/tex-gyre/
 	# Let's check if this is really the case.
 	@export LC_COLLATE=C && for fam in $(FAMILIES) ; do \
 	   a=$$(find fonts/map/dvips/tex-gyre -name "$$fam-*.map" \
