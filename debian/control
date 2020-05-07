@@ -11,7 +11,6 @@ Vcs-Browser: https://github.com/debian-tex/tex-gyre
 Homepage: http://www.gust.org.pl/projects/e-foundry/tex-gyre/
 
 Package: tex-gyre
-Section: tex
 Architecture: all
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}
