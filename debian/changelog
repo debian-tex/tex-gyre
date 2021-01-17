@@ -1,5 +1,6 @@
 tex-gyre (20180621-4) UNRELEASED; urgency=medium
 
+  [ Debian Janitor ]
   * Trim trailing whitespace.
   * Move source package lintian overrides to debian/source.
   * Bump debhelper from old 11 to 12.
@@ -7,7 +8,13 @@ tex-gyre (20180621-4) UNRELEASED; urgency=medium
   * Update renamed lintian tag names in lintian overrides.
   * Remove Section on tex-gyre that duplicates source.
 
- -- Debian Janitor <janitor@jelmer.uk>  Sun, 17 Nov 2019 02:30:01 +0000
+  [ Hilmar Preusse ]
+  * Lintian
+    I: tex-gyre source: unused-override no-debian-copyright-in-source
+  * Lintian Override:
+    I: tex-gyre source: debian-watch-file-is-missing
+
+ -- Hilmar Preusse <hille42@web.de>  Sun, 17 Jan 2021 23:40:26 +0100
 
 tex-gyre (20180621-3) unstable; urgency=medium
 
