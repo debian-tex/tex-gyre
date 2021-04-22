@@ -5,7 +5,7 @@ Maintainer: Debian TeX maintainers <debian-tex-maint@lists.debian.org>
 Uploaders: Norbert Preining <norbert@preining.info>,
 	Hilmar Preusse <hille42@web.de>
 Build-Depends: debhelper-compat (= 12),
-	tex-common (>= 6)
+	tex-common
 Standards-Version: 4.2.1
 Vcs-Git: https://github.com/debian-tex/tex-gyre.git
 Vcs-Browser: https://github.com/debian-tex/tex-gyre
@@ -32,8 +32,7 @@ Section: fonts
 Architecture: all
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}
-Replaces: tex-gyre (<= 2.004.1-4)
-Breaks: tex-gyre (<= 2.004.1-4), fontconfig-config (<< 2.11.0)
+Breaks: fontconfig-config (<< 2.11.0)
 Multi-Arch: foreign
 Description: OpenType fonts based on URW Fonts
  The TeX Gyre project, following the Latin Modern project, aims at providing

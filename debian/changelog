@@ -16,6 +16,13 @@ tex-gyre (20180621-4) UNRELEASED; urgency=medium
   * Lintian Override:
     I: tex-gyre source: debian-watch-file-is-missing
 
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since stretch:
+    + Build-Depends: Drop versioned constraint on tex-common.
+    + fonts-texgyre: Drop versioned constraint on tex-gyre in Replaces.
+    + fonts-texgyre: Drop versioned constraint on tex-gyre in Breaks.
+    + Remove 2 maintscript entries from 1 files.
+
  -- Hilmar Preusse <hille42@web.de>  Sun, 17 Jan 2021 23:40:26 +0100
 
 tex-gyre (20180621-3) unstable; urgency=medium
