@@ -1,13 +1,5 @@
 tex-gyre (20180621-4) UNRELEASED; urgency=medium
 
-  [ Debian Janitor ]
-  * Trim trailing whitespace.
-  * Move source package lintian overrides to debian/source.
-  * Bump debhelper from old 11 to 12.
-  * Add missing build dependency on dh addon.
-  * Update renamed lintian tag names in lintian overrides.
-  * Remove Section on tex-gyre that duplicates source.
-
   [ Hilmar Preusse ]
   * Lintian
     W: tex-gyre source: package-has-a-duplicate-build-relation
@@ -17,6 +9,12 @@ tex-gyre (20180621-4) UNRELEASED; urgency=medium
     I: tex-gyre source: debian-watch-file-is-missing
 
   [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Move source package lintian overrides to debian/source.
+  * Bump debhelper from old 11 to 12.
+  * Add missing build dependency on dh addon.
+  * Update renamed lintian tag names in lintian overrides.
+  * Remove Section on tex-gyre that duplicates source.
   * Remove constraints unnecessary since stretch:
     + Build-Depends: Drop versioned constraint on tex-common.
     + fonts-texgyre: Drop versioned constraint on tex-gyre in Replaces.
