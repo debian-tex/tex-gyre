@@ -22,6 +22,7 @@ tex-gyre (20180621-4) UNRELEASED; urgency=medium
     + Remove 2 maintscript entries from 1 files.
   * Use secure URI in Homepage field.
   * Remove 1 obsolete maintscript entry.
+  * Bump debhelper from old 12 to 13.
 
  -- Hilmar Preusse <hille42@web.de>  Sun, 17 Jan 2021 23:40:26 +0100
 
