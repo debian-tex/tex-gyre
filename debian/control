@@ -9,7 +9,7 @@ Build-Depends: debhelper-compat (= 12),
 Standards-Version: 4.2.1
 Vcs-Git: https://github.com/debian-tex/tex-gyre.git
 Vcs-Browser: https://github.com/debian-tex/tex-gyre
-Homepage: http://www.gust.org.pl/projects/e-foundry/tex-gyre/
+Homepage: https://www.gust.org.pl/projects/e-foundry/tex-gyre/
 
 Package: tex-gyre
 Architecture: all

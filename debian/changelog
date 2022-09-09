@@ -20,6 +20,7 @@ tex-gyre (20180621-4) UNRELEASED; urgency=medium
     + fonts-texgyre: Drop versioned constraint on tex-gyre in Replaces.
     + fonts-texgyre: Drop versioned constraint on tex-gyre in Breaks.
     + Remove 2 maintscript entries from 1 files.
+  * Use secure URI in Homepage field.
 
  -- Hilmar Preusse <hille42@web.de>  Sun, 17 Jan 2021 23:40:26 +0100
 
