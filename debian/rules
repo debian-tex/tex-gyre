@@ -2,8 +2,10 @@
 
 PKG                   := tex-gyre
 PKGFONTS              := fonts-texgyre
+PKGMATH               := fonts-texgyre-math
 PKG_INSTALL_DIR       := debian/$(PKG)
 PKGFONTS_INSTALL_DIR  := debian/$(PKGFONTS)
+PKGMATH_INSTALL_DIR   := debian/$(PKGMATH)
 
 FAMILIES              := qag qbk qzc qcr qcs qhv qpl qtm
 FAMILYNAMES           := Adventor Bonum Chorus Cursor Heros Pagella \
@@ -121,20 +123,26 @@ binary-indep: build-indep
             $(foreach FAM, $(FAMILIES), \
 	      usr/share/texmf/doc/fonts/tex-gyre/$(FAM)-hist.txt \
 	      usr/share/doc/$(PPP)/$(FAM)-hist.txt) \
+	    ; )
+
+	dh_link}
 	    usr/share/texmf/doc/fonts/tex-gyre-math/README-TeX-Gyre-Bonum-Math.txt \
-	    usr/share/doc/$(PPP)/README-TeX-Gyre-Bonum-Math.txt \
+	    usr/share/doc/$(PKGMATH)/README-TeX-Gyre-Bonum-Math.txt \
 	    usr/share/texmf/doc/fonts/tex-gyre-math/README-TeX-Gyre-Pagella-Math.txt \
-	    usr/share/doc/$(PPP)/README-TeX-Gyre-Pagella-Math.txt \
+	    usr/share/doc/$(PKGMATH)/README-TeX-Gyre-Pagella-Math.txt \
 	    usr/share/texmf/doc/fonts/tex-gyre-math/README-TeX-Gyre-Schola-Math.txt \
-	    usr/share/doc/$(PPP)/README-TeX-Gyre-Schola-Math.txt \
+	    usr/share/doc/$(PKGMATH)/README-TeX-Gyre-Schola-Math.txt \
 	    usr/share/texmf/doc/fonts/tex-gyre-math/README-TeX-Gyre-Termes-Math.txt \
-	    usr/share/doc/$(PPP)/README-TeX-Gyre-Termes-Math.txt \
+	    usr/share/doc/$(PKGMATH)/README-TeX-Gyre-Termes-Math.txt \
 	    usr/share/texmf/doc/fonts/tex-gyre-math/README-TeX-Gyre-DejaVu-Math.txt \
-	    usr/share/doc/$(PPP)/README-TeX-Gyre-DejaVu-Math.txt \
-	      ; )
+	    usr/share/doc/$(PKGMATH)/README-TeX-Gyre-DejaVu-Math.txt
 	dh_link -p $(PKGFONTS) \
 	    etc/fonts/conf.avail/65-$(PKGFONTS).conf \
 	    etc/fonts/conf.d/65-$(PKGFONTS).conf
+
+	dh_link -p $(PKGMATH) \
+	    etc/fonts/conf.avail/65-$(PKGMATH).conf \
+	    etc/fonts/conf.d/65-$(PKGMATH).conf
 
 	dh_installxfonts
 	dh_installdocs debian/VERSIONS

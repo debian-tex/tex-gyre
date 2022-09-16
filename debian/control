@@ -15,7 +15,7 @@ Package: tex-gyre
 Architecture: all
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}
-Recommends: fonts-texgyre (= ${source:Version})
+Recommends: fonts-texgyre (= ${source:Version}), fonts-texgyre-math (= ${source:Version})
 Multi-Arch: foreign
 Description: scalable PostScript and OpenType fonts based on URW Fonts
  The TeX Gyre project, following the Latin Modern project, aims at providing
@@ -31,7 +31,7 @@ Package: fonts-texgyre
 Section: fonts
 Architecture: all
 Pre-Depends: ${misc:Pre-Depends}
-Depends: ${misc:Depends}
+Depends: fonts-texgyre-math (= ${source:Version})
 Breaks: fontconfig-config (<< 2.11.0)
 Multi-Arch: foreign
 Description: OpenType fonts based on URW Fonts
@@ -74,3 +74,31 @@ Description: OpenType fonts based on URW Fonts
  available in Adobe Type 1 and Open Type formats, and LaTeX support
  (for use with a variety of encodings) is provided.  Vietnamese
  characters were added by Han The Thanh.
+
+Package: fonts-texgyre-math
+Section: fonts
+Architecture: all
+Pre-Depends: ${misc:Pre-Depends}
+Replaces: fonts-texgyre (<< 20180621-4)
+Breaks: tex-gyre (<< 20180621-4), fontconfig-config (<< 2.11.0)
+Multi-Arch: foreign
+Description: OpenType math fonts based on URW Fonts
+ The TeX Gyre project, following the Latin Modern project, aims at providing
+ a rich collection of diacritical characters in the attempt to cover as many
+ Latin-based scripts as possible.
+ .
+ This package provides the OpenType math fonts accompanying the following
+ text fonts available in fonts-texgyre:
+ .
+ The TeX Gyre Bonum family of fonts is based on the URW Bookman L family
+ (designed by Alexander Phemister).
+ .
+ The TeX Gyre Pagella family of fonts is based on the URW Palladio L
+ family (designed by Hermann Zapf).
+ .
+ The TeX Gyre Schola family of fonts is based on the URW Century
+ Schoolbook L family (designed by Morris Fuller Benton).
+ .
+ The TeX Gyre Termes is based on the URW Nimbus Roman No9 L family
+ (designed by Stanley Morison together with Starling Burgess and
+ Victor Lardent).
