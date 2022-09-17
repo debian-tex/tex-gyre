@@ -23,7 +23,8 @@ Description: scalable PostScript and OpenType fonts based on URW Fonts
  Latin-based scripts as possible.
  .
  This package provides TeX support and Type1 (PostScript) fonts. If only
- the OpenType fonts are needed, please see the package fonts-texgyre.
+ the OpenType fonts are needed, please see the package fonts-texgyre
+ (and fonts-texgyre-math).
  .
  See the description for fonts-texgyre package for more information.
 
@@ -92,6 +93,9 @@ Description: OpenType math fonts based on URW Fonts
  .
  The TeX Gyre Bonum family of fonts is based on the URW Bookman L family
  (designed by Alexander Phemister).
+ .
+ The TeX Gyre DejaVu Math font is a math companion to the fine and popular
+ DejaVu text fonts.
  .
  The TeX Gyre Pagella family of fonts is based on the URW Palladio L
  family (designed by Hermann Zapf).
