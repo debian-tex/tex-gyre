@@ -1,4 +1,3 @@
 fonts/opentype/public/tex-gyre/*.otf usr/share/texmf/fonts/opentype/public/tex-gyre
 doc/fonts/tex-gyre/* usr/share/texmf/doc/fonts/tex-gyre
-source/fonts/tex-gyre-math/* usr/share/texmf/source/fonts/tex-gyre-math
 debian/65-fonts-texgyre.conf etc/fonts/conf.avail
