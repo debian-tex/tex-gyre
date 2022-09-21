@@ -8,6 +8,9 @@ tex-gyre (20180621-4) UNRELEASED; urgency=medium
   * Lintian Override:
     I: tex-gyre source: debian-watch-file-is-missing
 
+  [ Norbert Preining ]
+  * separate math fonts out into their own package
+
   [ Debian Janitor ]
   * Trim trailing whitespace.
   * Move source package lintian overrides to debian/source.
