@@ -7,6 +7,7 @@ Uploaders: Norbert Preining <norbert@preining.info>,
 Build-Depends: debhelper-compat (= 13),
 	tex-common
 Standards-Version: 4.2.1
+Rules-Requires-Root: no
 Vcs-Git: https://github.com/debian-tex/tex-gyre.git
 Vcs-Browser: https://github.com/debian-tex/tex-gyre
 Homepage: https://www.gust.org.pl/projects/e-foundry/tex-gyre/
