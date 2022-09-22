@@ -9,6 +9,7 @@ tex-gyre (20180621-4) UNRELEASED; urgency=medium
     P: tex-gyre source: silent-on-rules-requiring-root
   * Lintian Override:
     I: tex-gyre source: debian-watch-file-is-missing
+    I: tex-gyre(-math): package-contains-documentation-outside-usr-share-doc
 
   [ Norbert Preining ]
   * separate math fonts out into their own package
