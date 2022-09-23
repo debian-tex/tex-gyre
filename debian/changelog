@@ -7,9 +7,11 @@ tex-gyre (20180621-4) UNRELEASED; urgency=medium
     I: fonts-texgyre: unused-override extra-license-file
     X: tex-gyre: maintainer-script-supports-ancient-package-version
     P: tex-gyre source: silent-on-rules-requiring-root
-  * Lintian Override:
+  * Lintian Overrides:
     I: tex-gyre source: debian-watch-file-is-missing
     I: tex-gyre(-math): package-contains-documentation-outside-usr-share-doc
+    I: tex-gyre: font-in-non-font-package
+    I: tex-gyre: font-outside-font-dir
 
   [ Norbert Preining ]
   * separate math fonts out into their own package
