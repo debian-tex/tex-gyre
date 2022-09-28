@@ -3,11 +3,12 @@ tex-gyre (20180621-4) UNRELEASED; urgency=medium
   [ Hilmar Preusse ]
   * Lintian
     W: tex-gyre source: package-has-a-duplicate-build-relation
+    W: tex-gyre source: debhelper-but-no-misc-depends
     I: tex-gyre source: unused-override no-debian-copyright-in-source
     I: fonts-texgyre: unused-override extra-license-file
-    X: tex-gyre: maintainer-script-supports-ancient-package-version
     P: tex-gyre source: silent-on-rules-requiring-root
-    W: tex-gyre source: debhelper-but-no-misc-depends
+    P: tex-gyre source: no-dep5-copyright
+    X: tex-gyre: maintainer-script-supports-ancient-package-version
   * Lintian Overrides:
     I: tex-gyre source: debian-watch-file-is-missing
     I: tex-gyre(-math): package-contains-documentation-outside-usr-share-doc
