@@ -1,6 +1,7 @@
-tex-gyre (20180621-4) UNRELEASED; urgency=medium
+tex-gyre (20180621-4) unstable; urgency=medium
 
   [ Hilmar Preusse ]
+  * Add me to list of Uploaders.
   * Lintian
     W: tex-gyre source: package-has-a-duplicate-build-relation
     W: tex-gyre source: debhelper-but-no-misc-depends
@@ -33,7 +34,7 @@ tex-gyre (20180621-4) UNRELEASED; urgency=medium
   * Use secure URI in Homepage field.
   * Remove 1 obsolete maintscript entry.
 
- -- Hilmar Preusse <hille42@web.de>  Sun, 17 Jan 2021 23:40:26 +0100
+ -- Hilmar Preusse <hille42@web.de>  Wed, 28 Sep 2022 21:04:51 +0200
 
 tex-gyre (20180621-3) unstable; urgency=medium
 
