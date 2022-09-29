@@ -34,7 +34,6 @@ Section: fonts
 Architecture: all
 Pre-Depends: ${misc:Pre-Depends}
 Depends: fonts-texgyre-math (= ${source:Version}), ${misc:Depends}
-Breaks: fontconfig-config (<< 2.11.0)
 Multi-Arch: foreign
 Description: OpenType fonts based on URW Fonts
  The TeX Gyre project, following the Latin Modern project, aims at providing
@@ -83,7 +82,7 @@ Architecture: all
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}
 Replaces: fonts-texgyre (<< 20180621-4)
-Breaks: tex-gyre (<< 20180621-4), fontconfig-config (<< 2.11.0)
+Breaks: tex-gyre (<< 20180621-4)
 Multi-Arch: foreign
 Description: OpenType math fonts based on URW Fonts
  The TeX Gyre project, following the Latin Modern project, aims at providing
