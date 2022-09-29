@@ -1,5 +1,6 @@
 tex-gyre (20180621-5) UNRELEASED; urgency=medium
 
+  * debian/copyright: use spaces rather than tabs to start continuation lines.
   * Remove constraints unnecessary since buster (oldstable):
     + fonts-texgyre: Drop versioned constraint on fontconfig-config in Breaks.
     + fonts-texgyre-math: Drop versioned constraint on fontconfig-config in
