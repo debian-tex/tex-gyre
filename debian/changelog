@@ -1,3 +1,9 @@
+tex-gyre (20180621-5) UNRELEASED; urgency=medium
+
+  * debian/copyright: use spaces rather than tabs to start continuation lines.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Thu, 29 Sep 2022 19:30:46 -0000
+
 tex-gyre (20180621-4) unstable; urgency=medium
 
   [ Hilmar Preusse ]
