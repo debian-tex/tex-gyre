@@ -33,7 +33,8 @@ Package: fonts-texgyre
 Section: fonts
 Architecture: all
 Pre-Depends: ${misc:Pre-Depends}
-Depends: fonts-texgyre-math (= ${source:Version}), ${misc:Depends}
+Depends: ${misc:Depends}
+Recommends: fonts-texgyre-math (= ${source:Version})
 Multi-Arch: foreign
 Description: OpenType fonts based on URW Fonts
  The TeX Gyre project, following the Latin Modern project, aims at providing
