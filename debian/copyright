@@ -11,7 +11,7 @@ Files:	fonts/enc/dvips/tex-gyre/*.enc
  	doc/fonts/tex-gyre-math/math-test*
  	doc/fonts/tex-gyre/goadb999.nam
  	tlpkg/tlpobj/*
-Copyright: Copyright (C) 2006-2018 Bogus\l{}aw Jackowski and Janusz M. Nowacki
+Copyright: Copyright (C) 2006-2018 Bogusław Jackowski and Janusz M. Nowacki
 License: GUST-Font-License
 
 Comment: TeX-Gyre-Adventor
@@ -24,7 +24,7 @@ Files:	doc/fonts/tex-gyre/qag*
  	source/fonts/tex-gyre/*adventor*
  	tex/latex/tex-gyre/*qag*
  	tex/latex/tex-gyre/tgadventor.sty
-Copyright: Copyright (C) 2007-2018 Bogus\l{}aw Jackowski and Janusz M. Nowacki
+Copyright: Copyright (C) 2007-2018 Bogusław Jackowski and Janusz M. Nowacki
 License: GUST-Font-License
 
 Comment: TeX-Gyre-Bonum
@@ -37,7 +37,7 @@ Files:	doc/fonts/tex-gyre/qbk*
  	tex/latex/tex-gyre/*qbk*
  	tex/latex/tex-gyre/qbookman.sty
  	tex/latex/tex-gyre/tgbonum.sty
-Copyright: Copyright (C) 2007-2009 Bogus\l{}aw Jackowski and Janusz M. Nowacki
+Copyright: Copyright (C) 2007-2009 Bogusław Jackowski and Janusz M. Nowacki
 License: GUST-Font-License
 
 Comment: TeX-Gyre-Chorus
@@ -50,7 +50,7 @@ Files:	doc/fonts/tex-gyre/qzc*
  	tex/latex/tex-gyre/*qzc*
  	tex/latex/tex-gyre/qzapfcha.sty
  	tex/latex/tex-gyre/tgchorus.sty
-Copyright: Copyright (C) 2007-2009 Bogus\l{}aw Jackowski and Janusz M. Nowacki
+Copyright: Copyright (C) 2007-2009 Bogusław Jackowski and Janusz M. Nowacki
 License: GUST-Font-License
 
 Comment: TeX-Gyre-Cursor
@@ -64,7 +64,7 @@ Files:	doc/fonts/tex-gyre/qcr*
  	tex/latex/tex-gyre/*qcr*
  	tex/latex/tex-gyre/qcourier.sty
  	tex/latex/tex-gyre/tgcursor.sty
-Copyright: Copyright (C) 2007-2009 Bogus\l{}aw Jackowski and Janusz M. Nowacki
+Copyright: Copyright (C) 2007-2009 Bogusław Jackowski and Janusz M. Nowacki
 License: GUST-Font-License
 
 Comment: TeX-Gyre-Heros
@@ -77,7 +77,7 @@ Files:	doc/fonts/tex-gyre/qhv*
  	tex/latex/tex-gyre/*qhv*
  	tex/latex/tex-gyre/qswiss.sty
  	tex/latex/tex-gyre/tgheros.sty
-Copyright: Copyright (C) 2007-2018  Bogus\l{}aw Jackowski and Janusz M. Nowacki
+Copyright: Copyright (C) 2007-2018  Bogusław Jackowski and Janusz M. Nowacki
 License: GUST-Font-License
 
 Comment: TeX-Gyre-Pagella
@@ -91,7 +91,7 @@ Files:	doc/fonts/tex-gyre/qpl*
  	tex/latex/tex-gyre/*qpl*
  	tex/latex/tex-gyre/qpalatin.sty
  	tex/latex/tex-gyre/tgpagella.sty
-Copyright: Copyright (C) 2007-2018  Bogus\l{}aw Jackowski and Janusz M. Nowacki
+Copyright: Copyright (C) 2007-2018  Bogusław Jackowski and Janusz M. Nowacki
 License: GUST-Font-License
 
 Comment: TeX-Gyre-Schola
@@ -103,7 +103,7 @@ Files:	doc/fonts/tex-gyre/qcs*
  	fonts/opentype/public/tex-gyre/texgyreschola*
  	tex/latex/tex-gyre/*qcs*
  	tex/latex/tex-gyre/tgschola.sty
-Copyright: Copyright (C) 2007-2009  Bogus\l{}aw Jackowski and Janusz M. Nowacki
+Copyright: Copyright (C) 2007-2009  Bogusław Jackowski and Janusz M. Nowacki
 License: GUST-Font-License
 
 Comment: TeX-Gyre-Termes
@@ -116,7 +116,7 @@ Files:	doc/fonts/tex-gyre/qtm*
  	tex/latex/tex-gyre/*qtm*
  	tex/latex/tex-gyre/qtimes.sty
  	tex/latex/tex-gyre/tgtermes.sty
-Copyright: Copyright (C) 2006-2009  Bogus\l{}aw Jackowski and Janusz M. Nowacki
+Copyright: Copyright (C) 2006-2009  Bogusław Jackowski and Janusz M. Nowacki
 License: GUST-Font-License
 
 Comment: TeX-Gyre-Bonum-Math

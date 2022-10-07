@@ -1,4 +1,4 @@
-tex-gyre (20180621-5) UNRELEASED; urgency=medium
+tex-gyre (20180621-5) unstable; urgency=medium
 
   [ Debian Janitor ]
   * debian/copyright: use spaces rather than tabs to start continuation lines.
@@ -8,10 +8,11 @@ tex-gyre (20180621-5) UNRELEASED; urgency=medium
       Breaks.
 
   [ Hilmar Preusse ]
-  * Demote fonts-texgyre: dep on fonts-texgyre-math to Recommends.
+  * Demote fonts-texgyre Depend on fonts-texgyre-math to Recommends.
     (Closes: #1021347)
+  * Bump Standards version to 4.6.1 , no changes needed.
 
- -- Debian Janitor <janitor@jelmer.uk>  Thu, 29 Sep 2022 19:30:48 -0000
+ -- Hilmar Preusse <hille42@web.de>  Fri, 07 Oct 2022 09:16:32 +0200
 
 tex-gyre (20180621-4) unstable; urgency=medium
 
