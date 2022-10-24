@@ -1,3 +1,9 @@
+tex-gyre (20180621-6) unstable; urgency=medium
+
+  * Fix "Breaks" statement of fonts-texgyre-math (Closes: #1022719).
+
+ -- Hilmar Preusse <hille42@web.de>  Mon, 24 Oct 2022 23:34:23 +0200
+
 tex-gyre (20180621-5) unstable; urgency=medium
 
   [ Debian Janitor ]
