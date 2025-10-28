@@ -30,7 +30,7 @@ License: GUST-Font-License
 Files:	fonts/type1/public/tex-gyre/qag*pfb
 Copyright: Copyright (C) 2007-2018 Bogusław Jackowski and Janusz M. Nowacki
 	   Copyright (C) 1987-1990 Adobe Systems Incorporated
-License: GUST-Font-License, Apache-2.0
+License: GUST-Font-License or Apache-2.0
 
 Comment: TeX-Gyre-Bonum
 Files:	doc/fonts/tex-gyre/qbk*
@@ -48,7 +48,7 @@ License: GUST-Font-License
 Files:	fonts/type1/public/tex-gyre/qbk*pfb
 Copyright: Copyright (C) 2007-2009 Bogusław Jackowski and Janusz M. Nowacki
 	   Copyright (C) 1987-1990 Adobe Systems Incorporated
-License: GUST-Font-License, Apache-2.0
+License: GUST-Font-License or Apache-2.0
 
 Comment: TeX-Gyre-Chorus
 Files:	doc/fonts/tex-gyre/qzc*
@@ -66,7 +66,7 @@ License: GUST-Font-License
 Files:	fonts/type1/public/tex-gyre/qzc*pfb
 Copyright: Copyright (C) 2007-2009 Bogusław Jackowski and Janusz M. Nowacki
 	   Copyright (C) 1987-1990 Adobe Systems Incorporated
-License: GUST-Font-License, Apache-2.0
+License: GUST-Font-License or Apache-2.0
 
 Comment: TeX-Gyre-Cursor
 Files:	doc/fonts/tex-gyre/qcr*
@@ -84,7 +84,7 @@ License: GUST-Font-License
 Files:	fonts/type1/public/tex-gyre/qcr*.pfb
 Copyright: Copyright (C) 2007-2009 Bogusław Jackowski and Janusz M. Nowacki
 	   Copyright (C) 1987-1990 Adobe Systems Incorporated
-License: GUST-Font-License, Apache-2.0
+License: GUST-Font-License or Apache-2.0
 
 Comment: TeX-Gyre-Heros
 Files:	doc/fonts/tex-gyre/qhv*
@@ -102,7 +102,7 @@ License: GUST-Font-License
 Files:	fonts/type1/public/tex-gyre/qhv*pfb
 Copyright: Copyright (C) 2007-2018 Bogusław Jackowski and Janusz M. Nowacki
 	   Copyright (C) 1987-1990 Adobe Systems Incorporated
-License: GUST-Font-License, Apache-2.0
+License: GUST-Font-License or Apache-2.0
 
 Comment: TeX-Gyre-Pagella
 Files:	doc/fonts/tex-gyre/qpl*
@@ -121,7 +121,7 @@ License: GUST-Font-License
 Files:	fonts/type1/public/tex-gyre/qpl*pfb
 Copyright: Copyright (C) 2007-2018 Bogusław Jackowski and Janusz M. Nowacki
 	   Copyright (C) 1987-1990 Adobe Systems Incorporated
-License: GUST-Font-License, Apache-2.0
+License: GUST-Font-License or Apache-2.0
 
 Comment: TeX-Gyre-Schola
 Files:	doc/fonts/tex-gyre/qcs*
@@ -138,7 +138,7 @@ License: GUST-Font-License
 Files:	fonts/type1/public/tex-gyre/qcs*pfb
 Copyright: Copyright (C) 2007-2009 Bogusław Jackowski and Janusz M. Nowacki
 	   Copyright (C) 1987-1990 Adobe Systems Incorporated
-License: GUST-Font-License, Apache-2.0
+License: GUST-Font-License or Apache-2.0
 
 Comment: TeX-Gyre-Termes
 Files:	doc/fonts/tex-gyre/qtm*
@@ -156,7 +156,7 @@ License: GUST-Font-License
 Files:	fonts/type1/public/tex-gyre/qtm*pfb
 Copyright: Copyright (C) 2007-2009 Bogusław Jackowski and Janusz M. Nowacki
 	   Copyright (C) 1987-1990 Adobe Systems Incorporated
-License: GUST-Font-License, Apache-2.0
+License: GUST-Font-License or Apache-2.0
 
 Comment: TeX-Gyre-Bonum-Math
 Files: doc/fonts/tex-gyre-math/test-*-texgyre_bonum_math.*
