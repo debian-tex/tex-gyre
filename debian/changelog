@@ -1,3 +1,9 @@
+tex-gyre (20180621-8) UNRELEASED; urgency=medium
+
+  * The pfb Files are on GUST-Font-License /and/ Apache-2.0 license.
+
+ -- Hilmar Preuße <hille42@debian.org>  Fri, 06 Mar 2026 13:35:39 +0100
+
 tex-gyre (20180621-7) unstable; urgency=medium
 
   * Fix d/copyright, add Apache 2 license for Type 1 fonts
